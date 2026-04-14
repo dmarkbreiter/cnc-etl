@@ -1,0 +1,756 @@
+city,project,country,province,link,slug,id
+Piracicaba,Piracicaba,Brazil,São Paulo,https://www.inaturalist.org/projects/desafio-da-natureza-urbana-2026-piracicaba-sao-paulo-vizinhos-silvestres,desafio-da-natureza-urbana-2026-piracicaba-sao-paulo-vizinhos-silvestres,278010
+Palu,Palu and Surrounding Area,Indonesia,Central Sulawesi,https://www.inaturalist.org/projects/city-nature-challenge-2026-palu-and-surrounding-area,city-nature-challenge-2026-palu-and-surrounding-area,270080
+Cúcuta,Cúcuta,Colombia,Norte de Santander,https://colombia.inaturalist.org/projects/city-nature-challenge-2026-cucuta,city-nature-challenge-2026-cucuta,273998
+Sabana de Bogotá,Sabana de Bogotá,Colombia,Bogotá,https://colombia.inaturalist.org/projects/reto-naturalista-2026-sabana-de-bogota,reto-naturalista-2026-sabana-de-bogota,270187
+Baraya,Baraya,Colombia,Baraya,https://colombia.inaturalist.org/projects/reto-naturalista-urbano-baraya-2026,reto-naturalista-urbano-baraya-2026,274985
+Departamento de Guatemala,Departamento de Guatemala,Guatemala,Departamento de Guatemala,https://guatemala.inaturalist.org/projects/reto-naturalista-2026-departamento-de-guatemala,reto-naturalista-2026-departamento-de-guatemala,265959
+Departamento de Petén,Petén,Guatemala,Departamento de Petén,https://guatemala.inaturalist.org/projects/reto-naturalista-2026-peten,reto-naturalista-2026-peten,266615
+Campbell Town,Tasmania,Australia,Tasmania,https://inaturalist.ala.org.au/projects/city-nature-challenge-2026-tasmania,city-nature-challenge-2026-tasmania,265458
+Montreal | Tiohtià:ke,Tiohtià:ke | Grande région de Montréal | Greater Montreal Area,Canada,Quebec,https://inaturalist.ca/projects/c-n-c-defi-nature-urbaine-2026-tiohtia-ke-grand-montreal-greater-montreal-qc-ca,c-n-c-defi-nature-urbaine-2026-tiohtia-ke-grand-montreal-greater-montreal-qc-ca,266320
+Brandon,Brandon and Area,Canada,Manitoba,https://inaturalist.ca/projects/city-nature-challenge-2026-brandon-area,city-nature-challenge-2026-brandon-area,266456
+Calgary,Calgary Metropolitan Region,Canada,Alberta,https://inaturalist.ca/projects/city-nature-challenge-2026-calgary-metropolitan-region,city-nature-challenge-2026-calgary-metropolitan-region,270324
+Cape Breton Regional Municipality,CBRM,Canada,Nova Scotia,https://inaturalist.ca/projects/city-nature-challenge-2026-cape-breton-regional-municipality,city-nature-challenge-2026-cape-breton-regional-municipality,270282
+Charlottetown,Greater Charlottetown,Canada,Prince Edward Island,https://inaturalist.ca/projects/city-nature-challenge-2026-charlottetown-pei,city-nature-challenge-2026-charlottetown-pei,274627
+Barrie,Barrie,Canada,Ontario,https://inaturalist.ca/projects/city-nature-challenge-2026-city-of-barrie,city-nature-challenge-2026-city-of-barrie,266255
+London,London,Canada,Ontario,https://inaturalist.ca/projects/city-nature-challenge-2026-london-on,city-nature-challenge-2026-london-on,266309
+Edmonton,Edmonton metro area,Canada,Alberta,https://inaturalist.ca/projects/city-nature-challenge-2026-metro-edmonton-area,city-nature-challenge-2026-metro-edmonton-area,274820
+Vancouver,Metro Vancouver Regional District,Canada,British Columbia,https://inaturalist.ca/projects/city-nature-challenge-2026-metro-vancouver-regional-district-mvrd,city-nature-challenge-2026-metro-vancouver-regional-district-mvrd,264008
+Chatham,Chatham-Kent,Canada,Ontario,https://inaturalist.ca/projects/city-nature-challenge-2026-municipality-of-chatham-kent,city-nature-challenge-2026-municipality-of-chatham-kent,276777
+Ottawa,Ottawa,Canada,Ontario,https://inaturalist.ca/projects/city-nature-challenge-2026-ottawa,city-nature-challenge-2026-ottawa,273839
+Red Deer,Red Deer Area,Canada,Alberta,https://inaturalist.ca/projects/city-nature-challenge-2026-red-deer-area,city-nature-challenge-2026-red-deer-area,278797
+Saskatoon,Saskatoon,Canada,Saskatchewan,https://inaturalist.ca/projects/city-nature-challenge-2026-saskatoon-sk,city-nature-challenge-2026-saskatoon-sk,270566
+Summerside,Greater Summerside,Canada,Prince Edward Island,https://inaturalist.ca/projects/city-nature-challenge-2026-summerside-pei,city-nature-challenge-2026-summerside-pei,274628
+Thunder Bay,Thunder Bay District,Canada,Ontario,https://inaturalist.ca/projects/city-nature-challenge-2026-thunder-bay-district-on-canada,city-nature-challenge-2026-thunder-bay-district-on-canada,270275
+Winnipeg,Winnipeg Region,Canada,Manitoba,https://inaturalist.ca/projects/city-nature-challenge-2026-winnipeg-region-mb-canada,city-nature-challenge-2026-winnipeg-region-mb-canada,249425
+Gatineau,Gatineau and the Outaouais,Canada,Quebec,https://inaturalist.ca/projects/defi-nature-urbaine-2026-gatineau-et-environs-city-nature-challenge-2026,defi-nature-urbaine-2026-gatineau-et-environs-city-nature-challenge-2026,273840
+Quebec City,Région de Québec,Canada,Québec,https://inaturalist.ca/projects/defi-nature-urbaine-2026-region-de-quebec,defi-nature-urbaine-2026-region-de-quebec,265895
+Santiago de Chile,Santiago de Chile,Chile,Region Metrolitana de Santiago,https://inaturalist.mma.gob.cl/projects/city-nature-challenge-2026-santiago-de-chile,city-nature-challenge-2026-santiago-de-chile,265382
+Christchurch,Ōtautahi/Christchurch,New Zealand,Canterbury,https://inaturalist.nz/projects/city-nature-challenge-2026-otautahi-christchurch,city-nature-challenge-2026-otautahi-christchurch,247454
+Queenstown,Queenstown Lakes,New Zealand,Otago,https://inaturalist.nz/projects/city-nature-challenge-2026-queenstown-lakes,city-nature-challenge-2026-queenstown-lakes,278392
+Nanaimo,Regional District of Nanaimo,Canada,British Columbia,https://inaturalist.nz/projects/city-nature-challenge-2026-regional-district-of-nanaimo,city-nature-challenge-2026-regional-district-of-nanaimo,274814
+Taranaki,Taranaki,New Zealand,Taranaki,https://inaturalist.nz/projects/city-nature-challenge-2026-taranaki,city-nature-challenge-2026-taranaki,273661
+Luxembourg,Luxembourg,Luxembourg,Luxembourg,https://inaturalist.org/projects/city-nature-challenge-2026-luxembourg,city-nature-challenge-2026-luxembourg,266190
+Cosalá,Cosalá,Mexico,Sinaloa/Cosalá,https://mexico.inaturalist.org/projects/city-nature-challenge-2026-cosala-sinaloa,city-nature-challenge-2026-cosala-sinaloa,269778
+Villahermosa,Villahermosa,Mexico,Tabasco,https://mexico.inaturalist.org/projects/cnc-2026-villahermosa-tabasco,cnc-2026-villahermosa-tabasco,275089
+Delicias,Delicias-Meoqui-Rosales-Julimes,Mexico,Chihuahua,https://mexico.inaturalist.org/projects/reto-naturalista-2026-centro-sur-chihuahua-meoqui-delicias-julimes-rosales-mexico,reto-naturalista-2026-centro-sur-chihuahua-meoqui-delicias-julimes-rosales-mexico,275147
+Chihuahua,Chihuahua,Mexico,Chihuahua,https://mexico.inaturalist.org/projects/reto-naturalista-2026-chihuahua-mexcio,reto-naturalista-2026-chihuahua-mexcio,268819
+Ecatepec de Morelos,Ecatepec de Morelos,Mexico,Estado De México,https://mexico.inaturalist.org/projects/reto-naturalista-ecatepec-2026,reto-naturalista-ecatepec-2026,266292
+Mazatlán,Mazatlán,Mexico,Sinaloa,https://mexico.inaturalist.org/projects/reto-naturalista-mazatlan-sinaloa-2026,reto-naturalista-mazatlan-sinaloa-2026,265533
+Mexico City,Ciudad de México,Mexico,Ciudad de México,https://mexico.inaturalist.org/projects/reto-naturalista-primavera-2026-ciudad-de-mexico,reto-naturalista-primavera-2026-ciudad-de-mexico,264862
+Amanalco de Becerra,Amanalco de Becerra,Mexico,Estado de México,https://mexico.inaturalist.org/projects/reto-naturalista-urbano-2026-amanalco-de-becerra-edo-mex,reto-naturalista-urbano-2026-amanalco-de-becerra-edo-mex,266298
+Atenco,Atenco,Mexico,Estado de México,https://mexico.inaturalist.org/projects/reto-naturalista-urbano-2026-atenco,reto-naturalista-urbano-2026-atenco,266385
+Colima,Colima - Villa de Álvarez área,Mexico,Colima,https://mexico.inaturalist.org/projects/reto-naturalista-urbano-2026-colima,reto-naturalista-urbano-2026-colima,271263
+Monterrey,Monterrey Zona Metropolitana,Mexico,Nuevo Leon,https://mexico.inaturalist.org/projects/reto-naturalista-urbano-2026-monterrey-zona-metropolitana,reto-naturalista-urbano-2026-monterrey-zona-metropolitana,272388
+Puerto Vallarta,Reto Naturalista Urbano 2026: Puerto Vallarta,Mexico,Jalisco,https://mexico.inaturalist.org/projects/reto-naturalista-urbano-2026-puerto-vallarta,reto-naturalista-urbano-2026-puerto-vallarta,274757
+Tapachula,Tapachula,Mexico,Chiapas,https://mexico.inaturalist.org/projects/reto-naturalista-urbano-2026-tapachula-chiapas-mx,reto-naturalista-urbano-2026-tapachula-chiapas-mx,270175
+Tizimin,Tizimin,Mexico,Yucatan,https://mexico.inaturalist.org/projects/reto-naturalista-urbano-2026-tizimin,reto-naturalista-urbano-2026-tizimin,266232
+Tulum,Tulum,Mexico,Quintana Roo,https://mexico.inaturalist.org/projects/reto-naturalista-urbano-2026-tulum-q-roo,reto-naturalista-urbano-2026-tulum-q-roo,269454
+Ahome,Municipio De Ahome,Mexico,Sinaloa,https://mexico.inaturalist.org/projects/reto-naturalista-urbano-ahome-sinaloa-2026,reto-naturalista-urbano-ahome-sinaloa-2026,264388
+Guadalajara,Area Metropolitana de Guadalajara,Mexico,Jalisco,https://mexico.inaturalist.org/projects/reto-naturalista-urbano-area-metropolitana-de-guadalajara-2026,reto-naturalista-urbano-area-metropolitana-de-guadalajara-2026,265733
+Panamá,Ciudad de Panamá y San Miguelito,Panama,Panamá,https://panama.inaturalist.org/projects/reto-naturalista-urbano-2026-ciudad-de-panama-y-san-miguelito,reto-naturalista-urbano-2026-ciudad-de-panama-y-san-miguelito,266313
+San Sebastián de los Reyes,San Sebastián de los Reyes,Spain,Comunidad de Madrid,https://spain.inaturalist.org/projects/biomaraton-cnc-2026-sanse,biomaraton-cnc-2026-sanse,267779
+Birmingham,Birmingham & Black Country,England,West Midlands,https://uk.inaturalist.org/projects/city-nature-challenge-2026-birmingham-black-country,city-nature-challenge-2026-birmingham-black-country,265091
+Chester,Chester Region,England,Cheshire,https://uk.inaturalist.org/projects/city-nature-challenge-2026-chester-region,city-nature-challenge-2026-chester-region,264099
+Dundee,Dundee,Scotland,Tayside,https://uk.inaturalist.org/projects/city-nature-challenge-2026-dundee,city-nature-challenge-2026-dundee,269038
+Hull,Hull,England,,https://uk.inaturalist.org/projects/city-nature-challenge-2026-hull,city-nature-challenge-2026-hull,265929
+Nottingham City,Nottingham City,England,Nottinghamshire,https://uk.inaturalist.org/projects/city-nature-challenge-2026-nottingham-city-uk,city-nature-challenge-2026-nottingham-city-uk,266246
+Swansea,Swansea (City and County),Wales,South West Wales,https://uk.inaturalist.org/projects/city-nature-challenge-2026-swansea-city-and-county,city-nature-challenge-2026-swansea-city-and-county,270157
+Bristol,West of England (Bristol and Bath),England,West of England,https://uk.inaturalist.org/projects/city-nature-challenge-2026-west-of-england-bristol-and-bath,city-nature-challenge-2026-west-of-england-bristol-and-bath,273831
+Posadas,Misiones,Argentina,Misiones,https://www.inaturalist.org/projects/cnc-2026-desafio-misiones,cnc-2026-desafio-misiones,279847
+Amarillo,Amarillo Metropolitan Area plus Hutchinson County,United States of America,Texas,https://www.inaturalist.org/projects/2026-city-nature-challenge-amarillo-and-area,2026-city-nature-challenge-amarillo-and-area,278899
+Tallahassee,Northwest Florida - Southwest Georgia,United States of America,"Florida, Georgia",https://www.inaturalist.org/projects/2026-florida-georgia-inaturalist-city-nature-challenge,2026-florida-georgia-inaturalist-city-nature-challenge,264019
+Massa Lubrense,Area Marina Protetta Punta Campanella,Italy,Italia,https://www.inaturalist.org/projects/amp-punta-campanella-bioblitz-e-blublitz-cnc-2026,amp-punta-campanella-bioblitz-e-blublitz-cnc-2026,270883
+Arrecife Alacranes,Arrecife Alacranes,Mexico,Yucatan,https://www.inaturalist.org/projects/arrecife-alacranes-yucatan-cnc-2026,arrecife-alacranes-yucatan-cnc-2026,266301
+Banyoles,Banyoles/Pla de l'Estany,Spain,Girona,https://www.inaturalist.org/projects/biomarato-2026-pla-de-l-estany,biomarato-2026-pla-de-l-estany,264283
+Santa Pola,Santa Pola I Espais Naturals,Spain,Comunitat Valenciana,https://www.inaturalist.org/projects/biomarato-cnc-2026-santa-pola,biomarato-cnc-2026-santa-pola,266273
+Vinaròs,Vinaròs-La Massola,Spain,Castellón,https://www.inaturalist.org/projects/biomarato-primavera-2026-vinaros-la-massola,biomarato-primavera-2026-vinaros-la-massola,270128
+Navalcarnero,Navalcarnero - El Álamo,Spain,Comunidad de Madrid,https://www.inaturalist.org/projects/biomaraton-cnc-2025-navalcarnero-el-alamo,biomaraton-cnc-2025-navalcarnero-el-alamo,265435
+Pamplona,Área Metropolitana de Pamplona / Iruña,Spain,Navarra,https://www.inaturalist.org/projects/biomaraton-cnc-2026-pamplona-iruna,biomaraton-cnc-2026-pamplona-iruna,265338
+Tudela,Ribera Navarra,Spain,Navarra,https://www.inaturalist.org/projects/biomaraton-cnc-2026-ribera-navarra,biomaraton-cnc-2026-ribera-navarra,270127
+Zaragoza,"Zaragoza: área metropolitana, AR, ES División",Spain,Aragón,https://www.inaturalist.org/projects/biomaraton-cnc-2026-zaragoza,biomaraton-cnc-2026-zaragoza,266515
+Colmenar Viejo,Colmenar Viejo,Spain,Madrid y Burgos,https://www.inaturalist.org/projects/biomaraton-cnc-colmenar-viejo-2026,biomaraton-cnc-colmenar-viejo-2026,264498
+Takuapa,Takuapa,Thailand,Phang Nga,https://www.inaturalist.org/projects/city-nature-challange-2025-takuapa-phang-nga,city-nature-challange-2025-takuapa-phang-nga,268804
+Jakarta,Jakarta,Indonesia,Jakarta,https://www.inaturalist.org/projects/city-nature-challange-2026-jakarta,city-nature-challange-2026-jakarta,242140
+Tirupati,Tirupati,India,Andhra Pradesh,https://www.inaturalist.org/projects/city-nature-challenge-2026-tirupati,city-nature-challenge-2026-tirupati,270084
+Nashik,"Nashik, Maharashtra",India,Maharashtra,https://www.inaturalist.org/projects/city-nature-challenge-2026_nashik,city-nature-challenge-2026_nashik,266030
+Aarhus,Aarhus,Denmark,Midtjylland,https://www.inaturalist.org/projects/city-nature-challenge-2026-aarhus,city-nature-challenge-2026-aarhus,271354
+Abbotsford,Abbotsford,Canada,British Columbia,https://www.inaturalist.org/projects/city-nature-challenge-2026-abbotsford,city-nature-challenge-2026-abbotsford,264718
+Aberdeen,Aberdeen,Scotland,Aberdeen,https://www.inaturalist.org/projects/city-nature-challenge-2026-aberdeen,city-nature-challenge-2026-aberdeen,267352
+Albuquerque,ABQ,United States of America,New Mexico,https://www.inaturalist.org/projects/city-nature-challenge-2026-abq,city-nature-challenge-2026-abq,265874
+Nassawadox,Accomack & Northampton Counties,United States of America,Virginia,https://www.inaturalist.org/projects/city-nature-challenge-2026-accomack-northampton-counties,city-nature-challenge-2026-accomack-northampton-counties,269093
+Boise,Ada County,United States of America,Idaho,https://www.inaturalist.org/projects/city-nature-challenge-2026-ada-county,city-nature-challenge-2026-ada-county,264998
+Andaman,North & Middle Andaman,India,Andaman and Nicobar Islands,https://www.inaturalist.org/projects/city-nature-challenge-2026-north-middle-andaman,city-nature-challenge-2026-north-middle-andaman,279758
+Alachua County,Alachua County,United States of America,Florida,https://www.inaturalist.org/projects/city-nature-challenge-2026-alachua-county,city-nature-challenge-2026-alachua-county,270242
+Makhanda,Albany Center of Endemism (Makana & Ndlambe),South Africa,Eastern Cape,https://www.inaturalist.org/projects/city-nature-challenge-2026-albany-coe-makana-ndlambe,city-nature-challenge-2026-albany-coe-makana-ndlambe,264280
+Sault Ste. Marie,"Algoma District, ON, Canada & Chippewa County, MI, USA","Canada, United States of America","Ontario, Michigan",https://www.inaturalist.org/projects/city-nature-challenge-2026-algoma-district-on-canada-chippewa-county-mi-usa,city-nature-challenge-2026-algoma-district-on-canada-chippewa-county-mi-usa,265445
+Lexington,Allegheny and Shenandoah Mountains,United States of America,Virginia,https://www.inaturalist.org/projects/city-nature-challenge-2026-allegheny-and-shenandoah-mountains,city-nature-challenge-2026-allegheny-and-shenandoah-mountains,269091
+Alpiarça,Alpiarça,Portugal,Alpiarça,https://www.inaturalist.org/projects/city-nature-challenge-2026-alpiarca,city-nature-challenge-2026-alpiarca,275064
+Amstetten,"Amstetten, Waidhofen/Ybbs",Austria,Niederösterreich,https://www.inaturalist.org/projects/city-nature-challenge-2026-amstetten-waidhofen-ybbs,city-nature-challenge-2026-amstetten-waidhofen-ybbs,275608
+Antigonish,Antigonish County,Canada,Nova Scotia,https://www.inaturalist.org/projects/city-nature-challenge-2026-antigonish-county,city-nature-challenge-2026-antigonish-county,273835
+Ahmedabad,Ahmedabad-Gandhinagar,India,Gujarat,https://www.inaturalist.org/projects/city-nature-challenge-2026-ahmedabad-gandhinagar,city-nature-challenge-2026-ahmedabad-gandhinagar,265074
+Athens,Athens-Clarke County,United States of America,Georgia,https://www.inaturalist.org/projects/city-nature-challenge-2026-athens-clarke-county,city-nature-challenge-2026-athens-clarke-county,268776
+Athens,Athens Metropolitan Area,Greece,Attica,https://www.inaturalist.org/projects/city-nature-challenge-2026-athens-metropolitan-area,city-nature-challenge-2026-athens-metropolitan-area,276764
+Atlanta,Greater Atlanta Area,United States of America,Georgia,https://www.inaturalist.org/projects/city-nature-challenge-2026-atlanta,city-nature-challenge-2026-atlanta,264827
+Austin,Greater Austin,United States of America,Texas,https://www.inaturalist.org/projects/city-nature-challenge-2026-austin,city-nature-challenge-2026-austin,265496
+Baku,"Baku, Abşeron Peninsula",Azerbaijan,Abşeron Peninsula,https://www.inaturalist.org/projects/city-nature-challenge-2026-baku-abseron-peninsula,city-nature-challenge-2026-baku-abseron-peninsula,264878
+Baltimore,Baltimore Metro Area,United States of America,Maryland,https://www.inaturalist.org/projects/city-nature-challenge-2026-baltimore-metro-area,city-nature-challenge-2026-baltimore-metro-area,264098
+Assam,Assam,India,Assam,https://www.inaturalist.org/projects/city-nature-challenge-2026-assam,city-nature-challenge-2026-assam,265582
+Bangkok,Bangkok Metropolitan Region,Thailand,Central Thailand,https://www.inaturalist.org/projects/city-nature-challenge-2026-bangkok-metropolitan-region-thailand,city-nature-challenge-2026-bangkok-metropolitan-region-thailand,265176
+Baton Rouge,Baton Rouge Region,United States of America,Louisiana,https://www.inaturalist.org/projects/city-nature-challenge-2026-baton-rouge-region,city-nature-challenge-2026-baton-rouge-region,259655
+Bend,Bend,United States of America,Oregon,https://www.inaturalist.org/projects/city-nature-challenge-2026-bend,city-nature-challenge-2026-bend,265646
+Berezivka,"Berezivka city, Odesa region",Ukraine,Odesa,https://www.inaturalist.org/projects/city-nature-challenge-2026-berezivka-ua,city-nature-challenge-2026-berezivka-ua,277499
+Bergamo,Bergamo,Italy,Lombardia,https://www.inaturalist.org/projects/city-nature-challenge-2026-bergamo,city-nature-challenge-2026-bergamo,266452
+Reading,Berks County,United States of America,Pennsylvania,https://www.inaturalist.org/projects/city-nature-challenge-2026-berks-county,city-nature-challenge-2026-berks-county,264999
+Berkshire,Berkshire,England,Berkshire,https://www.inaturalist.org/projects/city-nature-challenge-2026-berkshire,city-nature-challenge-2026-berkshire,269406
+Berlin,Berlin,Germany,,https://www.inaturalist.org/projects/city-nature-challenge-2026-berlin,city-nature-challenge-2026-berlin,265202
+Bethlehem,Bethlehem,United States of America,Pennsylvania,https://www.inaturalist.org/projects/city-nature-challenge-2026-bethlehem,city-nature-challenge-2026-bethlehem,265390
+Bangalore,Bangalore,India,Karnataka,https://www.inaturalist.org/projects/city-nature-challenge-2026-bangalore-metropolitan-region,city-nature-challenge-2026-bangalore-metropolitan-region,266241
+Almaty,Big Almaty,Kazakhstan,Almaty Region,https://www.inaturalist.org/projects/city-nature-challenge-2026-big-almaty,city-nature-challenge-2026-big-almaty,275133
+Bila Tserkva,Bila Tserkva,Ukraine,Kyivska oblast,https://www.inaturalist.org/projects/city-nature-challenge-2026-bila-tserkva,city-nature-challenge-2026-bila-tserkva,274664
+Bilene,Bilene,Mozambique,Gaza,https://www.inaturalist.org/projects/city-nature-challenge-2026-bilene,city-nature-challenge-2026-bilene,274479
+Makarska,Biokovo,Croatia,Splitsko-dalmatinska županija,https://www.inaturalist.org/projects/city-nature-challenge-2026-biokovo,city-nature-challenge-2026-biokovo,271690
+Alicante,Alicante,Spain,Alicante,https://www.inaturalist.org/projects/city-nature-challenge-2026-biomarato-primavera-2026-alacant,city-nature-challenge-2026-biomarato-primavera-2026-alacant,275120
+Birmingham,Birmingham Metro Area,United States of America,Alabama,https://www.inaturalist.org/projects/city-nature-challenge-2026-birmingham-metro-area,city-nature-challenge-2026-birmingham-metro-area,268692
+Bishop,Bishop and Mammoth Lakes,United States of America,California,https://www.inaturalist.org/projects/city-nature-challenge-2026-bishop-and-mammoth-lakes,city-nature-challenge-2026-bishop-and-mammoth-lakes,273860
+Čazma,Bjelovarsko-bilogorska županija,Croatia,Bjelovarsko-bilogorska županija,https://www.inaturalist.org/projects/city-nature-challenge-2026-bjelovarsko-bilogorska-zupanija,city-nature-challenge-2026-bjelovarsko-bilogorska-zupanija,271508
+Boane,Boane,Mozambique,Maputo,https://www.inaturalist.org/projects/city-nature-challenge-2026-boane,city-nature-challenge-2026-boane,274473
+Bolton,Bolton,United States of America,Vermont,https://www.inaturalist.org/projects/city-nature-challenge-2026-bolton-vt,city-nature-challenge-2026-bolton-vt,270174
+Bonn,Bonn,Germany,Nordrhein-Westfalen,https://www.inaturalist.org/projects/city-nature-challenge-2026-bonn,city-nature-challenge-2026-bonn,272549
+Boone County,Boone County,United States of America,Kentucky,https://www.inaturalist.org/projects/city-nature-challenge-2026-boone-county-kentucky,city-nature-challenge-2026-boone-county-kentucky,266500
+Boston,Boston Area,United States of America,Massachusetts,https://www.inaturalist.org/projects/city-nature-challenge-2026-boston-area,city-nature-challenge-2026-boston-area,265029
+Bowling Green,Bowling Green and South Central Kentucky,United States of America,Kentucky,https://www.inaturalist.org/projects/city-nature-challenge-2026-bowling-green-and-south-central-kentucky,city-nature-challenge-2026-bowling-green-and-south-central-kentucky,270603
+Brainerd,Brainerd Lakes Area,United States of America,Minnesota,https://www.inaturalist.org/projects/city-nature-challenge-2026-brainerd-lakes-area,city-nature-challenge-2026-brainerd-lakes-area,275082
+Bratislava,Bratislava,Slovakia,Slovakia,https://www.inaturalist.org/projects/city-nature-challenge-2026-bratislava,city-nature-challenge-2026-bratislava,278900
+College Station,Brazos Valley,United States of America,Texas,https://www.inaturalist.org/projects/city-nature-challenge-2026-brazos-valley-tx,city-nature-challenge-2026-brazos-valley-tx,264096
+Bremen,Bremen & Bremerhaven,Germany,Free Hanseatic City of Bremen,https://www.inaturalist.org/projects/city-nature-challenge-2026-bremen-bremerhaven,city-nature-challenge-2026-bremen-bremerhaven,269520
+Brighton,Brighton & Eastern Downs,England,Sussex,https://www.inaturalist.org/projects/city-nature-challenge-2026-brighton-eastern-downs,city-nature-challenge-2026-brighton-eastern-downs,270234
+Brno,Brno,Czech Republic,South Moravian Region,https://www.inaturalist.org/projects/city-nature-challenge-2026-brno,city-nature-challenge-2026-brno,272039
+Slavonski Brod,Brodsko-posavska županija,Croatia,Brodsko-posavska županija,https://www.inaturalist.org/projects/city-nature-challenge-2026-brodsko-posavska-zupanija,city-nature-challenge-2026-brodsko-posavska-zupanija,271686
+Brovary,Brovary,Ukraine,Kyivska,https://www.inaturalist.org/projects/city-nature-challenge-2026-brovarska-hromada,city-nature-challenge-2026-brovarska-hromada,275140
+Brussels,Brussels-Capital Region,Belgium,Brussels-Capital Region,https://www.inaturalist.org/projects/city-nature-challenge-2026-brussels-capital-region,city-nature-challenge-2026-brussels-capital-region,264387
+Doylestown,Delaware Valley University,United States of America,Pennsylvania,https://www.inaturalist.org/projects/city-nature-challenge-2026-bucks-county,city-nature-challenge-2026-bucks-county,275087
+Bucharest,București,Romania,București-Ilfov,https://www.inaturalist.org/projects/city-nature-challenge-2026-bucure-ti,city-nature-challenge-2026-bucure-ti,278444
+Budapest,Budapest,Hungary,Pest megye,https://www.inaturalist.org/projects/city-nature-challenge-2026-budapest,city-nature-challenge-2026-budapest,270180
+Hamilton,Butler County,United States of America,Ohio,https://www.inaturalist.org/projects/city-nature-challenge-2026-butler-county-oh,city-nature-challenge-2026-butler-county-oh,264323
+Johnstown,Cambria County,United States of America,Pennsylvania,https://www.inaturalist.org/projects/city-nature-challenge-2026-cambria-county,city-nature-challenge-2026-cambria-county,272699
+Cambridge,Cambridge,Canada,Ontario,https://www.inaturalist.org/projects/city-nature-challenge-2026-cambridge-ontario-canada-observations,city-nature-challenge-2026-cambridge-ontario-canada-observations,270235
+Nampa,Canyon County,United States of America,Idaho,https://www.inaturalist.org/projects/city-nature-challenge-2026-canyon-county-id,city-nature-challenge-2026-canyon-county-id,267141
+City of Cape Town,Cape Town,South Africa,Western Cape,https://www.inaturalist.org/projects/city-nature-challenge-2026-cape-town,city-nature-challenge-2026-cape-town,273795
+Stellenbosch,Cape Winelands,South Africa,Western Cape,https://www.inaturalist.org/projects/city-nature-challenge-2026-cape-winelands,city-nature-challenge-2026-cape-winelands,272952
+Great Falls,Cascade County,United States of America,Montana,https://www.inaturalist.org/projects/city-nature-challenge-2026-cascade-county-mt,city-nature-challenge-2026-cascade-county-mt,274585
+Celestún,Celestún,Mexico,Yucatán,https://www.inaturalist.org/projects/city-nature-challenge-2026-celestun-yucatan,city-nature-challenge-2026-celestun-yucatan,270692
+Serowe,"Central District, Botswana",Botswana,Central District,https://www.inaturalist.org/projects/city-nature-challenge-2026-central-botswana,city-nature-challenge-2026-central-botswana,273644
+Bloomington,Central Illinois,United States of America,Illinois,https://www.inaturalist.org/projects/city-nature-challenge-2026-central-illinois,city-nature-challenge-2026-central-illinois,269561
+Sagamihara City,Prefectural Central Region of Kanagawa,Japan,Kanagawa Prefecture,https://www.inaturalist.org/projects/city-nature-challenge-2026-central-kanagawa-jp,city-nature-challenge-2026-central-kanagawa-jp,271372
+Taichung,Central Taiwan,Taiwan,,https://www.inaturalist.org/projects/city-nature-challenge-2026-central-taiwan,city-nature-challenge-2026-central-taiwan,272353
+Ceske Budejovice,Ceske Budejovice,Czech Republic,South Bohemia,https://www.inaturalist.org/projects/city-nature-challenge-2026-ceske-budejovice,city-nature-challenge-2026-ceske-budejovice,272049
+Charlotte,Charlotte Metro Region,United States of America,North Carolina,https://www.inaturalist.org/projects/city-nature-challenge-2026-charlotte-metro-region,city-nature-challenge-2026-charlotte-metro-region,275405
+Charlottesville,Charlottesville Region,United States of America,Virginia,https://www.inaturalist.org/projects/city-nature-challenge-2026-charlottesville-region,city-nature-challenge-2026-charlottesville-region,269089
+Bargarh,Bargarh,India,Odisha,https://www.inaturalist.org/projects/city-nature-challenge-2026-bargarh,city-nature-challenge-2026-bargarh,270419
+Cheringoma,Cheringoma,Mozambique,Sofala,https://www.inaturalist.org/projects/city-nature-challenge-2026-cheringoma,city-nature-challenge-2026-cheringoma,274480
+Cherkasy,Cherkasy,Ukraine,Cherkasy,https://www.inaturalist.org/projects/city-nature-challenge-2026-cherkasy,city-nature-challenge-2026-cherkasy,274679
+Chernihiv,Chernihiv,Ukraine,Chernihiv,https://www.inaturalist.org/projects/city-nature-challenge-2026-chernihiv,city-nature-challenge-2026-chernihiv,274769
+Bhopal,Bhopal,India,Madhya Pradesh,https://www.inaturalist.org/projects/city-nature-challenge-2026-bhopal,city-nature-challenge-2026-bhopal,264783
+Bhubaneswar,Bhubaneswar,India,Odisha,https://www.inaturalist.org/projects/city-nature-challenge-2026-bhubaneswar,city-nature-challenge-2026-bhubaneswar,270996
+Chiang Rai,Chiang Rai,Thailand,Chiang Rai,https://www.inaturalist.org/projects/city-nature-challenge-2026-chiang-rai,city-nature-challenge-2026-chiang-rai,273897
+Chiayi,Chiayi-Yunlin,Taiwan,-,https://www.inaturalist.org/projects/city-nature-challenge-2026-chiayi-yunlin,city-nature-challenge-2026-chiayi-yunlin,272352
+Chicago,Chicagoland Region,United States of America,"Illinois, Indiana, Wisconsin",https://www.inaturalist.org/projects/city-nature-challenge-2026-chicagoland-region,city-nature-challenge-2026-chicagoland-region,265860
+Chimoio,Chimoio,Mozambique,Manica,https://www.inaturalist.org/projects/city-nature-challenge-2026-chimoio,city-nature-challenge-2026-chimoio,274488
+Chiúre,Chiúre,Mozambique,Cabo Delgado,https://www.inaturalist.org/projects/city-nature-challenge-2026-chiure,city-nature-challenge-2026-chiure,274484
+Chortkiv,Ternopil region,Ukraine,Ternopil,https://www.inaturalist.org/projects/city-nature-challenge-2026-chortkiv-town,city-nature-challenge-2026-chortkiv-town,274902
+Cidade da Beira,Beira,Mozambique,Sofala,https://www.inaturalist.org/projects/city-nature-challenge-2026-cidade-da-beira,city-nature-challenge-2026-cidade-da-beira,274477
+Cidade de Inhambane,Inhambane,Mozambique,Inhambane,https://www.inaturalist.org/projects/city-nature-challenge-2026-cidade-de-inhambane,city-nature-challenge-2026-cidade-de-inhambane,274486
+Cidade de Lichinga,Lichinga,Mozambique,Niassa,https://www.inaturalist.org/projects/city-nature-challenge-2026-cidade-de-lichinga,city-nature-challenge-2026-cidade-de-lichinga,274883
+Cidade de Maputo,Cidade de Maputo,Mozambique,Maputo,https://www.inaturalist.org/projects/city-nature-challenge-2026-cidade-de-maputo,city-nature-challenge-2026-cidade-de-maputo,274465
+Cincinnati,Cincinnati:Hamilton County,United States of America,Ohio,https://www.inaturalist.org/projects/city-nature-challenge-2026-cincinnati-hamilton-county,city-nature-challenge-2026-cincinnati-hamilton-county,267359
+Hamilton,Hamilton,Canada,Ontario,https://www.inaturalist.org/projects/city-nature-challenge-2026-city-of-hamilton,city-nature-challenge-2026-city-of-hamilton,274910
+Harrisburg,City of Harrisburg,United States of America,Pennsylvania,https://www.inaturalist.org/projects/city-nature-challenge-2026-city-of-harrisburg,city-nature-challenge-2026-city-of-harrisburg,267392
+Kingston,Kingston,Canada,Ontario,https://www.inaturalist.org/projects/city-nature-challenge-2026-city-of-kingston,city-nature-challenge-2026-city-of-kingston,264949
+Logan,City of Logan,Australia,Queensland,https://www.inaturalist.org/projects/city-nature-challenge-2026-city-of-logan,city-nature-challenge-2026-city-of-logan,278351
+Chennai,Chennai,India,Tamil Nadu,https://www.inaturalist.org/projects/city-nature-challenge-2026-chennai,city-nature-challenge-2026-chennai,265167
+Grand Junction,Colorado West Slope,United States of America,Colorado,https://www.inaturalist.org/projects/city-nature-challenge-2026-colorado-west-slope,city-nature-challenge-2026-colorado-west-slope,265027
+Columbia,Columbia,United States of America,South Carolina,https://www.inaturalist.org/projects/city-nature-challenge-2026-columbia,city-nature-challenge-2026-columbia,265537
+Columbus,Columbus Ohio,United States of America,Ohio,https://www.inaturalist.org/projects/city-nature-challenge-2026-columbus-ohio,city-nature-challenge-2026-columbus-ohio,264100
+Corvallis,Benton County,United States of America,Oregon,https://www.inaturalist.org/projects/city-nature-challenge-2026-corvallis,city-nature-challenge-2026-corvallis,273161
+Curacao,Curacao,Curacao,Curacao,https://www.inaturalist.org/projects/city-nature-challenge-2026-curacao,city-nature-challenge-2026-curacao,264640
+Dallas,Dallas/Fort Worth,United States of America,Texas,https://www.inaturalist.org/projects/city-nature-challenge-2026-dallas-fort-worth,city-nature-challenge-2026-dallas-fort-worth,272714
+Darwin,Darwin and Palmerston,Australia,Northern territory,https://www.inaturalist.org/projects/city-nature-challenge-2026-darwin-and-palmerston,city-nature-challenge-2026-darwin-and-palmerston,273080
+Debrecen,Debrecen,Hungary,Hungary,https://www.inaturalist.org/projects/city-nature-challenge-2026-debrecen,city-nature-challenge-2026-debrecen,274577
+Chhatrapati Smabhajinagar,Chhatrapati Smabhajinagar,India,Maharashtra,https://www.inaturalist.org/projects/city-nature-challenge-2026-chhatrapati-sambhajinagar,city-nature-challenge-2026-chhatrapati-sambhajinagar,278836
+Denver,Colorado Front Range,United States of America,Colorado,https://www.inaturalist.org/projects/city-nature-challenge-2026-denver-metro-area,city-nature-challenge-2026-denver-metro-area,270253
+Detroit,Detroil Tri-County Area,United States of America,Michigan,https://www.inaturalist.org/projects/city-nature-challenge-2026-detroit-tri-county-area,city-nature-challenge-2026-detroit-tri-county-area,274967
+Dnipro,Dnipro ter hromada,Ukraine,Dnipropetrovsk,https://www.inaturalist.org/projects/city-nature-challenge-2026-dnipro,city-nature-challenge-2026-dnipro,274686
+Dubai,Dubai,United Arab Emirates,,https://www.inaturalist.org/projects/city-nature-challenge-2026-dubai,city-nature-challenge-2026-dubai,264631
+Dunedin,Ōtepoti/Dunedin,New Zealand,Otago,https://www.inaturalist.org/projects/city-nature-challenge-2026-dunedin-otepoti,city-nature-challenge-2026-dunedin-otepoti,269150
+Dykanka,Dykanka hromada,Ukraine,Poltava,https://www.inaturalist.org/projects/city-nature-challenge-2026-dykanka-hromada,city-nature-challenge-2026-dykanka-hromada,275039
+Ekaterinburg,Ekaterinburg,Russia,Sverdlovsk,https://www.inaturalist.org/projects/city-nature-challenge-2026-ekaterinburg-russia-turnir-gorodskoy-prirody-2025-ekaterinburg,city-nature-challenge-2026-ekaterinburg-russia-turnir-gorodskoy-prirody-2025-ekaterinburg,267905
+Ekurhuleni,Ekurhuleni,South Africa,Gauteng,https://www.inaturalist.org/projects/city-nature-challenge-2026-ekurhuleni,city-nature-challenge-2026-ekurhuleni,270223
+El Paso,El Paso County,United States of America,Texas,https://www.inaturalist.org/projects/city-nature-challenge-2026-el-paso,city-nature-challenge-2026-el-paso,266133
+Elko,Elko County,United States of America,Nevada,https://www.inaturalist.org/projects/city-nature-challenge-2026-elko-county,city-nature-challenge-2026-elko-county,275365
+Neulengbach,Region Elsbeere Wienerwald,Austria,Lower Austria,https://www.inaturalist.org/projects/city-nature-challenge-2026-elsbeere-wienerwald,city-nature-challenge-2026-elsbeere-wienerwald,265724
+Montrose,Endless Mountains Region,United States of America,Pennsylvania,https://www.inaturalist.org/projects/city-nature-challenge-2026-endless-mountains-region,city-nature-challenge-2026-endless-mountains-region,243528
+Erie,Greater Erie,United States of America,Pennsylvania,https://www.inaturalist.org/projects/city-nature-challenge-2026-erie-county,city-nature-challenge-2026-erie-county,272998
+eThekwini,eThekwini,South Africa,KwaZulu-Natal / South Africa,https://www.inaturalist.org/projects/city-nature-challenge-2026-ethekwini,city-nature-challenge-2026-ethekwini,275299
+Exeter,Exeter,England,Devon,https://www.inaturalist.org/projects/city-nature-challenge-2026-exeter,city-nature-challenge-2026-exeter,269967
+Fairfield,Fairfield and Westchester County,United States of America,"Connecticut, New York",https://www.inaturalist.org/projects/city-nature-challenge-2026-fairfield-and-westchester-county,city-nature-challenge-2026-fairfield-and-westchester-county,273106
+Fall River,Fall River,United States of America,Massachusetts,https://www.inaturalist.org/projects/city-nature-challenge-2026-fall-river,city-nature-challenge-2026-fall-river,272106
+Ferrara,Provincia di Ferrara,Italy,Ferrara,https://www.inaturalist.org/projects/city-nature-challenge-2026-ferrara,city-nature-challenge-2026-ferrara,274277
+Fort Wayne,Greater Fort Wayne Area,United States of America,Indiana,https://www.inaturalist.org/projects/city-nature-challenge-2026-fort-wayne-area,city-nature-challenge-2026-fort-wayne-area,269468
+Frankfort,Frankfort,United States of America,Kentucky,https://www.inaturalist.org/projects/city-nature-challenge-2026-frankfort,city-nature-challenge-2026-frankfort,267947
+Frankfurt am Main,Frankfurt am Main,Germany,Hessen,https://www.inaturalist.org/projects/city-nature-challenge-2026-frankfurt-am-main,city-nature-challenge-2026-frankfurt-am-main,267900
+Free State,Free State,South Africa,Free State,https://www.inaturalist.org/projects/city-nature-challenge-2026-free-state,city-nature-challenge-2026-free-state,269824
+Freiburg im Breisgau,Freiburg Schwarzwald & Kaiserstuhl,Germany,Baden-Württemberg,https://www.inaturalist.org/projects/city-nature-challenge-2026-freiburg-schwarzwald-kaiserstuhl,city-nature-challenge-2026-freiburg-schwarzwald-kaiserstuhl,269098
+Bilaspur,Chhattisgarh,India,Chhattisgarh,https://www.inaturalist.org/projects/city-nature-challenge-2026-chhattisgarh,city-nature-challenge-2026-chhattisgarh,265845
+Garden Route,Garden Route,South Africa,Western Cape,https://www.inaturalist.org/projects/city-nature-challenge-2026-garden-route,city-nature-challenge-2026-garden-route,264563
+Genova,Genova,Italy,Liguria,https://www.inaturalist.org/projects/city-nature-challenge-2026-genova,city-nature-challenge-2026-genova,269952
+Coimbatore,Coimbatore,India,Tamil Nadu,https://www.inaturalist.org/projects/city-nature-challenge-2026-coimbatore,city-nature-challenge-2026-coimbatore,266373
+Gorongosa,Gorongosa,Mozambique,Sofala,https://www.inaturalist.org/projects/city-nature-challenge-2026-gorangosa,city-nature-challenge-2026-gorangosa,274489
+Göttingen,Göttingen Stadt & Landkreis,Germany,Lower Saxony,https://www.inaturalist.org/projects/city-nature-challenge-2026-gottingen-stadt-landkreis,city-nature-challenge-2026-gottingen-stadt-landkreis,266118
+Curitiba,Grande Curitiba,Brazil,Paraná,https://www.inaturalist.org/projects/city-nature-challenge-2026-grande-curitiba,city-nature-challenge-2026-grande-curitiba,266287
+Grass Valley,Grass Valley - Nevada City,United States of America,California,https://www.inaturalist.org/projects/city-nature-challenge-2026-grass-valley-nevada-city,city-nature-challenge-2026-grass-valley-nevada-city,272253
+Steiermark,Steiermark,Austria,Steiermark,https://www.inaturalist.org/projects/city-nature-challenge-2026-graz-die-restliche-steiermark,city-nature-challenge-2026-graz-die-restliche-steiermark,266134
+Adelaide,Greater Adelaide,Australia,South Australia,https://www.inaturalist.org/projects/city-nature-challenge-2026-greater-adelaide,city-nature-challenge-2026-greater-adelaide,273079
+Belfast,Greater Belfast,Northern Ireland,Ulster,https://www.inaturalist.org/projects/city-nature-challenge-2026-greater-belfast,city-nature-challenge-2026-greater-belfast,265110
+Cairo,Greater Cairo,Egypt,Cairo Governorate,https://www.inaturalist.org/projects/city-nature-challenge-2026-greater-cairo,city-nature-challenge-2026-greater-cairo,269930
+Chattanooga,Greater Chattanooga Area,United States of America,"Alabama, Georgia, Tennessee",https://www.inaturalist.org/projects/city-nature-challenge-2026-greater-chattanooga-area/,city-nature-challenge-2026-greater-chattanooga-area,268790
+Des Moines,Greater Des Moines Area,United States of America,Iowa,https://www.inaturalist.org/projects/city-nature-challenge-2026-greater-des-moines,city-nature-challenge-2026-greater-des-moines,265002
+Edinburgh,Greater Edinburgh,Scotland,Greater Edinburgh,https://www.inaturalist.org/projects/city-nature-challenge-2026-greater-edinburgh,city-nature-challenge-2026-greater-edinburgh,272157
+Francistown,Greater Francistown,Botswana,North East District,https://www.inaturalist.org/projects/city-nature-challenge-2026-greater-francistown,city-nature-challenge-2026-greater-francistown,270718
+Geelong,Greater Geelong,Australia,Victoria,https://www.inaturalist.org/projects/city-nature-challenge-2026-greater-geelong,city-nature-challenge-2026-greater-geelong,267310
+Glasgow,Greater Glasgow,Scotland,Greater Glasgow,https://www.inaturalist.org/projects/city-nature-challenge-2026-greater-glasgow,city-nature-challenge-2026-greater-glasgow,272155
+Kansas City,Greater Kansas City Metro Area,United States of America,"Kansas, Missouri",https://www.inaturalist.org/projects/city-nature-challenge-2026-greater-kansas-city-metro-area,city-nature-challenge-2026-greater-kansas-city-metro-area,265843
+London,Greater London,England,Greater London,https://www.inaturalist.org/projects/city-nature-challenge-2026-greater-london,city-nature-challenge-2026-greater-london,265103
+Manchester,Greater Manchester,England,Greater Manchester,https://www.inaturalist.org/projects/city-nature-challenge-2026-greater-manchester,city-nature-challenge-2026-greater-manchester,270044
+Melbourne,Greater Melbourne,Australia,Greater Melbourne,https://www.inaturalist.org/projects/city-nature-challenge-2026-greater-melbourne,city-nature-challenge-2026-greater-melbourne,270698
+Milwaukee,Greater Milwaukee Area,United States of America,Wisconsin,https://www.inaturalist.org/projects/city-nature-challenge-2026-greater-milwaukee-area,city-nature-challenge-2026-greater-milwaukee-area,270159
+Philadelphia,Philadelphia,United States of America,Pennsylvania,https://www.inaturalist.org/projects/city-nature-challenge-2026-greater-philadelphia-area,city-nature-challenge-2026-greater-philadelphia-area,277500
+Phoenix,Greater Phoenix Area,United States of America,Arizona,https://www.inaturalist.org/projects/city-nature-challenge-2026-greater-phoenix-area,city-nature-challenge-2026-greater-phoenix-area,265132
+Portland,Greater Portland-Vancouver Metro Area,United States of America,"Oregon, Washington",https://www.inaturalist.org/projects/city-nature-challenge-2026-greater-portland-vancouver-metro-area,city-nature-challenge-2026-greater-portland-vancouver-metro-area,273762
+Richmond,Greater Richmond Metropolitan Area,United States of America,Virginia,https://www.inaturalist.org/projects/city-nature-challenge-2026-greater-richmond-metropolitan-area,city-nature-challenge-2026-greater-richmond-metropolitan-area,264338
+Sydney,Greater Sydney,Australia,New South Wales,https://www.inaturalist.org/projects/city-nature-challenge-2026-greater-sydney,city-nature-challenge-2026-greater-sydney,265388
+Victoria,Greater Victoria,Canada,British Columbia,https://www.inaturalist.org/projects/city-nature-challenge-2026-greater-victoria,city-nature-challenge-2026-greater-victoria,264125
+Greenville,Greenville County,United States of America,South Carolina,https://www.inaturalist.org/projects/city-nature-challenge-2026-greenville-county-sc,city-nature-challenge-2026-greenville-county-sc,269470
+City of Guelph,Guelph,Canada,Ontario,https://www.inaturalist.org/projects/city-nature-challenge-2026-guelph-ontario,city-nature-challenge-2026-guelph-ontario,273153
+Guilford County,"Guilford County, NC",United States of America,North Carolina,https://www.inaturalist.org/projects/city-nature-challenge-2026-guilford-county-nc,city-nature-challenge-2026-guilford-county-nc,274044
+Savanes,Guyane : Savanes & Littoral,France,French Guiana,https://www.inaturalist.org/projects/city-nature-challenge-2026-guyane-savanes-littoral,city-nature-challenge-2026-guyane-savanes-littoral,273874
+Dehradun,Dehradun,India,Uttarakhand,https://www.inaturalist.org/projects/city-nature-challenge-2026-dehradun,city-nature-challenge-2026-dehradun,277645
+Haifa,Haifa,Israel,Haifa,https://www.inaturalist.org/projects/city-nature-challenge-2026-haifa,city-nature-challenge-2026-haifa,270989
+Hartford,Hartford and New Haven counties,United States of America,Connecticut,https://www.inaturalist.org/projects/city-nature-challenge-2026-hartford-new-haven-counties,city-nature-challenge-2026-hartford-new-haven-counties,273899
+Hat Yai,Hat Yai,Thailand,Songkhla,https://www.inaturalist.org/projects/city-nature-challenge-2026-hat-yai-thailand,city-nature-challenge-2026-hat-yai-thailand,270269
+Heidelberg,Heidelberg / Rhein-Neckar,Germany,Baden-Württemberg,https://www.inaturalist.org/projects/city-nature-challenge-2026-heidelberg-germany,city-nature-challenge-2026-heidelberg-germany,265003
+Henderson,City of Henderson,United States of America,Nevada,https://www.inaturalist.org/projects/city-nature-challenge-2026-henderson,city-nature-challenge-2026-henderson,270644
+Hereford,Herefordshire,England,West Midlands,https://www.inaturalist.org/projects/city-nature-challenge-2026-herefordshire,city-nature-challenge-2026-herefordshire,266448
+Herzliya,"Herzliya, Israel",Israel,Tel Aviv District,https://www.inaturalist.org/projects/city-nature-challenge-2026-herzliya,city-nature-challenge-2026-herzliya,265198
+Tampa,Hillsborough County,United States of America,Florida,https://www.inaturalist.org/projects/city-nature-challenge-2026-hillsborough-county-florida,city-nature-challenge-2026-hillsborough-county-florida,267863
+Hlohovec,Hlohovec,Slovakia,Hlohovec/Hlohovec,https://www.inaturalist.org/projects/city-nature-challenge-2026-hlohovec,city-nature-challenge-2026-hlohovec,273513
+Hong Kong,Hong Kong,China,China,https://www.inaturalist.org/projects/city-nature-challenge-2026-hong-kong,city-nature-challenge-2026-hong-kong,264271
+Houston-Galveston,Houston-Galveston,United States of America,Texas,https://www.inaturalist.org/projects/city-nature-challenge-2026-houston-galveston,city-nature-challenge-2026-houston-galveston,276652
+Hsinchu,Hsinchu,Taiwan,,https://www.inaturalist.org/projects/city-nature-challenge-2026-hsinchu,city-nature-challenge-2026-hsinchu,272357
+Durgapur,Durgapur,India,West Bengal,https://www.inaturalist.org/projects/city-nature-challenge-2026-durgapur,city-nature-challenge-2026-durgapur,279050
+Indianapolis,Indianapolis & Central Indiana Area,United States of America,Indiana,https://www.inaturalist.org/projects/city-nature-challenge-2026-indianapolis,city-nature-challenge-2026-indianapolis,265443
+Eluru,Eluru,India,Andhra Pradesh,https://www.inaturalist.org/projects/city-nature-challenge-2026-eluru,city-nature-challenge-2026-eluru,276018
+Riverside,Riverside- Corona Resource Conservation District (RCRCD),United States of America,California,https://www.inaturalist.org/projects/city-nature-challenge-2026-inland-empire,city-nature-challenge-2026-inland-empire,273294
+Innsbruck,Innsbruck-Stadt und Innsbruck-Land,Austria,Tirol,https://www.inaturalist.org/projects/city-nature-challenge-2026-innsbruck,city-nature-challenge-2026-innsbruck,270093
+Kanazawa,Ishikawa,Japan,Ishikawa,https://www.inaturalist.org/projects/city-nature-challenge-2026-ishikawa,city-nature-challenge-2026-ishikawa,274656
+Istanbul,Istanbul,Turkey,Istanbul,https://www.inaturalist.org/projects/city-nature-challenge-2026-istanbul,city-nature-challenge-2026-istanbul,263189
+Medulin,Istarska županija,Croatia,Istarska županija,https://www.inaturalist.org/projects/city-nature-challenge-2026-istarska-zupanija,city-nature-challenge-2026-istarska-zupanija,271687
+Pula,Istarska županija,Croatia,Istarska županija,https://www.inaturalist.org/projects/city-nature-challenge-2026-istarska-zupanija,city-nature-challenge-2026-istarska-zupanija,271687
+Ivankiv Hromada,Ivankiv Hromada,Ukraine,Kyiv,https://www.inaturalist.org/projects/city-nature-challenge-2026-ivankiv-hromada,city-nature-challenge-2026-ivankiv-hromada,274738
+Joburg,Joburg,South Africa,Gauteng,https://www.inaturalist.org/projects/city-nature-challenge-2026-joburg,city-nature-challenge-2026-joburg,273555
+Iowa City,Johnson County,United States of America,Iowa,https://www.inaturalist.org/projects/city-nature-challenge-2026-johnson-county-iowa,city-nature-challenge-2026-johnson-county-iowa,266277
+Klagenfurt,Kärnten,Austria,Kärnten,https://www.inaturalist.org/projects/city-nature-challenge-2026-kaernten,city-nature-challenge-2026-kaernten,179569
+Kandy,Kandy,Sri Lanka,Central Province,https://www.inaturalist.org/projects/city-nature-challenge-2026-kandy,city-nature-challenge-2026-kandy,264006
+Kaohsiung,Kaohsiung,Taiwan,-,https://www.inaturalist.org/projects/city-nature-challenge-2026-kaohsiung,city-nature-challenge-2026-kaohsiung,272362
+Karaganda,Karaganda,Kazakhstan,Karaganda Metropolitan,https://www.inaturalist.org/projects/city-nature-challenge-2026-karaganda,city-nature-challenge-2026-karaganda,265819
+Karlovac,Karlovačka županija,Croatia,Karlovačka županija,https://www.inaturalist.org/projects/city-nature-challenge-2026-karlovacka-zupanija,city-nature-challenge-2026-karlovacka-zupanija,264418
+Kenton County,Kenton County,United States of America,Kentucky,https://www.inaturalist.org/projects/city-nature-challenge-2026-kenton-county-ky,city-nature-challenge-2026-kenton-county-ky,269083
+Gangtok,Gangtok,India,Sikkim,https://www.inaturalist.org/projects/city-nature-challenge-2026-gangtok-sikkim,city-nature-challenge-2026-gangtok-sikkim,268738
+Bakersfield,Kern County,United States of America,California,https://www.inaturalist.org/projects/city-nature-challenge-2026-kern-county,city-nature-challenge-2026-kern-county,265001
+Kharkiv,Kharkiv,Ukraine,Kharkiv,https://www.inaturalist.org/projects/city-nature-challenge-2026-kharkiv-region,city-nature-challenge-2026-kharkiv-region,274711
+Kherson,Kherson City UA,Ukraine,Kherson,https://www.inaturalist.org/projects/city-nature-challenge-2026-kherson,city-nature-challenge-2026-kherson,274712
+Mueang Nakhon Ratchasima,Khorat Paleontopolis,Thailand,Nakhon Ratchasima,https://www.inaturalist.org/projects/city-nature-challenge-2026-khorat-paleontopolis,city-nature-challenge-2026-khorat-paleontopolis,274272
+Kiel,KielRegion,Germany,Schleswig-Holstein,https://www.inaturalist.org/projects/city-nature-challenge-2026-kielregion,city-nature-challenge-2026-kielregion,263907
+Bainbridge Island,Kitsap County,United States of America,Washington,https://www.inaturalist.org/projects/city-nature-challenge-2026-kitsap-county,city-nature-challenge-2026-kitsap-county,272201
+Klang Valley,Klang Valley,Malaysia,Malaysia,https://www.inaturalist.org/projects/city-nature-challenge-2026-klang-valley-malaysia,city-nature-challenge-2026-klang-valley-malaysia,266183
+Knoxville,Knox Area,United States of America,Tennessee,https://www.inaturalist.org/projects/city-nature-challenge-2026-knox-area,city-nature-challenge-2026-knox-area,267482
+Koblenz,KoblenzRegion,Germany,Rheinland-Pfalz,https://www.inaturalist.org/projects/city-nature-challenge-2026-koblenzregion,city-nature-challenge-2026-koblenzregion,270104
+Kobleve rural territorial community,Kobleve rural territorial community,Ukraine,Mykolaiv,https://www.inaturalist.org/projects/city-nature-challenge-2026-kobleve-rural-territorial-community,city-nature-challenge-2026-kobleve-rural-territorial-community,274926
+Koh Mak Phatthalung,Koh Mak,Thailand,Phatthalung,https://www.inaturalist.org/projects/city-nature-challenge-2026-koh-mak-phatthalung,city-nature-challenge-2026-koh-mak-phatthalung,274828
+Ghaziabad,CNC Ghaziabad and Gautam buddha nagar,India,Uttar Pradesh,https://www.inaturalist.org/projects/city-nature-challenge-2026-ghaziabad-and-gautam-buddha-nagar,city-nature-challenge-2026-ghaziabad-and-gautam-buddha-nagar,273818
+Konotop,City Nature Challenge 2026: Konotop,Ukraine,Sumy Region,https://www.inaturalist.org/projects/city-nature-challenge-2026-konotop,city-nature-challenge-2026-konotop,274936
+Nakhon Ratchasima,Korat (Nakhon Ratchasima),Thailand,Nakhon Ratchasima,https://www.inaturalist.org/projects/city-nature-challenge-2026-korat-nakhon-ratchasima,city-nature-challenge-2026-korat-nakhon-ratchasima,273659
+Habra,Habra,India,West Bengal,https://www.inaturalist.org/projects/city-nature-challenge-2026-habra-north-24-pgs,city-nature-challenge-2026-habra-north-24-pgs,276592
+Kovel,Kovel,Ukraine,Volyn,https://www.inaturalist.org/projects/city-nature-challenge-2026-kovel,city-nature-challenge-2026-kovel,274682
+Kraków,Kraków,Poland,Lesser Poland Voivodeship,https://www.inaturalist.org/projects/city-nature-challenge-2026-krakow,city-nature-challenge-2026-krakow,264278
+Krapina,Krapinsko-zagorska županija,Croatia,Krapinsko-zagorska županija,https://www.inaturalist.org/projects/city-nature-challenge-2026-krapinsko-zagorska-zupanija,city-nature-challenge-2026-krapinsko-zagorska-zupanija,264421
+Krems,Krems - Wachau - Melk,Austria,Lower Austria,https://www.inaturalist.org/projects/city-nature-challenge-2026-krems-wachau-melk,city-nature-challenge-2026-krems-wachau-melk,264407
+Kropyvnytskyi,Kropyvnytskyi,Ukraine,Kirovohradska,https://www.inaturalist.org/projects/city-nature-challenge-2026-kropyvnytskyi,city-nature-challenge-2026-kropyvnytskyi,274662
+Kryvyi Rih,Kryvyi Rih Raion,Ukraine,Kryvyi Rih Raion,https://www.inaturalist.org/projects/city-nature-challenge-2026-kryvyi-rih,city-nature-challenge-2026-kryvyi-rih,264578
+Kyiv,Kyiv,Ukraine,Kyiv,https://www.inaturalist.org/projects/city-nature-challenge-2026-kyiv,city-nature-challenge-2026-kyiv,264575
+Port Shepstone,KZN South Coast,South Africa,KwaZulu-Natal,https://www.inaturalist.org/projects/city-nature-challenge-2026-kzn-south-coast,city-nature-challenge-2026-kzn-south-coast,270387
+Lake County,Lake County of California,United States of America,California,https://www.inaturalist.org/projects/city-nature-challenge-2026-lake-county-california,city-nature-challenge-2026-lake-county-california,274555
+Mentor,Lake County,United States of America,Ohio,https://www.inaturalist.org/projects/city-nature-challenge-2026-lake-county-ohio,city-nature-challenge-2026-lake-county-ohio,270144
+Lancashire,Lancashire,England,Lancashire,https://www.inaturalist.org/projects/city-nature-challenge-2026-lancashire-uk,city-nature-challenge-2026-lancashire-uk,265834
+Larimer County,Larimer County,United States of America,Colorado,https://www.inaturalist.org/projects/city-nature-challenge-2026-larimer-county-co,city-nature-challenge-2026-larimer-county-co,273450
+Allentown,Lehigh Valley,United States of America,Pennsylvania,https://www.inaturalist.org/projects/city-nature-challenge-2026-lehigh-valley,city-nature-challenge-2026-lehigh-valley,267493
+Leicester,Leicestershire and Rutland,England,Leicestershire and Rutland,https://www.inaturalist.org/projects/city-nature-challenge-2026-leicestershire-and-rutland,city-nature-challenge-2026-leicestershire-and-rutland,269402
+Lethbridge,Lethbridge,Canada,Alberta,https://www.inaturalist.org/projects/city-nature-challenge-2026-lethbridge,city-nature-challenge-2026-lethbridge,265099
+Lexington-Fayette County,"Lexington, Fayette County",United States of America,Kentucky,https://www.inaturalist.org/projects/city-nature-challenge-2026-lexington-fayette-county-ky,city-nature-challenge-2026-lexington-fayette-county-ky,270059
+Granville,"Licking County, Ohio",United States of America,Ohio,https://www.inaturalist.org/projects/city-nature-challenge-2026-licking-county-ohio,city-nature-challenge-2026-licking-county-ohio,274968
+Plitvička Jezera,Ličko-senjska županija,Croatia,Ličko-senjska županija,https://www.inaturalist.org/projects/city-nature-challenge-2026-licko-senjska-zupanija,city-nature-challenge-2026-licko-senjska-zupanija,271688
+Lincoln,Lincoln-Lancaster County,United States of America,Nebraska,https://www.inaturalist.org/projects/city-nature-challenge-2026-lincoln-lancaster-county,city-nature-challenge-2026-lincoln-lancaster-county,270575
+Liverpool,Liverpool City Region,England,Liverpool City Region,https://www.inaturalist.org/projects/city-nature-challenge-2026-liverpool-city-region,city-nature-challenge-2026-liverpool-city-region,263237
+Long Island,Long Island,United States of America,New York,https://www.inaturalist.org/projects/city-nature-challenge-2026-long-island,city-nature-challenge-2026-long-island,263198
+Los Angeles County,Los Angeles County,United States of America,California,https://www.inaturalist.org/projects/city-nature-challenge-2026-los-angeles-county,city-nature-challenge-2026-los-angeles-county,263437
+Los Patios,Los Patios / Norte de Santander,Colombia,Norte de Santander,https://www.inaturalist.org/projects/city-nature-challenge-2026-los-patios,city-nature-challenge-2026-los-patios,274001
+Louisville,Louisville Metro,United States of America,Kentucky,https://www.inaturalist.org/projects/city-nature-challenge-2026-louisville-metro,city-nature-challenge-2026-louisville-metro,265135
+Lower Rio Grande Valley,Lower Rio Grande Valley,United States of America,Texas,https://www.inaturalist.org/projects/city-nature-challenge-2026-lower-rio-grande-valley,city-nature-challenge-2026-lower-rio-grande-valley,269087
+Lutsk,Volyn Region,Ukraine,,https://www.inaturalist.org/projects/city-nature-challenge-2026-lutsk,city-nature-challenge-2026-lutsk,274544
+Lutsk,Lutsk,Ukraine,,https://www.inaturalist.org/projects/city-nature-challenge-2026-lutsk,city-nature-challenge-2026-lutsk,274544
+Lviv,Lviv,Ukraine,,https://www.inaturalist.org/projects/city-nature-challenge-2026-lviv,city-nature-challenge-2026-lviv,274730
+Macao,Macao SAR,China,,https://www.inaturalist.org/projects/city-nature-challenge-2026-macao,city-nature-challenge-2026-macao,265801
+Majune,Majune,Mozambique,,https://www.inaturalist.org/projects/city-nature-challenge-2026-majune,city-nature-challenge-2026-majune,274880
+Mancha Khiri,"city nature challenge 2026:Mancha Khiri,Khon Kaen",Thailand,,https://www.inaturalist.org/projects/city-nature-challenge-2026-mancha-khiri-thailand-406dbb89-fd55-498e-80e4-f31d4113adb2,city-nature-challenge-2026-mancha-khiri-thailand-406dbb89-fd55-498e-80e4-f31d4113adb2,275743
+Manchester,Manchester,United States of America,New Hampshire,https://www.inaturalist.org/projects/city-nature-challenge-2026-manchester-nh,city-nature-challenge-2026-manchester-nh,272325
+Mandlakazi,Mandlakazi,Mozambique,,https://www.inaturalist.org/projects/city-nature-challenge-2026-mandlakazi,city-nature-challenge-2026-mandlakazi,274481
+Marawi City,"Marawi City, Philippines",Philippines,,https://www.inaturalist.org/projects/city-nature-challenge-2026-marawi-city-philippines,city-nature-challenge-2026-marawi-city-philippines,275362
+Marquette,Marquette,United States of America,Michigan,https://www.inaturalist.org/projects/city-nature-challenge-2026-marquette-mi,city-nature-challenge-2026-marquette-mi,264313
+Marracuene,Marracuene,Mozambique,,https://www.inaturalist.org/projects/city-nature-challenge-2026-marracuene,city-nature-challenge-2026-marracuene,274472
+Marromeu,Marromeu,Mozambique,,https://www.inaturalist.org/projects/city-nature-challenge-2026-marromeu,city-nature-challenge-2026-marromeu,274495
+Marrupa,Marrupa,Mozambique,,https://www.inaturalist.org/projects/city-nature-challenge-2026-marrupa,city-nature-challenge-2026-marrupa,274881
+Marseille,Marseille des collines à la mer,France,,https://www.inaturalist.org/projects/city-nature-challenge-2026-marseille-des-collines-a-la-mer,city-nature-challenge-2026-marseille-des-collines-a-la-mer,266229
+Mati City,"Mati City, Philippines",Philippines,,https://www.inaturalist.org/projects/city-nature-challenge-2026-mati-city-philippines,city-nature-challenge-2026-mati-city-philippines,274096
+Matola,Matola,Mozambique,,https://www.inaturalist.org/projects/city-nature-challenge-2026-matola,city-nature-challenge-2026-matola,274470
+Matutíne,Matutíne,Mozambique,,https://www.inaturalist.org/projects/city-nature-challenge-2026-matutuine,city-nature-challenge-2026-matutuine,274474
+Mavago,Mavago,Mozambique,,https://www.inaturalist.org/projects/city-nature-challenge-2026-mavago,city-nature-challenge-2026-mavago,274879
+Mecula,Mecula,Mozambique,,https://www.inaturalist.org/projects/city-nature-challenge-2026-mecula,city-nature-challenge-2026-mecula,274878
+Memphis,Memphis-Shelby County,United States of America,Tennessee,https://www.inaturalist.org/projects/city-nature-challenge-2026-memphis-shelby-county,city-nature-challenge-2026-memphis-shelby-county,265094
+Mérida,Mérida Metropolitana,Mexico,Yucatán,https://www.inaturalist.org/projects/city-nature-challenge-2026-merida-metropolitana-yucatan,city-nature-challenge-2026-merida-metropolitana-yucatan,272692
+Toulouse,Midi Occitan,France,Occitanie,https://www.inaturalist.org/projects/city-nature-challenge-2026-midi-occitan,city-nature-challenge-2026-midi-occitan,229716
+Milazzo,Milazzo - Valle del Mela,Italy,Messina,https://www.inaturalist.org/projects/city-nature-challenge-2026-milazzo-valle-del-mela,city-nature-challenge-2026-milazzo-valle-del-mela,265080
+Millville,Millville,United States of America,New Jersey,https://www.inaturalist.org/projects/city-nature-challenge-2026-millville-nj,city-nature-challenge-2026-millville-nj,274571
+Place the pin on the University of Minnesota St Paul campus,Minneapolis-St. Paul,United States of America,Minnesota,https://www.inaturalist.org/projects/city-nature-challenge-2026-minneapolis-st-paul,city-nature-challenge-2026-minneapolis-st-paul,270066
+Hyderabad,Hyderabad,India,,https://www.inaturalist.org/projects/city-nature-challenge-2026-hyderabad,city-nature-challenge-2026-hyderabad,264362
+Jaffrey,Monadnock Region,United States of America,New Hampshire,https://www.inaturalist.org/projects/city-nature-challenge-2026-monadnock-region,city-nature-challenge-2026-monadnock-region,270590
+Elkins,Monongahela Forest Towns,United States of America,West Virginia,https://www.inaturalist.org/projects/city-nature-challenge-2026-monongahela-forest-towns,city-nature-challenge-2026-monongahela-forest-towns,265891
+Pisa,Monte Pisano,Italy,,https://www.inaturalist.org/projects/city-nature-challenge-2026-monte-pisano-cluster-biodiversita-italia,city-nature-challenge-2026-monte-pisano-cluster-biodiversita-italia,275010
+Moss Landing,Monterey and Santa Cruz Counties,United States of America,California,https://www.inaturalist.org/projects/city-nature-challenge-2026-monterey-and-santa-cruz-counties,city-nature-challenge-2026-monterey-and-santa-cruz-counties,265442
+Moscow,Moscow,Russia,,https://www.inaturalist.org/projects/city-nature-challenge-2026-moscow,city-nature-challenge-2026-moscow,264793
+Mossuril,Mossuril,Mozambique,,https://www.inaturalist.org/projects/city-nature-challenge-2026-mossuril,city-nature-challenge-2026-mossuril,274487
+Muang Sungaikolok,Muang Sungaikolok,Thailand,,https://www.inaturalist.org/projects/city-nature-challenge-2026-muang-sungaikolok-thailand,city-nature-challenge-2026-muang-sungaikolok-thailand,275031
+Muang Chiang Mai,Mueang Chiang Mai,Thailand,,https://www.inaturalist.org/projects/city-nature-challenge-2026-mueang-chiang-mai,city-nature-challenge-2026-mueang-chiang-mai,271021
+Mueang Phitsanulok,Mueang Phitsanulok,Thailand,,https://www.inaturalist.org/projects/city-nature-challenge-2026-mueang-phitsanulok,city-nature-challenge-2026-mueang-phitsanulok,273667
+Prachinburi,Prachinburi,Thailand,,https://www.inaturalist.org/projects/city-nature-challenge-2026-mueang-prachinburi-thailand,city-nature-challenge-2026-mueang-prachinburi-thailand,274913
+Indore,Indore,India,,https://www.inaturalist.org/projects/city-nature-challenge-2026-indore,city-nature-challenge-2026-indore,269068
+Port Aransas,Mustang Island/Port Aransas,United States of America,Texas,https://www.inaturalist.org/projects/city-nature-challenge-2026-mustang-island-texas,city-nature-challenge-2026-mustang-island-texas,265231
+Mykolaiv,Mykolaiv,Ukraine,,https://www.inaturalist.org/projects/city-nature-challenge-2026-mykolaiv,city-nature-challenge-2026-mykolaiv,274690
+Nacala,Nacala Velha,Mozambique,,https://www.inaturalist.org/projects/city-nature-challenge-2026-nacala,city-nature-challenge-2026-nacala,274475
+Muang Nakhon Si Thammarat,City Nature Challenge 2026: Nakhon Si Thammarat,Thailand,,https://www.inaturalist.org/projects/city-nature-challenge-2026-nakhon-si-thammarat,city-nature-challenge-2026-nakhon-si-thammarat,275019
+Keralam,Keralam,India,,https://www.inaturalist.org/projects/city-nature-challenge-2026-keralam,city-nature-challenge-2026-keralam,267317
+Nashua,Nashua,United States of America,New Hampshire,https://www.inaturalist.org/projects/city-nature-challenge-2026-nashua-nh,city-nature-challenge-2026-nashua-nh,272323
+Nashville,Nashville,United States of America,Tennessee,https://www.inaturalist.org/projects/city-nature-challenge-2026-nashville-tn,city-nature-challenge-2026-nashville-tn,263988
+Philipsburg,Sint Maarten,Netherlands,,https://www.inaturalist.org/projects/city-nature-challenge-2026-nature-foundation-sint-maarten,city-nature-challenge-2026-nature-foundation-sint-maarten,277712
+Chicle,Navajo Nation,United States of America,"Arizona, New Mexico, Utah",https://www.inaturalist.org/projects/city-nature-challenge-2026-navajo-nation,city-nature-challenge-2026-navajo-nation,275563
+Nelson Mandela Bay,Nelson Mandela Bay,South Africa,,https://www.inaturalist.org/projects/city-nature-challenge-2026-nelson-mandela-bay,city-nature-challenge-2026-nelson-mandela-bay,277299
+New Bedford,New Bedford,United States of America,Massachusetts,https://www.inaturalist.org/projects/city-nature-challenge-2026-new-bedford,city-nature-challenge-2026-new-bedford,272687
+Kolhapur,Kolhapur District,India,,https://www.inaturalist.org/projects/city-nature-challenge-2026-kolhapur-district,city-nature-challenge-2026-kolhapur-district,273901
+New York City,New York City,United States of America,New York,https://www.inaturalist.org/projects/city-nature-challenge-2026-new-york-city,city-nature-challenge-2026-new-york-city,242360
+Newport News,Newport News,United States of America,Virginia,https://www.inaturalist.org/projects/city-nature-challenge-2026-newport-news,city-nature-challenge-2026-newport-news,269703
+New Taipei City,NewTaipei-keelung,Taiwan,-,https://www.inaturalist.org/projects/city-nature-challenge-2026-newtaipei-keelung,city-nature-challenge-2026-newtaipei-keelung,272356
+Lebanon,NH's Upper Valley,United States of America,New Hampshire,https://www.inaturalist.org/projects/city-nature-challenge-2026-nh-s-upper-valley,city-nature-challenge-2026-nh-s-upper-valley,269901
+Nice,Nice,France,,https://www.inaturalist.org/projects/city-nature-challenge-2026-nice,city-nature-challenge-2026-nice,275308
+Kota,Kota Rajasthan,India,,https://www.inaturalist.org/projects/city-nature-challenge-2026-kota,city-nature-challenge-2026-kota,278376
+Newcastle upon Tyne,North East England,England,,https://www.inaturalist.org/projects/city-nature-challenge-2026-north-east-england,city-nature-challenge-2026-north-east-england,266453
+Scranton,Northeast Pennsylvania,United States of America,Pennsylvania,https://www.inaturalist.org/projects/city-nature-challenge-2026-northeast-pennsylvania,city-nature-challenge-2026-northeast-pennsylvania,264819
+Maun,Greater Northern Botswana,Botswana,,https://www.inaturalist.org/projects/city-nature-challenge-2026-northern-botswana,city-nature-challenge-2026-northern-botswana,264066
+Cleveland,Northern Ohio,United States of America,Ohio,https://www.inaturalist.org/projects/city-nature-challenge-2026-northern-ohio,city-nature-challenge-2026-northern-ohio,269121
+Shreveport,Northwest Louisiana,United States of America,Louisiana,https://www.inaturalist.org/projects/city-nature-challenge-2026-northwest-louisiana,city-nature-challenge-2026-northwest-louisiana,264394
+Nürnberg,"Nürnberg, Fürth, Erlangen",Germany,,https://www.inaturalist.org/projects/city-nature-challenge-2026-nuernberg-fuerth-erlangen,city-nature-challenge-2026-nuernberg-fuerth-erlangen,263235
+Honolulu,O‘ahu,United States of America,Hawaii,https://www.inaturalist.org/projects/city-nature-challenge-2026-o-ahu,city-nature-challenge-2026-o-ahu,272878
+Obukhivska Territorial Hromada,Obukhivska ter hromada,Ukraine,,https://www.inaturalist.org/projects/city-nature-challenge-2026-obukhivska-ter-hromada,city-nature-challenge-2026-obukhivska-ter-hromada,274899
+Ochakiv,Ochakiv,Ukraine,,https://www.inaturalist.org/projects/city-nature-challenge-2026-ochakiv,city-nature-challenge-2026-ochakiv,274693
+Odesa,Odesa,Ukraine,,https://www.inaturalist.org/projects/city-nature-challenge-2026-odesa,city-nature-challenge-2026-odesa,274698
+Olomouc,Olomouc,Czech Republic,,https://www.inaturalist.org/projects/city-nature-challenge-2026-olomouc,city-nature-challenge-2026-olomouc,274877
+Syracuse,Onondaga County,United States of America,New York,https://www.inaturalist.org/projects/city-nature-challenge-2026-onondaga-county-new-york,city-nature-challenge-2026-onondaga-county-new-york,270042
+Santa Ana,Orange County,United States of America,California,https://www.inaturalist.org/projects/city-nature-challenge-2026-orange-county-ca,city-nature-challenge-2026-orange-county-ca,265675
+Osijek,Osječko-baranjska županija,Croatia,,https://www.inaturalist.org/projects/city-nature-challenge-2026-osjecko-baranjska-zupanija,city-nature-challenge-2026-osjecko-baranjska-zupanija,271689
+Ostrava,Ostrava,Czech Republic,,https://www.inaturalist.org/projects/city-nature-challenge-2026-ostrava,city-nature-challenge-2026-ostrava,269926
+Krk,Otok Krk,Croatia,,https://www.inaturalist.org/projects/city-nature-challenge-2026-otok-krk,city-nature-challenge-2026-otok-krk,264419
+Overberg,Overberg,South Africa,,https://www.inaturalist.org/projects/city-nature-challenge-2026-overberg,city-nature-challenge-2026-overberg,273213
+Overstrand Municipality,Overstrand,South Africa,,https://www.inaturalist.org/projects/city-nature-challenge-2026-overstrand,city-nature-challenge-2026-overstrand,269044
+Oxfordshire,Oxfordshire,England,,https://www.inaturalist.org/projects/city-nature-challenge-2026-oxfordshire,city-nature-challenge-2026-oxfordshire,269405
+Pahang,Pahang,Malaysia,,https://www.inaturalist.org/projects/city-nature-challenge-2026-pahang-malaysia,city-nature-challenge-2026-pahang-malaysia,266528
+Palm Beach County,Palm Beach County,United States of America,Florida,https://www.inaturalist.org/projects/city-nature-challenge-2026-palm-beach-county,city-nature-challenge-2026-palm-beach-county,271071
+Pullman,Palouse Region,United States of America,"Idaho, Washington",https://www.inaturalist.org/projects/city-nature-challenge-2026-palouse-region,city-nature-challenge-2026-palouse-region,273991
+Paris,Paris - Île de France,France,,https://www.inaturalist.org/projects/city-nature-challenge-2026-paris-ile-de-france,city-nature-challenge-2026-paris-ile-de-france,264656
+penghu,penghu,Taiwan,,https://www.inaturalist.org/projects/city-nature-challenge-2026-penghu,city-nature-challenge-2026-penghu,274999
+Penza,Penza Region,Russia,,https://www.inaturalist.org/projects/city-nature-challenge-2026-penza-region,city-nature-challenge-2026-penza-region,269082
+Novyi Starodub,"Novyi Starodub, Inguletske",Ukraine,,https://www.inaturalist.org/projects/city-nature-challenge-2026-petrivska-terytorialna-hromada,city-nature-challenge-2026-petrivska-terytorialna-hromada,275006
+Pierre,Central South Dakota,United States of America,South Dakota,https://www.inaturalist.org/projects/city-nature-challenge-2026-pierre-fort-pierre,city-nature-challenge-2026-pierre-fort-pierre,269392
+Tucson,Pima County,United States of America,Arizona,https://www.inaturalist.org/projects/city-nature-challenge-2026-pima-county-arizona,city-nature-challenge-2026-pima-county-arizona,270358
+Pittsburgh,Pittsburgh Region,United States of America,Pennsylvania,https://www.inaturalist.org/projects/city-nature-challenge-2026-pittsburgh-region,city-nature-challenge-2026-pittsburgh-region,272719
+Plymouth,Plymouth City Nature Challenge Area,England,,https://www.inaturalist.org/projects/city-nature-challenge-2026-plymouth,city-nature-challenge-2026-plymouth,270147
+Polk County,Polk County,United States of America,Florida,https://www.inaturalist.org/projects/city-nature-challenge-2026-polk-county,city-nature-challenge-2026-polk-county,270063
+Potchefstroom,JB Marks Local Municipality,South Africa,,https://www.inaturalist.org/projects/city-nature-challenge-2026-potchefstroom,city-nature-challenge-2026-potchefstroom,272752
+Praha,Praha,Czech Republic,,https://www.inaturalist.org/projects/city-nature-challenge-2026-prague,city-nature-challenge-2026-prague,272755
+Mizoram,CNC Mizoram,India,,https://www.inaturalist.org/projects/city-nature-challenge-2026-mizoram,city-nature-challenge-2026-mizoram,272911
+Predazzo,"Predazzo, Valle di Fiemme e Fassa",Italy,,https://www.inaturalist.org/projects/city-nature-challenge-2026-predazzo-cluster-biodiversita-italia,city-nature-challenge-2026-predazzo-cluster-biodiversita-italia,272173
+Prince George,Prince George,Canada,,https://www.inaturalist.org/projects/city-nature-challenge-2026-prince-george-bc-canada,city-nature-challenge-2026-prince-george-bc-canada,264021
+Mumbai,Mumbai,India,,https://www.inaturalist.org/projects/city-nature-challenge-2026-mumbai,city-nature-challenge-2026-mumbai,266977
+Quelimane,Quelimane,Mozambique,,https://www.inaturalist.org/projects/city-nature-challenge-2026-quelimane,city-nature-challenge-2026-quelimane,274482
+Nanakmatta,Nanakmatta,India,,https://www.inaturalist.org/projects/city-nature-challenge-2026-nanakmatta-uttarakhand,city-nature-challenge-2026-nanakmatta-uttarakhand,267748
+Redland City,Redland City,Australia,,https://www.inaturalist.org/projects/city-nature-challenge-2026-redland-city-qld-australia,city-nature-challenge-2026-redland-city-qld-australia,269136
+Regina,Regina and Area,Canada,,https://www.inaturalist.org/projects/city-nature-challenge-2026-regina-and-area,city-nature-challenge-2026-regina-and-area,273725
+Ischia,Regno di Nettuno MPA,Italy,,https://www.inaturalist.org/projects/city-nature-challenge-2026-regno-di-nettuno-cluster-biodiversita-italia,city-nature-challenge-2026-regno-di-nettuno-cluster-biodiversita-italia,265225
+Rehovot,Rehovot,Israel,,https://www.inaturalist.org/projects/city-nature-challenge-2026-rehovot,city-nature-challenge-2026-rehovot,269693
+Reno-Sparks,Reno-Sparks,United States of America,Nevada,https://www.inaturalist.org/projects/city-nature-challenge-2026-reno-sparks,city-nature-challenge-2026-reno-sparks,273767
+City of Lynchburg,City of Lynchburg parks,United States of America,Virginia,https://www.inaturalist.org/projects/city-nature-challenge-2026-revivelyh-lynchburg-bioblitz,city-nature-challenge-2026-revivelyh-lynchburg-bioblitz,270750
+Aachen,Rheinisches Revier,Germany,,https://www.inaturalist.org/projects/city-nature-challenge-2026-rheinisches-revier,city-nature-challenge-2026-rheinisches-revier,275163
+Richmond,Richmond,Canada,,https://www.inaturalist.org/projects/city-nature-challenge-2026-richmond-bc,city-nature-challenge-2026-richmond-bc,251022
+Rivne,"Rivne, Ukraine",Ukraine,,https://www.inaturalist.org/projects/city-nature-challenge-2026-rivne,city-nature-challenge-2026-rivne,275121
+Roanoke,Roanoke Valley,United States of America,Virginia,https://www.inaturalist.org/projects/city-nature-challenge-2026-roanoke-city-county-va,city-nature-challenge-2026-roanoke-city-county-va,272553
+Rochester Metropolitan Area,Rochester,United States of America,New York,https://www.inaturalist.org/projects/city-nature-challenge-2026-rochester-ny,city-nature-challenge-2026-rochester-ny,264651
+Rockford,Rock River Valley,United States of America,Illinois,https://www.inaturalist.org/projects/city-nature-challenge-2026-rock-river-valley,city-nature-challenge-2026-rock-river-valley,265964
+Roma,Roma,Italy,,https://www.inaturalist.org/projects/city-nature-challenge-2026-roma-italy,city-nature-challenge-2026-roma-italy,265319
+Sacramento,Sacramento Region,United States of America,California,https://www.inaturalist.org/projects/city-nature-challenge-2026-sacramento-region,city-nature-challenge-2026-sacramento-region,264010
+New Delhi,New Delhi,India,,https://www.inaturalist.org/projects/city-nature-challenge-2026-nct-of-delhi,city-nature-challenge-2026-nct-of-delhi,275788
+San Antonio,San Antonio Metro Area,United States of America,Texas,https://www.inaturalist.org/projects/city-nature-challenge-2026-san-antonio-metro-area,city-nature-challenge-2026-san-antonio-metro-area,260796
+San Diego County,San Diego County,United States of America,California,https://www.inaturalist.org/projects/city-nature-challenge-2026-san-diego-county,city-nature-challenge-2026-san-diego-county,263173
+San Francisco Bay Area,San Francisco Bay Area,United States of America,California,https://www.inaturalist.org/projects/city-nature-challenge-2026-san-francisco-bay-area,city-nature-challenge-2026-san-francisco-bay-area,263576
+San Luis Obispo,San Luis Obispo County,United States of America,California,https://www.inaturalist.org/projects/city-nature-challenge-2026-san-luis-obispo-county,city-nature-challenge-2026-san-luis-obispo-county,271109
+San Marcos,City of San Marcos,United States of America,Texas,https://www.inaturalist.org/projects/city-nature-challenge-2026-san-marcos-tx,city-nature-challenge-2026-san-marcos-tx,270264
+Santa Barbara,Santa Barbara County,United States of America,California,https://www.inaturalist.org/projects/city-nature-challenge-2026-santa-barbara-county,city-nature-challenge-2026-santa-barbara-county,264997
+Santa Fe,Santa Fe Area,United States of America,New Mexico,https://www.inaturalist.org/projects/city-nature-challenge-2026-santa-fe-area,city-nature-challenge-2026-santa-fe-area,266139
+São Paulo,São Paulo,Brazil,,https://www.inaturalist.org/projects/city-nature-challenge-2026-sao-paulo-e-regiao-metropolitana,city-nature-challenge-2026-sao-paulo-e-regiao-metropolitana,105565
+Savannah Low Country and Coastal Georgia,Savannah Low Country and Coastal Georgia,United States of America,Georgia,https://www.inaturalist.org/projects/city-nature-challenge-2026-savannah-low-country-and-coastal-georgia,city-nature-challenge-2026-savannah-low-country-and-coastal-georgia,264014
+Seattle,Seattle-Tacoma Metropolitan Area,United States of America,Washington,https://www.inaturalist.org/projects/city-nature-challenge-2026-seattle-tacoma-metropolitan-area,city-nature-challenge-2026-seattle-tacoma-metropolitan-area,265107
+Sedona,Sedona,United States of America,Arizona,https://www.inaturalist.org/projects/city-nature-challenge-2026-sedona,city-nature-challenge-2026-sedona,278908
+Redding,Shasta County,United States of America,California,https://www.inaturalist.org/projects/city-nature-challenge-2026-shasta-county,city-nature-challenge-2026-shasta-county,274620
+Sherbrooke,Sherbrooke,Canada,,https://www.inaturalist.org/projects/city-nature-challenge-2026-sherbrooke,city-nature-challenge-2026-sherbrooke,274924
+Siena,Siena,Italy,,https://www.inaturalist.org/projects/city-nature-challenge-2026-siena-cluster-biodiversita-italia,city-nature-challenge-2026-siena-cluster-biodiversita-italia,266025
+Silver City,Silver City,United States of America,New Mexico,https://www.inaturalist.org/projects/city-nature-challenge-2026-silver-city-area,city-nature-challenge-2026-silver-city-area,270278
+Skokie,Skokie,United States of America,Illinois,https://www.inaturalist.org/projects/city-nature-challenge-2026-skokie-illinois,city-nature-challenge-2026-skokie-illinois,271084
+Slavuta,Slavuta hromada,Ukraine,,https://www.inaturalist.org/projects/city-nature-challenge-2026-slavuta-hromada,city-nature-challenge-2026-slavuta-hromada,277623
+Smolensk,Smolensk,Russia,,https://www.inaturalist.org/projects/city-nature-challenge-2026-smolensk,city-nature-challenge-2026-smolensk,264795
+Smolinska Hromada,Smolinska Hromada,Ukraine,,https://www.inaturalist.org/projects/city-nature-challenge-2026-smolinska-hromada,city-nature-challenge-2026-smolinska-hromada,274911
+Madison,South Central Wisconsin,United States of America,Wisconsin,https://www.inaturalist.org/projects/city-nature-challenge-2026-south-central-wisconsin,city-nature-challenge-2026-south-central-wisconsin,269505
+Miami,South Florida,United States of America,Florida,https://www.inaturalist.org/projects/city-nature-challenge-2026-south-florida-cncsoflo,city-nature-challenge-2026-south-florida-cncsoflo,264352
+Nicobar,NICOBAR,India,,https://www.inaturalist.org/projects/city-nature-challenge-2026-nicobar-a-n,city-nature-challenge-2026-nicobar-a-n,278470
+Kanye,Southern Botswana,Botswana,,https://www.inaturalist.org/projects/city-nature-challenge-2026-southern-botswana,city-nature-challenge-2026-southern-botswana,270716
+Lake Charles,Southwest Louisiana,United States of America,Louisiana,https://www.inaturalist.org/projects/city-nature-challenge-2026-southwest-louisiana,city-nature-challenge-2026-southwest-louisiana,271205
+Abingdon,Southwest Virginia,United States of America,Virginia,https://www.inaturalist.org/projects/city-nature-challenge-2026-southwest-virginia,city-nature-challenge-2026-southwest-virginia,269103
+Springfield,Springfield,United States of America,Massachusetts,https://www.inaturalist.org/projects/city-nature-challenge-2026-springfield,city-nature-challenge-2026-springfield,269954
+Saint Louis,Greater St. Louis Region,United States of America,"Illinois, Missouri",https://www.inaturalist.org/projects/city-nature-challenge-2026-st-louis,city-nature-challenge-2026-st-louis,265776
+St. Petersburg,St. Petersburg; Leningrad Oblast,Russia,,https://www.inaturalist.org/projects/city-nature-challenge-2026-st-petersburg-and-leningrad-oblast,city-nature-challenge-2026-st-petersburg-and-leningrad-oblast,263275
+St. Pölten,St. Pölten,Austria,,https://www.inaturalist.org/projects/city-nature-challenge-2026-st-poelten,city-nature-challenge-2026-st-poelten,265289
+Stoke-on-Trent,Staffordshire & Stoke-on-Trent,England,,https://www.inaturalist.org/projects/city-nature-challenge-2026-staffordshire-stoke-on-trent,city-nature-challenge-2026-staffordshire-stoke-on-trent,265205
+Modesto,Stanislaus County,United States of America,California,https://www.inaturalist.org/projects/city-nature-challenge-2026-stanislaus-county,city-nature-challenge-2026-stanislaus-county,275079
+State College Borough,State College Borough,United States of America,Pennsylvania,https://www.inaturalist.org/projects/city-nature-challenge-2026-state-college-borough,city-nature-challenge-2026-state-college-borough,274931
+Steyr,Steyr,Austria,,https://www.inaturalist.org/projects/city-nature-challenge-2026-steyr,city-nature-challenge-2026-steyr,266708
+Dover,Strafford County,United States of America,New Hampshire,https://www.inaturalist.org/projects/city-nature-challenge-2026-strafford-county,city-nature-challenge-2026-strafford-county,271955
+Sunshine Coast,Sunshine Coast,Australia,,https://www.inaturalist.org/projects/city-nature-challenge-2026-sunshine-coast-australia,city-nature-challenge-2026-sunshine-coast-australia,266322
+Tagum City,"Tagum City, Philippines",Philippines,,https://www.inaturalist.org/projects/city-nature-challenge-2026-tagum-city-philippines,city-nature-challenge-2026-tagum-city-philippines,274095
+Tainan,Tainan,Taiwan,,https://www.inaturalist.org/projects/city-nature-challenge-2026-tainan,city-nature-challenge-2026-tainan,272361
+Taipei,Taipei,Taiwan,,https://www.inaturalist.org/projects/city-nature-challenge-2026-taipei,city-nature-challenge-2026-taipei,272355
+Taitung,Taitung-Pingtung,Taiwan,,https://www.inaturalist.org/projects/city-nature-challenge-2026-taitung-pingtung,city-nature-challenge-2026-taitung-pingtung,272364
+Auckland,Auckland/Tāmaki Makaurau,New Zealand,,https://www.inaturalist.org/projects/city-nature-challenge-2026-tamaki-makaurau-auckland-8cb6c4c7-5191-401b-a5d9-ec5b34fa5138,city-nature-challenge-2026-tamaki-makaurau-auckland-8cb6c4c7-5191-401b-a5d9-ec5b34fa5138,272136
+Taoyuan,Taoyuan,Taiwan,,https://www.inaturalist.org/projects/city-nature-challenge-2026-taoyuan,city-nature-challenge-2026-taoyuan,272363
+Wellington,Te Upoko o te Ika/ Wellington Region,New Zealand,,https://www.inaturalist.org/projects/city-nature-challenge-2026-te-upoko-o-te-ika-wellington,city-nature-challenge-2026-te-upoko-o-te-ika-wellington,270099
+Wilmington,Team Coastal NC,United States of America,North Carolina,https://www.inaturalist.org/projects/city-nature-challenge-2026-team-coastal-nc,city-nature-challenge-2026-team-coastal-nc,267345
+Tehran,Tehran,Iran,,https://www.inaturalist.org/projects/city-nature-challenge-2026-tehran,city-nature-challenge-2026-tehran,264462
+Tel Aviv,Tel Aviv - Yafo,Israel,,https://www.inaturalist.org/projects/city-nature-challenge-2026-tel-aviv,city-nature-challenge-2026-tel-aviv,265199
+Leverano,Terra d'Arneo,Italy,,https://www.inaturalist.org/projects/city-nature-challenge-2026-terra-d-arneo-puglia-italy,city-nature-challenge-2026-terra-d-arneo-puglia-italy,272389
+Myrtle Beach,The Grand Strand South Carolina,United States of America,South Carolina,https://www.inaturalist.org/projects/city-nature-challenge-2026-the-grand-strand,city-nature-challenge-2026-the-grand-strand,265128
+Providence,The State of Rhode Island,United States of America,Rhode Island,https://www.inaturalist.org/projects/city-nature-challenge-2026-the-state-of-rhode-island,city-nature-challenge-2026-the-state-of-rhode-island,265130
+Thessaloniki,Thessaloniki,Greece,,https://www.inaturalist.org/projects/city-nature-challenge-2026-thessaloniki,city-nature-challenge-2026-thessaloniki,272765
+Kamloops,Thompson Nicola Regional District,Canada,,https://www.inaturalist.org/projects/city-nature-challenge-2026-thompson-nicola-regional-district,city-nature-challenge-2026-thompson-nicola-regional-district,270247
+Thung Song Municipality,Thung Song City,Thailand,,https://www.inaturalist.org/projects/city-nature-challenge-2026-thung-song-city,city-nature-challenge-2026-thung-song-city,273788
+Olympia,Thurston County,United States of America,Washington,https://www.inaturalist.org/projects/city-nature-challenge-2026-thurston-county-wa,city-nature-challenge-2026-thurston-county-wa,274800
+Prayagraj,Prayagraj,India,,https://www.inaturalist.org/projects/city-nature-challenge-2026-prayagraj-uttar-pradesh,city-nature-challenge-2026-prayagraj-uttar-pradesh,277168
+Tokyo,Tokyo,Japan,,https://www.inaturalist.org/projects/city-nature-challenge-2026-tokyo,city-nature-challenge-2026-tokyo,274413
+Torino,Torino,Italy,,https://www.inaturalist.org/projects/city-nature-challenge-2026-torino,city-nature-challenge-2026-torino,270819
+Toronto,Toronto and GTA,Canada,,https://www.inaturalist.org/projects/city-nature-challenge-2026-toronto-and-gta,city-nature-challenge-2026-toronto-and-gta,266402
+Trento,Comune di Trento,Italy,,https://www.inaturalist.org/projects/city-nature-challenge-2026-trento-cluster-biodiversita-italia,city-nature-challenge-2026-trento-cluster-biodiversita-italia,278407
+Raleigh,Triangle Area,United States of America,North Carolina,https://www.inaturalist.org/projects/city-nature-challenge-2026-triangle-area,city-nature-challenge-2026-triangle-area,263993
+Tshwane,City of Tshwane,South Africa,,https://www.inaturalist.org/projects/city-nature-challenge-2026-tshwane,city-nature-challenge-2026-tshwane,270028
+Visalia,Tulare County,United States of America,California,https://www.inaturalist.org/projects/city-nature-challenge-2026-tulare-county,city-nature-challenge-2026-tulare-county,270179
+Tulsa,Tulsa Metro Area,United States of America,Oklahoma,https://www.inaturalist.org/projects/city-nature-challenge-2026-tulsa-metro-area,city-nature-challenge-2026-tulsa-metro-area,272794
+Tyler,Tyler/East Texas,United States of America,Texas,https://www.inaturalist.org/projects/city-nature-challenge-2026-tyler-east-texas,city-nature-challenge-2026-tyler-east-texas,265272
+Uherské hradiště,Uherskohradišťsko,Czech Republic,,https://www.inaturalist.org/projects/city-nature-challenge-2026-uherskohradistsko,city-nature-challenge-2026-uherskohradistsko,278416
+Salt Lake City,Utah's Wasatch,United States of America,Utah,https://www.inaturalist.org/projects/city-nature-challenge-2026-utah-s-wasatch,city-nature-challenge-2026-utah-s-wasatch,270285
+Uzhhorod,Uzhhorod,Ukraine,,https://www.inaturalist.org/projects/city-nature-challenge-2026-uzhhorod,city-nature-challenge-2026-uzhhorod,274837
+Vanduzi,Vanduzi,Mozambique,,https://www.inaturalist.org/projects/city-nature-challenge-2026-vanduzi,city-nature-challenge-2026-vanduzi,274490
+Varaždin,Varaždinska županija,Croatia,,https://www.inaturalist.org/projects/city-nature-challenge-2026-varazdinska-zupanija,city-nature-challenge-2026-varazdinska-zupanija,264423
+Veselí nad Moravou,Veselsko,Czech Republic,,https://www.inaturalist.org/projects/city-nature-challenge-2026-veselsko,city-nature-challenge-2026-veselsko,266146
+Villa Rica,Villa Rica,United States of America,Georgia,https://www.inaturalist.org/projects/city-nature-challenge-2026-villa-rica-west-georgia,city-nature-challenge-2026-villa-rica-west-georgia,273974
+Vinnytsia,City Nature Challenge 2026: Vinnytsia,Ukraine,,https://www.inaturalist.org/projects/city-nature-challenge-2026-vinnytsia,city-nature-challenge-2026-vinnytsia,274938
+Wakefield,Virginia Pinelands,United States of America,Virginia,https://www.inaturalist.org/projects/city-nature-challenge-2026-virginia-pinelands,city-nature-challenge-2026-virginia-pinelands,269095
+Volodymyr,Volodymyr,Ukraine,,https://www.inaturalist.org/projects/city-nature-challenge-2026-volodymyr,city-nature-challenge-2026-volodymyr,274584
+Deland,Volusia County,United States of America,Florida,https://www.inaturalist.org/projects/city-nature-challenge-2026-volusia-county,city-nature-challenge-2026-volusia-county,248101
+Vyshhorod,Vyshhorod Hromada,Ukraine,,https://www.inaturalist.org/projects/city-nature-challenge-2026-vyshhorod-hromada,city-nature-challenge-2026-vyshhorod-hromada,274824
+Waikato,Waikato,New Zealand,,https://www.inaturalist.org/projects/city-nature-challenge-2026-waikato,city-nature-challenge-2026-waikato,273629
+Wakkerstroom,Wakkerstroom,South Africa,,https://www.inaturalist.org/projects/city-nature-challenge-2026-wakkerstroom,city-nature-challenge-2026-wakkerstroom,268926
+Huntsville,Walker & Trinity County,United States of America,Texas,https://www.inaturalist.org/projects/city-nature-challenge-2026-walker-trinity-county-texas,city-nature-challenge-2026-walker-trinity-county-texas,264365
+Joseph,Wallowa County,United States of America,Oregon,https://www.inaturalist.org/projects/city-nature-challenge-2026-wallowa-county,city-nature-challenge-2026-wallowa-county,268402
+Warsaw,Warsaw,Poland,,https://www.inaturalist.org/projects/city-nature-challenge-2026-warsaw,city-nature-challenge-2026-warsaw,263231
+Warwickshire,"Warwickshire, Coventry and Solihull",England,,https://www.inaturalist.org/projects/city-nature-challenge-2026-warwickshire-coventry-and-solihull,city-nature-challenge-2026-warwickshire-coventry-and-solihull,265839
+Washington DC,Washington DC Metro Area,United States of America,"Maryland, Virginia, Washington, D.C.",https://www.inaturalist.org/projects/city-nature-challenge-2026-washington-dc-metro-area,city-nature-challenge-2026-washington-dc-metro-area,270274
+Waterberg,Waterberg,South Africa,,https://www.inaturalist.org/projects/city-nature-challenge-2026-waterberg,city-nature-challenge-2026-waterberg,275020
+Welland,Welland,Canada,,https://www.inaturalist.org/projects/city-nature-challenge-2026-welland,city-nature-challenge-2026-welland,270067
+Riebeek-Kasteel,Weskus,South Africa,,https://www.inaturalist.org/projects/city-nature-challenge-2026-weskus,city-nature-challenge-2026-weskus,274733
+Grand Rapids,West Michigan,United States of America,Michigan,https://www.inaturalist.org/projects/city-nature-challenge-2026-west-michigan,city-nature-challenge-2026-west-michigan,266374
+Amherst,Western Mass,United States of America,Massachusetts,https://www.inaturalist.org/projects/city-nature-challenge-2026-western-mass,city-nature-challenge-2026-western-mass,274042
+Asheville,Western NC,United States of America,North Carolina,https://www.inaturalist.org/projects/city-nature-challenge-2026-western-nc,city-nature-challenge-2026-western-nc,265092
+Wichita Falls,"Wichita Falls, Texas - Rolling Plains TMN Region",United States of America,Texas,https://www.inaturalist.org/projects/city-nature-challenge-2026-wichita-falls-texas-rolling-plains-chapter-tmn-region,city-nature-challenge-2026-wichita-falls-texas-rolling-plains-chapter-tmn-region,265695
+Wien,Wien,Austria,,https://www.inaturalist.org/projects/city-nature-challenge-2026-wien,city-nature-challenge-2026-wien,264285
+Wildcoast Pondoland,Wildcoast Pondoland,South Africa,,https://www.inaturalist.org/projects/city-nature-challenge-2026-wildcoast-mpondoland-d60e5bb6-c27d-4f0b-9818-ae1c05358cd2,city-nature-challenge-2026-wildcoast-mpondoland-d60e5bb6-c27d-4f0b-9818-ae1c05358cd2,277298
+Brattleboro,Windham County,United States of America,Vermont,https://www.inaturalist.org/projects/city-nature-challenge-2026-windham-county-vt,city-nature-challenge-2026-windham-county-vt,273290
+Windhoek,Windhoek,Namibia,,https://www.inaturalist.org/projects/city-nature-challenge-2026-windhoek,city-nature-challenge-2026-windhoek,273073
+Worcester,Worcester,United States of America,Massachusetts,https://www.inaturalist.org/projects/city-nature-challenge-2026-worcester,city-nature-challenge-2026-worcester,269057
+Yilan,Yilan-Hualien,Taiwan,,https://www.inaturalist.org/projects/city-nature-challenge-2026-yilan-hualien,city-nature-challenge-2026-yilan-hualien,272359
+Yokohama,Yokohama,Japan,,https://www.inaturalist.org/projects/city-nature-challenge-2026-yokohama-japan,city-nature-challenge-2026-yokohama-japan,274430
+York,York,England,,https://www.inaturalist.org/projects/city-nature-challenge-2026-york,city-nature-challenge-2026-york,272933
+York,"York, Pennsylvania",United States of America,Pennsylvania,https://www.inaturalist.org/projects/city-nature-challenge-2026-york-pennsylvania,city-nature-challenge-2026-york-pennsylvania,267471
+Zadar,Zadarska županija,Croatia,,https://www.inaturalist.org/projects/city-nature-challenge-2026-zadarska-zupanija,city-nature-challenge-2026-zadarska-zupanija,271691
+Grad Zagreb,Grad Zagreb,Croatia,,https://www.inaturalist.org/projects/city-nature-challenge-2026-zagreb,city-nature-challenge-2026-zagreb,264422
+Zaporizhzhia,Zaporizhzhia,Ukraine,,https://www.inaturalist.org/projects/city-nature-challenge-2026-zaporizhzhia,city-nature-challenge-2026-zaporizhzhia,274552
+Zapotiltic,"Zapotiltic, México",Mexico,,https://www.inaturalist.org/projects/city-nature-challenge-2026-zapotiltic-jal,city-nature-challenge-2026-zapotiltic-jal,274745
+Zavala,Zavala,Mozambique,,https://www.inaturalist.org/projects/city-nature-challenge-2026-zavala,city-nature-challenge-2026-zavala,274478
+Zhytomyr,Zhytomyr,Ukraine,,https://www.inaturalist.org/projects/city-nature-challenge-2026-zhytomyr,city-nature-challenge-2026-zhytomyr,274695
+Zihuatanejo,Ixtapa Zihuatanejo,Mexico,,https://www.inaturalist.org/projects/city-nature-challenge-2026-zihuatanejo,city-nature-challenge-2026-zihuatanejo,272313
+Richards Bay,"Zululand area (King Cetshwayo District, KwaZulu-Natal, Umkhanyakude District Municipality, NL, ZA)",South Africa,,https://www.inaturalist.org/projects/city-nature-challenge-2026-zululand,city-nature-challenge-2026-zululand,270043
+Zvenyhorodka,Zvenyhorodka,Ukraine,,https://www.inaturalist.org/projects/city-nature-challenge-2026-zvenyhorodka,city-nature-challenge-2026-zvenyhorodka,274570
+Blois,Blois - Agglopolys,France,,https://www.inaturalist.org/projects/defi-nature-urbaine-2026-agglopolys,defi-nature-urbaine-2026-agglopolys,270709
+Pune,Pune,India,,https://www.inaturalist.org/projects/city-nature-challenge-2026-pune,city-nature-challenge-2026-pune,272758
+Rajgir,"Rajgir, Nalanda",India,,https://www.inaturalist.org/projects/city-nature-challenge-2026-rajgir-nalanda,city-nature-challenge-2026-rajgir-nalanda,267395
+Merthyr,Glamorgan,Wales,,https://www.inaturalist.org/projects/city-nature-challenge-her-byd-natur-y-ddinas-2026-glamorgan,city-nature-challenge-her-byd-natur-y-ddinas-2026-glamorgan,275923
+Green Bay,Northeast Wisconsin,United States of America,Wisconsin,https://www.inaturalist.org/projects/city-nature-challenge-northeasast-wisconsin-2026,city-nature-challenge-northeasast-wisconsin-2026,270270
+Fort Myers,"Lee County, Florida",United States of America,Florida,https://www.inaturalist.org/projects/city-nature-challenge-southwest-florida-florida-2026,city-nature-challenge-southwest-florida-florida-2026,274586
+Tuxtla Gutiérrez,Tuxtla Gutierrez,Mexico,,https://www.inaturalist.org/projects/city-nature-challenge-tuxtla-gutierrez-chiapas-mx,city-nature-challenge-tuxtla-gutierrez-chiapas-mx,274972
+Loreto,Municipio de Loreto,Mexico,,https://www.inaturalist.org/projects/cnc-2025-reto-naturalista-urbano-loreto-7f582677-96b7-4cd2-88ba-3b678599cc71,cnc-2025-reto-naturalista-urbano-loreto-7f582677-96b7-4cd2-88ba-3b678599cc71,269990
+Agiabampo,Agiabampo,Mexico,,https://www.inaturalist.org/projects/cnc-2026-agiabampo-sonora,cnc-2026-agiabampo-sonora,265883
+Bigastro,Bigastro,Spain,,https://www.inaturalist.org/projects/cnc-2026-bigastro,cnc-2026-bigastro,264580
+Brookings,Brookings County,United States of America,South Dakota,https://www.inaturalist.org/projects/cnc-2026-brookings-county-south-dakota,cnc-2026-brookings-county-south-dakota,270388
+Orihuela,Comarca de la Vega Baja del Río Segura,Spain,,https://www.inaturalist.org/projects/cnc-2026-comarca-de-la-vega-baja-del-rio-segura,cnc-2026-comarca-de-la-vega-baja-del-rio-segura,268065
+Crevillent,Crevillent I Espais Naturals,Spain,,https://www.inaturalist.org/projects/cnc-2026-crevillent-i-espais-naturals,cnc-2026-crevillent-i-espais-naturals,265354
+Funes,Funes,Argentina,,https://www.inaturalist.org/projects/cnc-2026-desafio-funes,cnc-2026-desafio-funes,274945
+Rosario,Rosario,Argentina,,https://www.inaturalist.org/projects/cnc-2026-desafio-rosario,cnc-2026-desafio-rosario,275408
+Mar del Plata,Mar del Plata / Mar Chiquita,Argentina,,https://www.inaturalist.org/projects/cnc-2026-mar-del-plata-mar-chiquita,cnc-2026-mar-del-plata-mar-chiquita,264263
+Jacksonville,Northeast Florida,United States of America,Florida,https://www.inaturalist.org/projects/cnc-2026-northeast-florida,cnc-2026-northeast-florida,278798
+Rayagada,Rayagada,India,,https://www.inaturalist.org/projects/city-nature-challenge-2026-rayagada,city-nature-challenge-2026-rayagada,273568
+Copalita-Huatulco,Copalita-Huatulco,Mexico,,https://www.inaturalist.org/projects/copalita-huatulco-oaxaca-cnc-2026,copalita-huatulco-oaxaca-cnc-2026,266302
+Granby,Granby,Canada,,https://www.inaturalist.org/projects/defi-nature-en-ville-granby-2026,defi-nature-en-ville-granby-2026,268529
+Strasbourg,Ville et Eurométropole de Strasbourg,France,,https://www.inaturalist.org/projects/defi-nature-urbaine-2026-ville-et-eurometropole-de-strasbourg,defi-nature-urbaine-2026-ville-et-eurometropole-de-strasbourg,267929
+Lekoko,Lekoko,Gabon,,https://www.inaturalist.org/projects/defit-nature-urbain-2026-lekoko,defit-nature-urbain-2026-lekoko,190261
+Bragança,Bragança,Brazil,,https://www.inaturalist.org/projects/desafio-da-natureza-urbana-2026-braganca-pa-brasil,desafio-da-natureza-urbana-2026-braganca-pa-brasil,268617
+Vitória,Grande Vitória,Brazil,,https://www.inaturalist.org/projects/desafio-da-natureza-urbana-2026-grande-vitoria-es-brasil,desafio-da-natureza-urbana-2026-grande-vitoria-es-brasil,270317
+Sinop,Sinop,Brazil,,https://www.inaturalist.org/projects/desafio-da-natureza-urbana-2026-sinop-mt,desafio-da-natureza-urbana-2026-sinop-mt,270170
+Arinos,Arinos/Minas Gerais/BR,Brazil,,https://www.inaturalist.org/projects/desafio-mundial-da-natureza-urbana-2026-arinos-mg-brasil,desafio-mundial-da-natureza-urbana-2026-arinos-mg-brasil,270292
+Belo Horizonte,Belo Horizonte e Região Metropolitana,Brazil,,https://www.inaturalist.org/projects/desafio-mundial-da-natureza-urbana-2026-belo-horizonte-e-regiao-metropolitana,desafio-mundial-da-natureza-urbana-2026-belo-horizonte-e-regiao-metropolitana,266239
+Brasília e Região,Brasília e Região,Brazil,,https://www.inaturalist.org/projects/desafio-mundial-da-natureza-urbana-2026-brasilia-e-regiao-brasil,desafio-mundial-da-natureza-urbana-2026-brasilia-e-regiao-brasil,270115
+Carangola,Carangola,Brazil,,https://www.inaturalist.org/projects/desafio-mundial-da-natureza-urbana-2026-carangola,desafio-mundial-da-natureza-urbana-2026-carangola,274785
+Congonhas,Congonhas - MG,Brazil,,https://www.inaturalist.org/projects/desafio-mundial-da-natureza-urbana-2026-congonhas-minas-gerais,desafio-mundial-da-natureza-urbana-2026-congonhas-minas-gerais,274304
+Porto Alegre,Região Metropolitana de Porto Alegre,Brazil,,https://www.inaturalist.org/projects/desafio-mundial-da-natureza-urbana-2026-grande-porto-alegre-rs-brasil,desafio-mundial-da-natureza-urbana-2026-grande-porto-alegre-rs-brasil,269995
+Rio de Janeiro,"Grande Rio e Baía de Guanabara, RJ",Brazil,,https://www.inaturalist.org/projects/desafio-mundial-da-natureza-urbana-2026-grande-rio-e-baia-de-guanabara-rj-brasil,desafio-mundial-da-natureza-urbana-2026-grande-rio-e-baia-de-guanabara-rj-brasil,273035
+Iguatu,Iguatu,Brazil,,https://www.inaturalist.org/projects/desafio-mundial-da-natureza-urbana-2026-iguatu-ce,desafio-mundial-da-natureza-urbana-2026-iguatu-ce,274809
+Santa Teresa,Santa Teresa,Brazil,,https://www.inaturalist.org/projects/desafio-mundial-da-natureza-urbana-2026-santa-teresa,desafio-mundial-da-natureza-urbana-2026-santa-teresa,272620
+Pirassununga,USP Pirassununga,Brazil,,https://www.inaturalist.org/projects/desafio-mundial-da-natureza-urbana-2026-usp-pirassununga,desafio-mundial-da-natureza-urbana-2026-usp-pirassununga,274889
+Quito,Quito,Ecuador,,https://www.inaturalist.org/projects/desafio-naturaleza-urbana-2026-descubre-quito-biodiverso,desafio-naturaleza-urbana-2026-descubre-quito-biodiverso,274557
+Blumenau,Mesorregião Vale do Itajaí,Brazil,,https://www.inaturalist.org/projects/dnu2026-mesorregiao-vale-do-itajai-sc-brasil,dnu2026-mesorregiao-vale-do-itajai-sc-brasil,270062
+Dos Bocas,Dos Bocas,Mexico,,https://www.inaturalist.org/projects/dos-bocas-tabasco-cnc-2026,dos-bocas-tabasco-cnc-2026,265963
+Huesca,Huesca,Spain,,https://www.inaturalist.org/projects/expedicionarios-cnc-2026-primus-ct-huesca,expedicionarios-cnc-2026-primus-ct-huesca,265084
+Eureka,Humboldt County,United States of America,California,https://www.inaturalist.org/projects/humboldt-county-city-nature-challenge,humboldt-county-city-nature-challenge,273866
+Manado,Manado,Indonesia,,https://www.inaturalist.org/projects/jelajah-alam-kota-manado,jelajah-alam-kota-manado,270086
+Kincardine,Municipality of Kincardine,Canada,,https://www.inaturalist.org/projects/kincardine-city-nature-challenge-2026-e689fb4f-7810-4f4b-9802-8c7dc73d6fc3,kincardine-city-nature-challenge-2026-e689fb4f-7810-4f4b-9802-8c7dc73d6fc3,269872
+Laguna de Términos,Laguna de Términos,Mexico,,https://www.inaturalist.org/projects/laguna-de-terminos-campeche-cnc-206,laguna-de-terminos-campeche-cnc-206,266304
+Morgantown,Morgantown Region,United States of America,West Virginia,https://www.inaturalist.org/projects/morgantown-region-city-nature-challenge,morgantown-region-city-nature-challenge,274987
+Chuquisaca,Chuquisaca,Bolivia,,https://www.inaturalist.org/projects/reto-ciudad-naturaleza-2026-chuquisaca-cnc,reto-ciudad-naturaleza-2026-chuquisaca-cnc,274190
+La Paz,Reto Ciudad Naturaleza La Paz 2026,Bolivia,,https://www.inaturalist.org/projects/reto-ciudad-naturaleza-2026-la-paz-cnc,reto-ciudad-naturaleza-2026-la-paz-cnc,273609
+Santa Cruz,Santa Cruz,Bolivia,,https://www.inaturalist.org/projects/reto-ciudad-naturaleza-2026-santa-cruz,reto-ciudad-naturaleza-2026-santa-cruz,265398
+Trinidad,Trinidad,Bolivia,,https://www.inaturalist.org/projects/reto-ciudad-naturaleza-2026-trinidad-cnc,reto-ciudad-naturaleza-2026-trinidad-cnc,272806
+Berriozabal,Berriozábal,Mexico,,https://www.inaturalist.org/projects/reto-naturalista-2026-berriozabal-chiapas,reto-naturalista-2026-berriozabal-chiapas,266713
+Berriozábal,Berriozábal,Mexico,,https://www.inaturalist.org/projects/reto-naturalista-2026-berriozabal-chiapas,reto-naturalista-2026-berriozabal-chiapas,266713
+Caicedo,"Caicedo, Antioquia, Colombia",Colombia,,https://www.inaturalist.org/projects/reto-naturalista-2026-caicedo-antioquia,reto-naturalista-2026-caicedo-antioquia,272788
+Valle de Aburrá,Valle de Aburrá,Colombia,,https://www.inaturalist.org/projects/reto-naturalista-2026-valle-de-aburra,reto-naturalista-2026-valle-de-aburra,265090
+Cali,Cali,Colombia,,https://www.inaturalist.org/projects/reto-naturalista-cali-2026,reto-naturalista-cali-2026,274908
+Municipio de Playa del Carmen antes Solidaridad,Playa del Carmen,Mexico,,https://www.inaturalist.org/projects/reto-naturalista-primavera-2026-playa-del-carmen-q-roo-mexico,reto-naturalista-primavera-2026-playa-del-carmen-q-roo-mexico,266299
+Ayacucho,Ayacucho,Peru,,https://www.inaturalist.org/projects/reto-naturalista-urbano-2026-ayacucho-pe,reto-naturalista-urbano-2026-ayacucho-pe,264459
+Estado de Hidalgo,Estado de Hidalgo,Mexico,,https://www.inaturalist.org/projects/reto-naturalista-urbano-2026-biodiversidad-de-hidalgo,reto-naturalista-urbano-2026-biodiversidad-de-hidalgo,274517
+Caracas,Caracas,Venezuela,,https://www.inaturalist.org/projects/reto-naturalista-urbano-2026-caracas-venezuela,reto-naturalista-urbano-2026-caracas-venezuela,269976
+Catemaco,Catemaco,Mexico,,https://www.inaturalist.org/projects/reto-naturalista-urbano-2026-catemaco-veracruz-mx,reto-naturalista-urbano-2026-catemaco-veracruz-mx,265348
+Cuenca,"Reto Naturalista Urbano 2026, Cuenca, Ec",Ecuador,,https://www.inaturalist.org/projects/reto-naturalista-urbano-2026-cuenca-ec,reto-naturalista-urbano-2026-cuenca-ec,274314
+Culiacán,Culiacán,Mexico,,https://www.inaturalist.org/projects/reto-naturalista-urbano-2026-culiacan-sinaloa,reto-naturalista-urbano-2026-culiacan-sinaloa,265011
+Eldorado,Eldorado,Mexico,,https://www.inaturalist.org/projects/reto-naturalista-urbano-2026-eldorado-sinaloa,reto-naturalista-urbano-2026-eldorado-sinaloa,265274
+Guasave,Guasave,Mexico,,https://www.inaturalist.org/projects/reto-naturalista-urbano-2026-guasave-sinaloa,reto-naturalista-urbano-2026-guasave-sinaloa,265164
+Jardín,Jardín,Colombia,,https://www.inaturalist.org/projects/reto-naturalista-urbano-2026-jardin,reto-naturalista-urbano-2026-jardin,270576
+La Paz,La Paz,Mexico,,https://www.inaturalist.org/projects/reto-naturalista-urbano-2026-la-paz-b-c-s-mx,reto-naturalista-urbano-2026-la-paz-b-c-s-mx,263986
+Lima,Lima,Peru,,https://www.inaturalist.org/projects/reto-naturalista-urbano-2026-lima-pe,reto-naturalista-urbano-2026-lima-pe,264155
+Los Cabos,"Los Cabos, BCS",Mexico,,https://www.inaturalist.org/projects/reto-naturalista-urbano-2026-los-cabos-b-c-s-mx,reto-naturalista-urbano-2026-los-cabos-b-c-s-mx,274807
+Municipio de Mulegé,Municipio de Mulegé,Mexico,,https://www.inaturalist.org/projects/reto-naturalista-urbano-2026-mulege-b-c-s-mx,reto-naturalista-urbano-2026-mulege-b-c-s-mx,264224
+San Andres Tuxtla,San Andres Tuxtla,Mexico,,https://www.inaturalist.org/projects/reto-naturalista-urbano-2026-san-andres-tuxtla-veracruz-mx,reto-naturalista-urbano-2026-san-andres-tuxtla-veracruz-mx,265347
+Tacna,Tacna / Tacna,Peru,,https://www.inaturalist.org/projects/reto-naturalista-urbano-2026-tacna-pe,reto-naturalista-urbano-2026-tacna-pe,279008
+Puerto Maldonado,Tambopata,Peru,,https://www.inaturalist.org/projects/reto-naturalista-urbano-2026-tambopata-pe,reto-naturalista-urbano-2026-tambopata-pe,271177
+Tecámac,"Reto Naturalista Urbano Tecámac, Estado de México",Mexico,,https://www.inaturalist.org/projects/reto-naturalista-urbano-2026-tecamac-edomex,reto-naturalista-urbano-2026-tecamac-edomex,275375
+Texcoco de Mora,Texcoco de Mora,Mexico,,https://www.inaturalist.org/projects/reto-naturalista-urbano-2026-texcoco-de-mora,reto-naturalista-urbano-2026-texcoco-de-mora,266621
+Tijuana,Tijuana,Mexico,,https://www.inaturalist.org/projects/reto-naturalista-urbano-2026-tijuana,reto-naturalista-urbano-2026-tijuana,269190
+Ixtapaluca,Ixtapaluca,Mexico,,https://www.inaturalist.org/projects/reto-naturalista-urbano-ixtapaluca-2026,reto-naturalista-urbano-ixtapaluca-2026,274652
+Zona Metropolitana del Valle de Toluca,Zona Metropolitana del Valle de Toluca,Mexico,,https://www.inaturalist.org/projects/reto-naturalista-urbano-primavera-2026-zona-metropolitana-del-valle-de-toluca,reto-naturalista-urbano-primavera-2026-zona-metropolitana-del-valle-de-toluca,274882
+Yurimaguas,Yurimaguas,Peru,,https://www.inaturalist.org/projects/reto-naturalista-urbano-yurimaguas-2026,reto-naturalista-urbano-yurimaguas-2026,269533
+Sisal,Sisal,Mexico,,https://www.inaturalist.org/projects/sisal-yucatan-cnc-2026,sisal-yucatan-cnc-2026,265961
+Trinitapoli,Zone Umide di Capitanata e foce del fiume Ofanto,Italy,,https://www.inaturalist.org/projects/trinitapoli-city-nature-challenge-2026-cluster-biodiversita-italia,trinitapoli-city-nature-challenge-2026-cluster-biodiversita-italia,270343
+Salem,Salem,India,,https://www.inaturalist.org/projects/city-nature-challenge-2026-salem,city-nature-challenge-2026-salem,277759
+Silchar,Southern Assam,India,,https://www.inaturalist.org/projects/city-nature-challenge-2026-southern-assam,city-nature-challenge-2026-southern-assam,275142
+Surat,Surat,India,,https://www.inaturalist.org/projects/city-nature-challenge-2026-surat-gujarat,city-nature-challenge-2026-surat-gujarat,279504
+Ventura,Ventura County,United States of America,California,https://www.inaturalist.org/projects/cnc-ventura-county-2026,cnc-ventura-county-2026,275058
+Eugene,"Eugene, Oregon",United States of America,Oregon,https://www.inaturalist.org/projects/city-nature-challenge-2026-eugene-oregon,city-nature-challenge-2026-eugene-oregon,279494
+Brisbane,Southeast Queensland,Australia,,https://www.inaturalist.org/projects/city-nature-challenge-2026-brisbane,city-nature-challenge-2026-brisbane,281257
+"City of Niagara Falls, Canada","City of Niagara Falls, Canada",Canada,,https://www.inaturalist.org/projects/2026-city-of-niagara-falls-city-nature-challenge,2026-city-of-niagara-falls-city-nature-challenge,272773
+"Burk's Falls, Ontario",Almaguin Highlands,Canada,,https://www.inaturalist.org/projects/almaguin-highlands-city-nature-challenge-2026,almaguin-highlands-city-nature-challenge-2026,278966
+Klinča Sela,Klinča Sela,Croatia,,https://www.inaturalist.org/projects/city-nature-challenge-2026-klinca-sela-jasterbarsko,city-nature-challenge-2026-klinca-sela-jasterbarsko,276380
+Tiruchirappalli,Tiruchirappalli,India,,https://www.inaturalist.org/projects/city-nature-challenge-2026-tiruchirappalli,city-nature-challenge-2026-tiruchirappalli,264058
+KRISHNAGIRI,KRISHNAGIRI,India,,https://www.inaturalist.org/projects/city-nature-challenge-cnc-2026-krishnagiri-district,city-nature-challenge-cnc-2026-krishnagiri-district,278581
+Dhanbad,Dhanbad,India,,https://www.inaturalist.org/projects/city-nature-challenge-2026-dhanbad,city-nature-challenge-2026-dhanbad,276597
+Las Vegas,Clark County,United States of America,Nevada,https://www.inaturalist.org/projects/city-nature-challenge-2026-clark-county-nv,city-nature-challenge-2026-clark-county-nv,274406
+Thane,Thane,India,,https://www.inaturalist.org/projects/city-nature-challennge-2026-thane,city-nature-challennge-2026-thane,279047
+Udaipur,Udaipur,India,,https://www.inaturalist.org/projects/cnc-biodiversity-workshop-udaipur-2026,cnc-biodiversity-workshop-udaipur-2026,278872
+"Mueang Surat Thani District, Ko Samui District Suratthani province Thailand","Surat Thani Province, Thailand",Thailand,,https://www.inaturalist.org/projects/city-nature-challenge-2026-surat-thani,city-nature-challenge-2026-surat-thani,275022
+Libby,"Lincoln County, Montana",United States of America,Montana,https://www.inaturalist.org/projects/city-nature-challenge-2026-troy-lincoln-county-mt,city-nature-challenge-2026-troy-lincoln-county-mt,275074
+Goa,Goa,India,,https://www.inaturalist.org/projects/city-nature-challenge-2026-goa,city-nature-challenge-2026-goa,264612
+Cochabamba,Cochabamba,Bolivia,,https://www.inaturalist.org/projects/desafio-llajta-viva-cochabamba-2026,desafio-llajta-viva-cochabamba-2026,281923
+Malé Atoll,Malé Atoll,Maldives,,https://www.inaturalist.org/projects/city-nature-challenge-2026-male-atoll,city-nature-challenge-2026-male-atoll,279873
+"Surin, Thailand","Surin, Thailand",Thailand,,https://www.inaturalist.org/projects/surin-city-nature-challenge-2026,surin-city-nature-challenge-2026,274998
+Limassol,Limassol,Cyprus,,https://www.inaturalist.org/projects/city-nature-challenge-2026-limassol,city-nature-challenge-2026-limassol,279920
+South Andaman,South Andaman,India,,https://www.inaturalist.org/projects/city-nature-challenge-2026-south-andaman,city-nature-challenge-2026-south-andaman,279756
+Belgaum,Belgaum,India,,https://www.inaturalist.org/projects/city-nature-challenge-2026-belgaum-karnataka,city-nature-challenge-2026-belgaum-karnataka,279889
+Lakshadweep,Lakshadweep,India,,https://www.inaturalist.org/projects/city-nature-challenge-2026-lakshadweep,city-nature-challenge-2026-lakshadweep,279930
+Navsari,Navsari,India,,https://www.inaturalist.org/projects/city-nature-challenge-2026-navsari,city-nature-challenge-2026-navsari,281823
+Chandigarh,Chandigarh,India,,https://www.inaturalist.org/projects/cnc-chandigarh-2026,cnc-chandigarh-2026,278586
+Angers,Angers Loire Métropole,France,,https://www.inaturalist.org/projects/defi-nature-urbaine-2026-angers-loire-metropole-et-ville-d-angers,defi-nature-urbaine-2026-angers-loire-metropole-et-ville-d-angers,269964
+Messina,Messina,Italy,,https://www.inaturalist.org/projects/city-nature-challenge-2026-messina-cluster-biodiversita-italia,city-nature-challenge-2026-messina-cluster-biodiversita-italia,242086
+Abu Dhabi,Abu Dhabi,United Arab Emirates,,https://www.inaturalist.org/projects/city-nature-challenge-2026-abu-dhabi,city-nature-challenge-2026-abu-dhabi,272975
+Rio Branco,Rio Branco,Brazil,,https://www.inaturalist.org/projects/cnc-rio-branco-e-leste-do-acre-2026,cnc-rio-branco-e-leste-do-acre-2026,279618
+Huaraz,"Ancash, Huaraz",Peru,,https://www.inaturalist.org/projects/reto-naturalista-urbano-2026-huaraz-pe,reto-naturalista-urbano-2026-huaraz-pe,279720
+Campbell County,"Campbell County, KY",United States of America,Kentucky,https://www.inaturalist.org/projects/city-nature-challenge-2026-campbell-county-kentucky,city-nature-challenge-2026-campbell-county-kentucky,279553
+Ladakh,Ladakh,India,Ladakh,https://www.inaturalist.org/projects/city-nature-challenge-2026-ladakh,city-nature-challenge-2026-ladakh,279903
+Kolkata,Kolkata Metropolitan Area,India,West Bengal,https://www.inaturalist.org/projects/city-nature-challenge-2026-kolkata,city-nature-challenge-2026-kolkata,279598
+Arunachal Pradesh,Arunachal Pradesh,India,Arunachal Pradesh,https://www.inaturalist.org/projects/city-nature-challenge-2026-arunachal-pradesh,city-nature-challenge-2026-arunachal-pradesh,279767
+"Gorari, Rohtas",Rohtas District,India,Bihar,https://www.inaturalist.org/projects/city-nature-challenge-2026-gorari,city-nature-challenge-2026-gorari,279752
+Kaimur,Kaimur,India,Bihar,https://www.inaturalist.org/projects/city-nature-challenge-2026-kaimur,city-nature-challenge-2026-kaimur,279900
+Kinnaur,Kinnaur,India,Himachal Pradesh,https://www.inaturalist.org/projects/city-nature-challenge-2026-kinnaur,city-nature-challenge-2026-kinnaur,279899
+Bhagalpur,Bhagalpur,India,Bihar,https://www.inaturalist.org/projects/city-nature-challenge-2026-bhagalpur,city-nature-challenge-2026-bhagalpur,279876
+Narmada,Narmada,India,Gujarat,https://www.inaturalist.org/projects/city-nature-challenge-narmada,city-nature-challenge-narmada,280311
+Baran,Baran,India,Rajasthan,https://www.inaturalist.org/projects/city-nature-challenge-2026-baran,city-nature-challenge-2026-baran,280871
+Dadra and Nagar Haveli,Dadra and Nagar Haveli,India,"Dadra, Nagar Haveli, Daman, Diu",https://www.inaturalist.org/projects/city-nature-challange-2026-daman-diu,city-nature-challange-2026-daman-diu,279650
+Daman and Diu,Daman and Diu,India,"Dadra, Nagar Haveli, Daman, Diu",https://www.inaturalist.org/projects/city-nature-challange-2026-dadra-nagar-haveli,city-nature-challange-2026-dadra-nagar-haveli,279890
+Kheda,Kheda,India,Gujarat,https://www.inaturalist.org/projects/city-nature-challenge-2026-kheda-gujarat-india,city-nature-challenge-2026-kheda-gujarat-india,279508
+Jamnagar,Jamnagar,India,Gujarat,https://www.inaturalist.org/projects/city-nature-challenge-2026-jamnagar,city-nature-challenge-2026-jamnagar,280002
+Bhavnagar,Bhavnagar,India,Gujarat,https://www.inaturalist.org/projects/city-nature-challenge-2026-bhavnagar-district,city-nature-challenge-2026-bhavnagar-district,279718
+Amreli,Amreli,India,Gujarat,https://www.inaturalist.org/projects/city-nature-challenge-2026-amreli,city-nature-challenge-2026-amreli,279908
+Chhota Udaipur,Chhota Udaipur,India,Gujarat,https://www.inaturalist.org/projects/city-nature-challenge-2026-chhotta-udaipur,city-nature-challenge-2026-chhotta-udaipur,279901
+Surendranagar,Surendranagar,India,Gujarat,https://www.inaturalist.org/projects/city-nature-challenge-2026-surendranagar,city-nature-challenge-2026-surendranagar,279555
+Vadodara,Vadodara,India,Gujarat,https://www.inaturalist.org/projects/city-nature-challenge-2026-vadodara-gujarat,city-nature-challenge-2026-vadodara-gujarat,279577
+Panchamahal,Panchamahal,India,Gujarat,https://www.inaturalist.org/projects/city-nature-challenge-2026-panchmahal,city-nature-challenge-2026-panchmahal,279703
+Gurugram,Gurugram,India,Haryana,https://www.inaturalist.org/projects/city-nature-challenge-2026-gurugram,city-nature-challenge-2026-gurugram,279705
+Haryana,Faridabad,India,Haryana,https://www.inaturalist.org/projects/city-nature-challenge-2026-faridabad-8b69f5d4-e5af-49de-8cb2-e6a036897fa4,city-nature-challenge-2026-faridabad-8b69f5d4-e5af-49de-8cb2-e6a036897fa4,279704
+Kangra,Kangra,India,Himachal Pradesh,https://www.inaturalist.org/projects/city-nature-challenge-2026-kangra,city-nature-challenge-2026-kangra,279884
+Ranchi,Ranchi,India,Jharkhand,https://www.inaturalist.org/projects/city-nature-challenge-2026-ranchi-jharkhand,city-nature-challenge-2026-ranchi-jharkhand,279593
+Jabalpur,Jabalpur,India,Madhya Pradesh,https://www.inaturalist.org/projects/city-nature-challenge-2026-jabalpur,city-nature-challenge-2026-jabalpur,279518
+Nagpur,Nagpur,India,Maharashtra,https://www.inaturalist.org/projects/city-nature-challenge-2026-nagpur,city-nature-challenge-2026-nagpur,279541
+Jalgaon,Jalgaon,India,Maharashtra,https://www.inaturalist.org/projects/city-nature-challenge-2026-jalgaon,city-nature-challenge-2026-jalgaon,274116
+Manipur,Manipur,India,Manipur,https://www.inaturalist.org/projects/city-nature-challenge-2026-manipur,city-nature-challenge-2026-manipur,279671
+Cooch Behar,Cooch Behar,India,West Bengal,https://www.inaturalist.org/projects/city-nature-challenge-2026-cooch-behar,city-nature-challenge-2026-cooch-behar,280349
+Jalgaigudi,Jalpaigudi,India,West Bengal,https://www.inaturalist.org/projects/city-nature-challenge-2026-jalpaiguri,city-nature-challenge-2026-jalpaiguri,280359
+Auroville,Auroville,India,Tamil Nadu,https://www.inaturalist.org/projects/city-nature-challenge-2026-auroville,city-nature-challenge-2026-auroville,280553
+Pantnagar,Pantnagar,India,Uttarakhand,https://www.inaturalist.org/projects/city-nature-challenge-2026-uttarakhand-pantnagar,city-nature-challenge-2026-uttarakhand-pantnagar,280573
+Shillong,Shillong,India,Meghalaya,https://www.inaturalist.org/projects/city-nature-challenge-2026-meghalaya-022899a1-ba0c-46ed-841d-5d57d2fc0fd5,city-nature-challenge-2026-meghalaya-022899a1-ba0c-46ed-841d-5d57d2fc0fd5,279700
+Bharuch,Bharuch,India,Gujarat,https://www.inaturalist.org/projects/city-nature-challenge-2026-bharuch,city-nature-challenge-2026-bharuch,279915
+Anand,Anand,India,Gujarat,https://www.inaturalist.org/projects/city-nature-challenge-2026-anand,city-nature-challenge-2026-anand,279917
+Kurnool,Kurnool,India,Andhra Pradesh,https://www.inaturalist.org/projects/city-nature-challenge-2026-kurnool,city-nature-challenge-2026-kurnool,279896
+Visakhapatnam,Visakhapatnam,India,Andhra Pradesh,https://www.inaturalist.org/projects/city-nature-challenge-2026-visakhapatnam,city-nature-challenge-2026-visakhapatnam,279897
+Akola,Akola,India,Maharashtra,https://www.inaturalist.org/projects/city-nature-challenge-2026-akola,city-nature-challenge-2026-akola,279669
+Puducherry,Puducherry,India,Puducherry,https://www.inaturalist.org/projects/city-nature-challenge-2026-puducherry,city-nature-challenge-2026-puducherry,279565
+East Godavari,East Godavari,India,Andhra Pradesh,https://www.inaturalist.org/projects/city-nature-challenge-2026-east-godavari,city-nature-challenge-2026-east-godavari,279695
+Srinagar,Srinagar,India,"Jammu, Kashmir",https://www.inaturalist.org/projects/city-nature-challenge-2026-srinagar,city-nature-challenge-2026-srinagar,279104
+Nagaland,Nagaland,India,Nagaland,https://www.inaturalist.org/projects/city-nature-challenge-2026-nagaland,city-nature-challenge-2026-nagaland,279561
+Cuttack,Cuttack,India,Odisha,https://www.inaturalist.org/projects/city-nature-challenge-2026-cuttack,city-nature-challenge-2026-cuttack,279529
+Rourkela,Rourkela,India,Odisha,https://www.inaturalist.org/projects/city-nature-challenge-2026-rourkela,city-nature-challenge-2026-rourkela,279775
+Ranga Reddy,Ranga Reddy,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-ranga-reddy,city-nature-challenge-2026-ranga-reddy,279815
+Sangareddy,Sangareddy,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-sangareddy,city-nature-challenge-2026-sangareddy,279818
+Vikarabad,Vikarabad,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-vikarabad,city-nature-challenge-2026-vikarabad,279825
+Wanaparthy,Wanaparthy,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-wanaparthy,city-nature-challenge-2026-wanaparthy,279827
+Yadadri Bhuvanagiri,Yadadri Bhuvanagiri,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-yadadri-bhuvanagiri,city-nature-challenge-2026-yadadri-bhuvanagiri,279834
+Mohali,Mohali,India,Punjab,https://www.inaturalist.org/projects/city-nature-challenge-2026-mohali,city-nature-challenge-2026-mohali,279888
+Rest of Sikkim,Rest of Sikkim,India,Sikkim,https://www.inaturalist.org/projects/city-nature-challenge-2026-sikkim,city-nature-challenge-2026-sikkim,279570
+Kamareddy,Kamareddy,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-kamareddy,city-nature-challenge-2026-kamareddy,279784
+Komaram Bheem,Komaram Bheem,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-komaram-bheem,city-nature-challenge-2026-komaram-bheem,279787
+Mahabubabad,Mahabubabad,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-mahabubabad,city-nature-challenge-2026-mahabubabad,279789
+Mahabubnagar,Mahabubnagar,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-mahabubnagar,city-nature-challenge-2026-mahabubnagar,279790
+Medak,Medak,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-medak,city-nature-challenge-2026-medak,279792
+Mulugu,Mulugu,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-mulugu,city-nature-challenge-2026-mulugu,279799
+Nagarkurnool,Nagarkurnool,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-nagarkurnool,city-nature-challenge-2026-nagarkurnool,279800
+Narayanpet,Narayanpet,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-narayanpet,city-nature-challenge-2026-narayanpet,279801
+Peddapalli,Peddapalli,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-peddapalli,city-nature-challenge-2026-peddapalli,279811
+Rajanna Sircilla,Rajanna Sircilla,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-rajanna-sircilla,city-nature-challenge-2026-rajanna-sircilla,279813
+Mayiladuthurai,Mayiladuthurai,India,Tamil Nadu,https://www.inaturalist.org/projects/city-nature-challenge-2026-mayiladuthurai,city-nature-challenge-2026-mayiladuthurai,279753
+,Tamil Nadu (Rest of TN),India,Tamil Nadu,https://www.inaturalist.org/projects/city-nature-challenge-2026-madurai-and-rest-of-tn,city-nature-challenge-2026-madurai-and-rest-of-tn,279750
+Erode,Erode,India,Tamil Nadu,https://www.inaturalist.org/projects/city-nature-challenge-2026-erode,city-nature-challenge-2026-erode,279692
+Dharmapuri,Dharmapuri,India,Tamil Nadu,https://www.inaturalist.org/projects/city-nature-challenge-2026-dharmapuri-district,city-nature-challenge-2026-dharmapuri-district,279658
+The Nilgiris,The Nilgiris,India,Tamil Nadu,https://www.inaturalist.org/projects/city-nature-challenge-2026-the-nilgiris,city-nature-challenge-2026-the-nilgiris,279682
+Rajapalayam,Rajapalayam,India,Tamil Nadu,https://www.inaturalist.org/projects/city-nature-challenge-2026-rajapalayam,city-nature-challenge-2026-rajapalayam,279751
+Theni,Theni,India,Tamil Nadu,https://www.inaturalist.org/projects/city-nature-challenge-2026-theni-d9323915-136b-4e2c-9335-271fb3129637,city-nature-challenge-2026-theni-d9323915-136b-4e2c-9335-271fb3129637,279885
+Adilabad,Adilabad,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-adilabad,city-nature-challenge-2026-adilabad,279762
+Warangal Urban,Warangal Urban,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-warangal-urban,city-nature-challenge-2026-warangal-urban,279832
+Nizamabad,Nizamabad,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-nizamabad,city-nature-challenge-2026-nizamabad,279807
+Mancherial,Mancherial,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-mancherial,city-nature-challenge-2026-mancherial,279791
+Suryapet,Suryapet,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-suryapet,city-nature-challenge-2026-suryapet,279823
+Bhadradri Kothagudem,Bhadradri Kothagudem,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-bhadradri-kothagudem,city-nature-challenge-2026-bhadradri-kothagudem,279769
+Jagtial,Jagtial,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-jagtial,city-nature-challenge-2026-jagtial,279781
+Siddipet,Siddipet,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-siddipet,city-nature-challenge-2026-siddipet,279822
+Janagaon,Janagaon,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-janagaon,city-nature-challenge-2026-janagaon,279772
+Warangal Rural,Warangal Rural,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-warangal-rural,city-nature-challenge-2026-warangal-rural,279830
+Karimnagar,Karimnagar,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-karimnagar,city-nature-challenge-2026-karimnagar,279785
+Nalgonda,Nalgonda,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-nalgonda,city-nature-challenge-2026-nalgonda,279803
+Khammam,Khammam,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-khammam,city-nature-challenge-2026-khammam,279786
+Jayashankar Bhupalpally,Jayashankar Bhupalpally,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-jayashankar-bhupalpally,city-nature-challenge-2026-jayashankar-bhupalpally,279773
+Jogulamba Gadwal,Jogulamba Gadwal,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-jogulamba-gadwal,city-nature-challenge-2026-jogulamba-gadwal,279774
+Nirmal,Nirmal,India,Telangana,https://www.inaturalist.org/projects/city-nature-challenge-2026-nirmal,city-nature-challenge-2026-nirmal,279805
+Tripura,Tripura,India,Tripura,https://www.inaturalist.org/projects/city-nature-challenge-2026-tripura,city-nature-challenge-2026-tripura,279761
+Lucknow,Lucknow,India,Uttar Pradesh,https://www.inaturalist.org/projects/city-nature-challenge-2026-lucknow,city-nature-challenge-2026-lucknow,279714
+Nainital,Nainital,India,Uttarakhand,https://www.inaturalist.org/projects/city-nature-challenge-2026-nainital,city-nature-challenge-2026-nainital,279759
+Bankura,Bankura,India,West Bengal,https://www.inaturalist.org/projects/city-nature-challenge-2026-bankura,city-nature-challenge-2026-bankura,279599
+Purulia,Purulia,India,West Bengal,https://www.inaturalist.org/projects/city-nature-challenge-2026-purulia-99d797b0-c4fc-4bf9-bff6-dd27dcbddc3c,city-nature-challenge-2026-purulia-99d797b0-c4fc-4bf9-bff6-dd27dcbddc3c,279952
+Patharpratima,Patharpratima,India,West Bengal,https://www.inaturalist.org/projects/city-nature-challenge-2026-patharpratima-1ff64e42-1446-4478-9af4-f23ecd0e026b,city-nature-challenge-2026-patharpratima-1ff64e42-1446-4478-9af4-f23ecd0e026b,279951
+Buenos Aires,CNC2026: Desafío Buenos Aires & CABA,Argentina,Buenos Aires,https://www.inaturalist.org/projects/cnc2026-desafio-buenos-aires-y-caba,cnc2026-desafio-buenos-aires-y-caba,279824
+Chaco,CNC2026: Desafío Chaco,Argentina,Chaco,https://www.inaturalist.org/projects/cnc2026-desafio-chaco,cnc2026-desafio-chaco,279845
+Córdoba,CNC2026: Desafío Córdoba,Argentina,Córdoba,https://www.inaturalist.org/projects/cnc2026-desafio-cordoba,cnc2026-desafio-cordoba,279835
+Corrientes,CNC2026: Desafío Corrientes,Argentina,Corrientes,https://www.inaturalist.org/projects/cnc2026-desafio-corrientes,cnc2026-desafio-corrientes,279844
+Entre Ríos,CNC2026: Desafío Entre Ríos,Argentina,Entre Ríos,https://www.inaturalist.org/projects/cnc2026-desafio-entre-rios,cnc2026-desafio-entre-rios,279838
+Jujuy,CNC2026: Desafío Jujuy,Argentina,Jujuy,https://www.inaturalist.org/projects/cnc2026-desafio-jujuy,cnc2026-desafio-jujuy,279848
+Santa Rosa,CNC2026: Desafío La Pampa,Argentina,La Pampa,https://www.inaturalist.org/projects/cnc2026-desafio-la-pampa,cnc2026-desafio-la-pampa,279833
+Mendoza,CNC2026: Desafío Mendoza,Argentina,Mendoza,https://www.inaturalist.org/projects/cnc2026-desafio-mendoza,cnc2026-desafio-mendoza,277502
+Bariloche,CNC2026: Desafío Río Negro,Argentina,Río Negro,https://www.inaturalist.org/projects/cnc2026-desafio-rio-negro,cnc2026-desafio-rio-negro,279839
+Salta,CNC2026: Desafío Salta,Argentina,Salta,https://www.inaturalist.org/projects/cnc2026-desafio-salta,cnc2026-desafio-salta,279841
+"Río Gallegos, Calafate, Caleta Olivia",CNC2026: Desafío Santa Cruz,Argentina,Santa Cruz,https://www.inaturalist.org/projects/cnc2026-desafio-santa-cruz,cnc2026-desafio-santa-cruz,279854
+Santiago del Estero,CNC2026: Desafío Santiago del Estero,Argentina,Santiago del Estero,https://www.inaturalist.org/projects/cnc2026-desafio-santiago-del-estero,cnc2026-desafio-santiago-del-estero,279851
+"Ushuaia, Toluin, Río Grande",CNC2026: Desafío Tierra del Fuego,Argentina,"Tierra del Fuego, Antártida e Islas del Atlántico Sur",https://www.inaturalist.org/projects/cnc2026-desafio-tierra-del-fuego-antartida-e-islas-del-atlantico-sur,cnc2026-desafio-tierra-del-fuego-antartida-e-islas-del-atlantico-sur,279840
+San Miguel de Tucumán,CNC2026: Desafío Tucumán,Argentina,Tucumán,https://www.inaturalist.org/projects/cnc2026-desafio-tucuman,cnc2026-desafio-tucuman,279850
+Chiclayo,Chiclayo,Peru,Chiclayo/Lambayeque,https://www.inaturalist.org/projects/reto-naturalista-urbano-2026-lambayeque-pe,reto-naturalista-urbano-2026-lambayeque-pe,279875
+Alipurduar,Alipurduar,India,West Bengal,https://www.inaturalist.org/projects/city-nature-challenge-2026-alipurduar,city-nature-challenge-2026-alipurduar,279600
+Ubatè,Ubatè,Colombia,Cundinamarca,https://www.inaturalist.org/projects/city-nature-challenge-2026-ubate,city-nature-challenge-2026-ubate,279628
+Sheffield,Sheffield,England,South Yorkshire,https://www.inaturalist.org/projects/city-nature-challenge-2026-sheffield,city-nature-challenge-2026-sheffield,263628
+Callahuanca,Lima,Peru,Lima,https://www.inaturalist.org/projects/reto-naturalista-urbano-2026-callahuanca-pe,reto-naturalista-urbano-2026-callahuanca-pe,272552
+Apaxco,Apaxco,Mexico,Apaxco,https://www.inaturalist.org/projects/reto-mundial-naturalista-2026-apaxco-estado-de-mexico,reto-mundial-naturalista-2026-apaxco-estado-de-mexico,266318
+Cuernavaca y Área Metropolitana,Cuernavaca y Área Metropolitana,Mexico,Morelos,https://www.inaturalist.org/projects/reto-mundial-naturalista-2026-cuernavaca-y-area-metropolitana,reto-mundial-naturalista-2026-cuernavaca-y-area-metropolitana,266306
+Huichapan y área metropolitana,Huichapan y área Metropolitana,Mexico,Hidalgo,https://www.inaturalist.org/projects/reto-mundial-naturalista-2026-huichapan-y-area-metropolitana,reto-mundial-naturalista-2026-huichapan-y-area-metropolitana,266321
+Huixquilucan,Huixquilucan,Mexico,Huixquilucan,https://www.inaturalist.org/projects/reto-mundial-naturalista-2026-huixquilucan-edo-de-mexico,reto-mundial-naturalista-2026-huixquilucan-edo-de-mexico,266312
+Lerma,Lerma,Mexico,Lerma,https://www.inaturalist.org/projects/reto-mundial-naturalista-2026-lerma-edo-de-mexico,reto-mundial-naturalista-2026-lerma-edo-de-mexico,266310
+Parque Estatal Sierra Hermosa,Parque Estatal Sierra Hermosa,Mexico,Estado de México,https://www.inaturalist.org/projects/reto-mundial-naturalista-2026-parque-estatal-sierra-hermosa,reto-mundial-naturalista-2026-parque-estatal-sierra-hermosa,266307
+Estado de México,Parque Nacional Los Remedios,Mexico,Estado de México,https://www.inaturalist.org/projects/reto-mundial-naturalista-2026-parque-nacional-los-remedios-edo-de-mexico,reto-mundial-naturalista-2026-parque-nacional-los-remedios-edo-de-mexico,266317
+San Fernando,"San Fernando, Chiapas",Mexico,Chiapas,https://www.inaturalist.org/projects/reto-mundial-naturalista-2026-san-fernando-chiapas,reto-mundial-naturalista-2026-san-fernando-chiapas,266308
+Darjeeling,Darjeeling,India,West Bengal,https://www.inaturalist.org/projects/city-nature-challenge-2026-darjeeling,city-nature-challenge-2026-darjeeling,279659
+Hamburg,Hamburg,Germany,Hamburg,https://www.inaturalist.org/projects/city-nature-challenge-2026-hamburg-germany,city-nature-challenge-2026-hamburg-germany,279760
+Umbertide,Umbertide,Italy,Perugia,https://www.inaturalist.org/projects/city-nature-challenge-2026-umbertide,city-nature-challenge-2026-umbertide,279421
+Quillabamba,City Nature Challenge 2026: Orange County,"Quillabamba, Cusco",Florida,https://www.inaturalist.org/projects/reto-naturalista-urbano-2026-la-convencion-peru,reto-naturalista-urbano-2026-la-convencion-peru,272558
+Villafruela,Villafuela,Spain,Burgos,https://www.inaturalist.org/projects/biomaraton-cnc-villafruela-2026,biomaraton-cnc-villafruela-2026,276680
+Martin County,Martin County,United States of America,Florida,https://www.inaturalist.org/projects/city-nature-challenge-2026-martin-county,City Nature Challenge 2026: Martin County,276950

@@ -1,0 +1,17 @@
+{
+  "timestamp": 1710000000000,
+  "results": [
+    {
+      "city": "San Francisco",
+      "state": "CA",
+      "population": 808988
+    },
+    {
+      "city": "New York",
+      "state": "NY",
+      "population": 8336817
+    }
+  ],
+  "source": "fixture"
+}
+
