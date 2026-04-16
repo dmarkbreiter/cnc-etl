@@ -8,6 +8,7 @@ Type=simple
 User=cnc
 Group=cnc
 WorkingDirectory=/srv/cnc-etl
+EnvironmentFile=-/etc/cnc-etl/prefect.env
 Environment="PREFECT_HOME=/var/lib/prefect"
 ExecStart=/srv/cnc-etl/.venv/bin/prefect server start --host 127.0.0.1 --port 4200 --analytics-off
 Restart=always

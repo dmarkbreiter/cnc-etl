@@ -12,7 +12,7 @@ import tqdm
 
 from prefect import flow, get_run_logger, task
 
-from settings import settings
+from settings import resolve_year, settings
 
 
 @task(retries=3, retry_delay_seconds=10)
@@ -69,9 +69,10 @@ def process_additional_stats(stats: list[dict]) -> dict:
 
 
 @flow(name="update_additional_stats")
-def update_additional_stats(*, year: int = settings.year, api_call_delay: float = 5.0) -> dict:
+def update_additional_stats(*, year: int | None = None, api_call_delay: float = 5.0) -> dict:
     logger = get_run_logger()
-    ids = get_project_ids(year=year)
+    resolved_year = resolve_year(year)
+    ids = get_project_ids(year=resolved_year)
     results = []
     now = datetime.now(timezone.utc)
 
@@ -93,4 +94,4 @@ def update_additional_stats(*, year: int = settings.year, api_call_delay: float 
 
 
 if __name__ == "__main__":
-    update_additional_stats(year=settings.year)
+    update_additional_stats(year=resolve_year(settings.year))

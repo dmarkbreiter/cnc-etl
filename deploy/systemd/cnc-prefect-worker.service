@@ -8,6 +8,7 @@ Type=simple
 User=cnc
 Group=cnc
 WorkingDirectory=/srv/cnc-etl
+EnvironmentFile=-/etc/cnc-etl/prefect.env
 Environment="PREFECT_HOME=/var/lib/prefect"
 Environment="PREFECT_API_URL=http://127.0.0.1:4200/api"
 ExecStart=/srv/cnc-etl/.venv/bin/prefect worker start -p cnc-etl -t process

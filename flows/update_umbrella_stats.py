@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 
 from prefect import flow, get_run_logger, task
 
-from settings import settings
+from settings import resolve_year, settings
 
 
 @task(retries=3, retry_delay_seconds=10)
@@ -79,17 +79,18 @@ def upload_umbrella_stats(stats: dict) -> None:
 
 @flow(name="update_umbrella_stats")
 def update_umbrella_stats(
-    project_id: str | None = None, *, year: int = settings.year
+    project_id: str | None = None, *, year: int | None = None
 ) -> dict:
     logger = get_run_logger()
-    resolved_project_id = project_id or f"city-nature-challenge-{year}"
+    resolved_year = resolve_year(year)
+    resolved_project_id = project_id or f"city-nature-challenge-{resolved_year}"
 
     results = fetch_umbrella_stats(resolved_project_id)
-    processed_results = process_umbrella_stats(results, year=year)
+    processed_results = process_umbrella_stats(results, year=resolved_year)
     logger.info("Fetched umbrella stats for project %s.", resolved_project_id)
     upload_umbrella_stats(processed_results)
     return processed_results
 
 
 if __name__ == "__main__":
-    update_umbrella_stats(year=settings.year)
+    update_umbrella_stats(year=resolve_year(settings.year))

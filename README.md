@@ -89,6 +89,23 @@ prefect deployment run update_additional_stats/additional --param year=2026 --pa
 prefect deployment run compose_city_results/compose
 ```
 
+## Prefect Variable for year
+
+The ETL flows can read the target year from a Prefect Variable named
+`cnc_year`. If the variable is unset or Prefect is unavailable, they fall back
+to `YEAR` from `.env` / `settings.py`.
+
+Set it from the server host with:
+
+```bash
+cd /srv/cnc-etl
+source .venv/bin/activate
+export PREFECT_API_URL=http://127.0.0.1:4200/api
+prefect variable set cnc_year 2026
+```
+
+You can also create or edit `cnc_year` in the Prefect UI under **Variables**.
+
 ## Running on a server
 
 The pattern is the same:
@@ -149,6 +166,44 @@ sudo cp /srv/cnc-etl/deploy/systemd/cnc-prefect-server.service /etc/systemd/syst
 sudo cp /srv/cnc-etl/deploy/systemd/cnc-prefect-worker.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable --now cnc-prefect-server
+```
+
+If the server logs show `sqlite3.OperationalError: database is locked`, switch
+Prefect Server to PostgreSQL. Prefect's self-hosted docs recommend Postgres for
+production use, and it avoids the SQLite locking issue.
+
+Install PostgreSQL and create the Prefect database:
+
+```bash
+sudo apt-get install -y postgresql postgresql-contrib
+sudo -u postgres psql -c "CREATE USER prefect WITH PASSWORD 'replace-this-password';"
+sudo -u postgres psql -c "CREATE DATABASE prefect OWNER prefect;"
+sudo -u postgres psql -d prefect -c "CREATE EXTENSION IF NOT EXISTS pg_trgm;"
+```
+
+Create a root-managed env file for the systemd services:
+
+```bash
+sudo install -d -m 0755 /etc/cnc-etl
+sudo install -m 0600 /dev/null /etc/cnc-etl/prefect.env
+sudo editor /etc/cnc-etl/prefect.env
+```
+
+Put this in `/etc/cnc-etl/prefect.env`:
+
+```bash
+PREFECT_API_DATABASE_CONNECTION_URL=postgresql+asyncpg://prefect:replace-this-password@127.0.0.1:5432/prefect
+PREFECT_API_URL=http://127.0.0.1:4200/api
+```
+
+Then reload and restart the services:
+
+```bash
+sudo cp /srv/cnc-etl/deploy/systemd/cnc-prefect-server.service /etc/systemd/system/
+sudo cp /srv/cnc-etl/deploy/systemd/cnc-prefect-worker.service /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl restart cnc-prefect-server
+sudo systemctl restart cnc-prefect-worker
 ```
 
 One-time, create the work pool and deploy the flows (run as `cnc`):
