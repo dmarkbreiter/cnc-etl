@@ -1,0 +1,18 @@
+[Unit]
+Description=Prefect Worker (cnc-etl)
+After=network-online.target cnc-prefect-server.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=cnc
+Group=cnc
+WorkingDirectory=/srv/cnc-etl
+Environment="PREFECT_HOME=/var/lib/prefect"
+Environment="PREFECT_API_URL=http://127.0.0.1:4200/api"
+ExecStart=/srv/cnc-etl/.venv/bin/prefect worker start -p cnc-etl -t process
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,17 @@
+[Unit]
+Description=Prefect Server (cnc-etl)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=cnc
+Group=cnc
+WorkingDirectory=/srv/cnc-etl
+Environment="PREFECT_HOME=/var/lib/prefect"
+ExecStart=/srv/cnc-etl/.venv/bin/prefect server start --host 127.0.0.1 --port 4200 --analytics-off
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

@@ -3,16 +3,17 @@ import pandas as pd
 from clients.spaces import SpacesObject
 from datetime import datetime, timezone
 
+from prefect import flow, get_run_logger, task
+
 from settings import settings
 
 
-# future task
+@task(retries=3, retry_delay_seconds=10)
 def fetch_umbrella_stats(project_id: str) -> list[dict]:
-
     return get_umbrella_project_stats(project_id)
 
 
-# future task
+@task
 def count_totals(stats: list[dict]) -> dict:
     totals = {"observation_count": 0, "species_count": 0, "observer_count": 0}
 
@@ -24,11 +25,10 @@ def count_totals(stats: list[dict]) -> dict:
     return totals
 
 
-# future task
-def process_umbrella_stats(stats: list[dict]) -> list[dict]:
-    # Placeholder for any processing logic; currently just returns the input.
+@task
+def process_umbrella_stats(stats: list[dict], year: int) -> dict:
     projects = pd.read_csv(
-        f"data/{settings.year}/inaturalist-projects_{settings.year}.csv",
+        f"data/{year}/inaturalist-projects_{year}.csv",
         keep_default_na=False,
     )
 
@@ -63,27 +63,33 @@ def process_umbrella_stats(stats: list[dict]) -> list[dict]:
     }
 
 
-# future task
-def upload_umbrella_stats(stats: list[dict]) -> None:
-    # Placeholder for upload logic; currently just prints the stats.
+@task(retries=3, retry_delay_seconds=10)
+def upload_umbrella_stats(stats: dict) -> None:
+    logger = get_run_logger()
     spaces = SpacesObject(key="umbrella-stats")
     response = spaces.upload(stats)
 
     response_success = response.get("ResponseMetadata", {}).get("HTTPStatusCode") == 200
     if response_success:
-        print("Upload successful!")
-    else:
-        print("Upload failed!")
+        logger.info("Upload successful.")
+        return
+
+    raise RuntimeError(f"Upload failed (response={response!r})")
 
 
-# future flow
-def update_umbrella_stats(project_id: str) -> list[dict]:
-    results = fetch_umbrella_stats(project_id)
-    processed_results = process_umbrella_stats(results)
-    print(f"Fetched umbrella stats for project {project_id}: {processed_results}")
+@flow(name="update_umbrella_stats")
+def update_umbrella_stats(
+    project_id: str | None = None, *, year: int = settings.year
+) -> dict:
+    logger = get_run_logger()
+    resolved_project_id = project_id or f"city-nature-challenge-{year}"
+
+    results = fetch_umbrella_stats(resolved_project_id)
+    processed_results = process_umbrella_stats(results, year=year)
+    logger.info("Fetched umbrella stats for project %s.", resolved_project_id)
     upload_umbrella_stats(processed_results)
     return processed_results
 
 
 if __name__ == "__main__":
-    update_umbrella_stats(f"city-nature-challenge-{settings.year}")
+    update_umbrella_stats(year=settings.year)

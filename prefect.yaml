@@ -8,44 +8,46 @@
 name: cnc-etl
 prefect-version: 3.6.23
 
-# build section allows you to manage and build docker images
-build:
-- prefect_docker.deployments.steps.build_docker_image:
-    id: build_image
-    requires: prefect-docker>=0.3.1
-    image_name: ''
-    tag: ''
-    dockerfile: auto
-
-# push section allows you to manage if and how this project
-# is uploaded to remote locations
-push:
-- prefect_docker.deployments.steps.push_docker_image:
-    requires: prefect-docker>=0.3.1
-    image_name: '{{ build_image.image_name }}'
-    tag: '{{ build_image.tag }}'
-
-# pull section allows you to provide instructions for cloning
-# this project in remote locations
-pull:
-- prefect.deployments.steps.git_clone:
-    repository: '{{ repository }}'
-    branch: '{{ branch }}'
-    access_token: null
+# This project is configured for a local `process` work pool.
+# We keep build/push/pull empty and run workers from the repo directory.
+build: []
+push: []
+pull: []
 
 # the deployments section allows you to provide configuration
 # for deploying flows
 deployments:
-- name: null
-  version: null
-  tags: []
-  description: null
-  schedule: {}
-  flow_name: null
-  entrypoint: null
+- name: umbrella
+  description: Fetch and upload umbrella project stats.
+  tags: ["cnc", "stats"]
+  entrypoint: flows/update_umbrella_stats.py:update_umbrella_stats
   parameters: {}
   work_pool:
-    name: null
+    name: cnc-etl
     work_queue_name: null
     job_variables:
-      image: '{{ build_image.image }}'
+      # Relative to the worker process working directory.
+      # Run the worker from the repo root (or set WorkingDirectory in systemd).
+      working_dir: "."
+
+- name: additional
+  description: Fetch and upload additional stats for each project.
+  tags: ["cnc", "stats"]
+  entrypoint: flows/update_additional_stats.py:update_additional_stats
+  parameters: {}
+  work_pool:
+    name: cnc-etl
+    work_queue_name: null
+    job_variables:
+      working_dir: "."
+
+- name: compose
+  description: Merge umbrella + additional stats and upload combined city results.
+  tags: ["cnc", "stats"]
+  entrypoint: flows/compose.py:compose_city_results
+  parameters: {}
+  work_pool:
+    name: cnc-etl
+    work_queue_name: null
+    job_variables:
+      working_dir: "."

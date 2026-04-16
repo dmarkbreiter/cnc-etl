@@ -1,26 +1,32 @@
 from clients.spaces import SpacesObject
 import pandas as pd
 
+from prefect import flow, get_run_logger, task
 
-# future task
+@task(retries=3, retry_delay_seconds=5)
 def fetch_additional_stats():
+    logger = get_run_logger()
     spaces = SpacesObject(key="additional-stats")
     content = spaces.get_content()
 
+    logger.info("Fetched additional stats payload (has_results=%s).", bool(content))
     return content.get("results", [])
 
 
-# future task
+@task(retries=3, retry_delay_seconds=5)
 def fetch_umbrella_stats():
+    logger = get_run_logger()
     spaces = SpacesObject(key="umbrella-stats")
     content = spaces.get_content()
 
+    logger.info("Fetched umbrella stats payload (has_results=%s).", bool(content))
     return content
 
 
-# future task
-def merge_stats(additional_stats: list[dict], umbrella_stats: list[dict]) -> list[dict]:
+@task
+def merge_stats(additional_stats: list[dict], umbrella_stats: dict) -> dict:
     # Create a mapping of project_id to umbrella stats for quick lookup
+    logger = get_run_logger()
     additional_mapping = {stat.get("id"): stat for stat in additional_stats}
 
     merged_results = []
@@ -49,20 +55,28 @@ def merge_stats(additional_stats: list[dict], umbrella_stats: list[dict]) -> lis
     }
 
 
-# future task
-def upload_merged_stats(merged_stats: list[dict]) -> None:
+@task(retries=3, retry_delay_seconds=10)
+def upload_merged_stats(merged_stats: dict) -> None:
+    logger = get_run_logger()
     spaces = SpacesObject(key="city-results")
     response = spaces.upload(merged_stats)
 
     response_success = response.get("ResponseMetadata", {}).get("HTTPStatusCode") == 200
     if response_success:
-        print("Upload successful!")
-    else:
-        print("Upload failed.")
+        logger.info("Upload successful.")
+        return
+
+    raise RuntimeError(f"Upload failed (response={response!r})")
 
 
-if __name__ == "__main__":
+@flow(name="compose_city_results")
+def compose_city_results() -> dict:
     additional_stats = fetch_additional_stats()
     umbrella_stats = fetch_umbrella_stats()
     merged = merge_stats(additional_stats, umbrella_stats)
     upload_merged_stats(merged)
+    return merged
+
+
+if __name__ == "__main__":
+    compose_city_results()

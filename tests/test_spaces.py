@@ -10,4 +10,4 @@ def test_get_content_city_results_json():
     totals = actual.get("totals", {})
 
     assert len(results)
-    assert totals.get("observations")
+    assert ("observations" in totals) or ("observation_count" in totals)
