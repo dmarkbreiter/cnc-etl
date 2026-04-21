@@ -52,13 +52,12 @@ def _normalize_most_observed_species(species: dict | None) -> dict:
     }
 
 
-def _transform_strapi_result(result: dict, project_lookup: dict[int, dict]) -> dict:
+def _transform_strapi_result(result: dict) -> dict:
     project_id = result.get("project_id")
-    project = project_lookup.get(project_id, {})
 
     return {
         "id": project_id,
-        "city": project.get("city"),
+        "city": result.get("city"),
         "most_observed_species": _normalize_most_observed_species(
             result.get("most_observed_species")
         ),
@@ -73,17 +72,8 @@ def _transform_strapi_result(result: dict, project_lookup: dict[int, dict]) -> d
 
 @task
 def process_strapi_results(results: list[dict], year: int) -> dict:
-    projects = pd.read_csv(
-        f"data/{year}/inaturalist-projects_{year}.csv",
-        keep_default_na=False,
-    )
-    projects = projects.drop_duplicates(subset="id", keep="first")
-    project_lookup = projects.set_index("id")[["city", "project"]].to_dict(orient="index")
-
     now = datetime.now(timezone.utc)
-    normalized_results = [
-        _transform_strapi_result(result, project_lookup) for result in results
-    ]
+    normalized_results = [_transform_strapi_result(result) for result in results]
 
     return {
         "timestamp": int(now.timestamp()),
