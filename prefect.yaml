@@ -55,7 +55,7 @@ deployments:
 - name: strapi
   description: Fetch and upload Strapi results for the configured CNC year.
   tags: ["cnc", "stats"]
-  entrypoint: flows/update_strapi_results.py:update_strapi_results
+  entrypoint: flows/update_strapi_stats.py:update_strapi_results
   parameters: {}
   work_pool:
     name: cnc-etl
