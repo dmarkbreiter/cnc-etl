@@ -51,3 +51,14 @@ deployments:
     work_queue_name: null
     job_variables:
       working_dir: "."
+
+- name: strapi
+  description: Fetch and upload Strapi results for the configured CNC year.
+  tags: ["cnc", "stats"]
+  entrypoint: flows/update_strapi_results.py:update_strapi_results
+  parameters: {}
+  work_pool:
+    name: cnc-etl
+    work_queue_name: null
+    job_variables:
+      working_dir: "."

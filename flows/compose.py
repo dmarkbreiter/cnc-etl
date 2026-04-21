@@ -3,6 +3,7 @@ import pandas as pd
 
 from prefect import flow, get_run_logger, task
 
+
 @task(retries=3, retry_delay_seconds=5)
 def fetch_additional_stats():
     logger = get_run_logger()
@@ -23,10 +24,21 @@ def fetch_umbrella_stats():
     return content
 
 
-@task
-def merge_stats(additional_stats: list[dict], umbrella_stats: dict) -> dict:
-    # Create a mapping of project_id to umbrella stats for quick lookup
+@task(retries=3, retry_delay_seconds=5)
+def fetch_strapi_stats():
     logger = get_run_logger()
+    spaces = SpacesObject(key="strapi-results")
+    content = spaces.get_content()
+
+    logger.info("Fetched Strapi stats payload (has_results=%s).", bool(content))
+    return content.get("results", [])
+
+
+@task
+def merge_stats(
+    additional_stats: list[dict], umbrella_stats: dict, strapi_stats: list[dict]
+) -> dict:
+    # Create a mapping of project_id to umbrella stats for quick lookup
     additional_mapping = {stat.get("id"): stat for stat in additional_stats}
 
     merged_results = []
@@ -46,6 +58,8 @@ def merge_stats(additional_stats: list[dict], umbrella_stats: dict) -> dict:
                 "observers_count": umbrella.get("observers_count", 0),
             }
         )
+
+    merged_results.extend(strapi_stats)
 
     return {
         "timestamp": int(pd.Timestamp.now(tz="UTC").timestamp()),
@@ -73,7 +87,8 @@ def upload_merged_stats(merged_stats: dict) -> None:
 def compose_city_results() -> dict:
     additional_stats = fetch_additional_stats()
     umbrella_stats = fetch_umbrella_stats()
-    merged = merge_stats(additional_stats, umbrella_stats)
+    strapi_stats = fetch_strapi_stats()
+    merged = merge_stats(additional_stats, umbrella_stats, strapi_stats)
     upload_merged_stats(merged)
     return merged
 

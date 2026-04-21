@@ -1,6 +1,6 @@
 from datetime import time
 import random
-from typing import TypedDict, Optional
+from typing import Any, TypedDict, Optional
 
 import requests
 
@@ -23,6 +23,29 @@ class UmbrellaProjectStats(TypedDict):
     species_count: int
     observers_count: int
     project: dict
+
+
+def _normalize_strapi_value(value):
+    """
+    Recursively unwrap Strapi `data` / `attributes` containers into plain values.
+    """
+
+    if isinstance(value, list):
+        return [_normalize_strapi_value(item) for item in value]
+
+    if isinstance(value, dict):
+        if "data" in value and len(value) == 1:
+            return _normalize_strapi_value(value["data"])
+
+        if "attributes" in value and isinstance(value["attributes"], dict):
+            normalized = _normalize_strapi_value(value["attributes"])
+            if isinstance(normalized, dict) and "id" in value:
+                normalized["id"] = value.get("id")
+            return normalized
+
+        return {key: _normalize_strapi_value(item) for key, item in value.items()}
+
+    return value
 
 
 def get_project_most_observed_species(project_id: int) -> MostObservedSpecies:
@@ -139,3 +162,28 @@ def get_umbrella_project_stats(project_id: str) -> list[UmbrellaProjectStats]:
         raise ValueError(f"No results found for project_id {project_id}")
 
     return results
+
+
+def get_strapi_results(year: int) -> list[dict[str, Any]]:
+    """
+    Fetch raw project results for a City Nature Challenge year from Strapi.
+    """
+
+    response = requests.get(
+        "https://cnc.nhmlac.org/api/event-dates",
+        params={
+            "populate[0]": "results",
+            "populate[results][populate][most_observed_species][populate]": "*",
+            "filters[year][$eq]": year,
+        },
+    )
+
+    response.raise_for_status()
+    data = response.json()
+
+    event_dates = _normalize_strapi_value(data.get("data", []))
+    raw_results = []
+    if event_dates:
+        raw_results = event_dates[0].get("results", [])
+
+    return [_normalize_strapi_value(result) for result in raw_results]
