@@ -57,7 +57,7 @@ def _transform_strapi_result(result: dict) -> dict:
 
     return {
         "id": project_id,
-        "city": result.get("city"),
+        "city": result.get("display"),
         "most_observed_species": _normalize_most_observed_species(
             result.get("most_observed_species")
         ),
