@@ -34,9 +34,30 @@ def fetch_strapi_stats():
     return content.get("results", [])
 
 
+@task(retries=3, retry_delay_seconds=5)
+def fetch_non_inat_stats():
+    logger = get_run_logger()
+    spaces = SpacesObject(key="non-inat-stats")
+    content = spaces.get_content()
+
+    logger.info("Fetched non-iNat stats payload (has_results=%s).", bool(content))
+    return content.get("results", [])
+
+
+def _count_totals(results: list[dict]) -> dict:
+    return {
+        "observation_count": sum(result.get("observation_count", 0) for result in results),
+        "species_count": sum(result.get("species_count", 0) for result in results),
+        "observer_count": sum(result.get("observers_count", 0) for result in results),
+    }
+
+
 @task
 def merge_stats(
-    additional_stats: list[dict], umbrella_stats: dict, strapi_stats: list[dict]
+    additional_stats: list[dict],
+    umbrella_stats: dict,
+    strapi_stats: list[dict],
+    non_inat_stats: list[dict],
 ) -> dict:
     # Create a mapping of project_id to umbrella stats for quick lookup
     additional_mapping = {stat.get("id"): stat for stat in additional_stats}
@@ -60,11 +81,12 @@ def merge_stats(
         )
 
     merged_results.extend(strapi_stats)
+    merged_results.extend(non_inat_stats)
 
     return {
         "timestamp": int(pd.Timestamp.now(tz="UTC").timestamp()),
         "datetime": pd.Timestamp.now(tz="UTC").isoformat(),
-        "totals": umbrella_stats.get("totals", {}),
+        "totals": _count_totals(merged_results),
         "results": merged_results,
     }
 
@@ -88,7 +110,10 @@ def compose_city_results() -> dict:
     additional_stats = fetch_additional_stats()
     umbrella_stats = fetch_umbrella_stats()
     strapi_stats = fetch_strapi_stats()
-    merged = merge_stats(additional_stats, umbrella_stats, strapi_stats)
+    non_inat_stats = fetch_non_inat_stats()
+    merged = merge_stats(
+        additional_stats, umbrella_stats, strapi_stats, non_inat_stats
+    )
     upload_merged_stats(merged)
     return merged
 

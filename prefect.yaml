@@ -62,3 +62,14 @@ deployments:
     work_queue_name: null
     job_variables:
       working_dir: "."
+
+- name: non-inat
+  description: Fetch and upload non-iNaturalist project stats for the configured CNC year.
+  tags: ["cnc", "stats"]
+  entrypoint: flows/update_non_inat_stats.py:update_non_inat_stats
+  parameters: {}
+  work_pool:
+    name: cnc-etl
+    work_queue_name: null
+    job_variables:
+      working_dir: "."

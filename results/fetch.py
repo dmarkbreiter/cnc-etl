@@ -1,5 +1,9 @@
 from datetime import time
+import hashlib
+import json
 import random
+import re
+import time as time_module
 from typing import Any, TypedDict, Optional
 
 import requests
@@ -23,6 +27,32 @@ class UmbrellaProjectStats(TypedDict):
     species_count: int
     observers_count: int
     project: dict
+
+
+class NonInaturalistProjectStats(TypedDict, total=False):
+    project: dict[str, Any]
+    observation_count: int
+    species_count: int
+    observers_count: int
+    identifiers_count: int
+    research_grade_observations_count: int
+    most_observed_species: list[dict[str, Any]]
+    least_observed_species: list[dict[str, Any]]
+
+
+REQUEST_HEADERS = {
+    "User-Agent": "Mozilla/5.0",
+    "Accept": "application/json,text/html,*/*",
+}
+OBSERVATION_ORG_BOT_CHALLENGE_MARKERS = (
+    "Checking if you are not a bot",
+    "/.within.website/x/xess/xess.min.css",
+    "anubis",
+)
+ANUBIS_CHALLENGE_RE = re.compile(
+    r'<script id="anubis_challenge" type="application/json">(?P<payload>.*?)</script>',
+    re.S,
+)
 
 
 def _normalize_strapi_value(value):
@@ -187,3 +217,134 @@ def get_strapi_results(year: int) -> list[dict[str, Any]]:
         raw_results = event_dates[0].get("results", [])
 
     return [_normalize_strapi_value(result) for result in raw_results]
+
+
+def _parse_json_response(
+    response: requests.Response, *, endpoint: str | None = None
+) -> dict[str, Any]:
+    response.raise_for_status()
+    response_text = response.text or ""
+
+    if endpoint and "observation.org" in endpoint and all(
+        marker in response_text for marker in OBSERVATION_ORG_BOT_CHALLENGE_MARKERS
+    ):
+        raise ValueError(
+            f"Observation.org returned its bot-check HTML instead of JSON for {endpoint}"
+        )
+
+    try:
+        payload = response.json()
+    except ValueError as exc:
+        snippet = response_text[:160].strip().replace("\n", " ")
+        if endpoint:
+            raise ValueError(
+                f"Expected JSON response from {endpoint} but received: {snippet}"
+            ) from exc
+        raise ValueError(f"Expected JSON response but received: {snippet}") from exc
+
+    if not isinstance(payload, dict):
+        if endpoint:
+            raise ValueError(
+                f"Expected JSON object response from {endpoint}, received {type(payload)!r}"
+            )
+        raise ValueError(f"Expected JSON object response, received {type(payload)!r}")
+
+    return payload
+
+
+def _is_observation_org_bot_check(response_text: str, endpoint: str) -> bool:
+    return "observation.org" in endpoint and all(
+        marker in response_text for marker in OBSERVATION_ORG_BOT_CHALLENGE_MARKERS
+    )
+
+
+def _extract_anubis_challenge_payload(response_text: str) -> dict[str, Any]:
+    match = ANUBIS_CHALLENGE_RE.search(response_text)
+    if not match:
+        raise ValueError("Observation.org bot-check page did not include a challenge payload")
+
+    payload = json.loads(match.group("payload"))
+    if not isinstance(payload, dict):
+        raise ValueError("Observation.org challenge payload was not a JSON object")
+
+    return payload
+
+
+def _has_leading_zeroes(digest: bytes, difficulty: int) -> bool:
+    full_bytes = difficulty // 2
+    has_half_nibble = difficulty % 2 == 1
+
+    if any(byte != 0 for byte in digest[:full_bytes]):
+        return False
+
+    if has_half_nibble and digest[full_bytes] >> 4 != 0:
+        return False
+
+    return True
+
+
+def _solve_anubis_challenge(random_data: str, difficulty: int) -> tuple[int, str, int]:
+    nonce = 0
+    started_at = time_module.perf_counter()
+
+    while True:
+        digest = hashlib.sha256(f"{random_data}{nonce}".encode("utf-8")).digest()
+        if _has_leading_zeroes(digest, difficulty):
+            elapsed_ms = max(1, int((time_module.perf_counter() - started_at) * 1000))
+            return nonce, digest.hex(), elapsed_ms
+        nonce += 1
+
+
+def _pass_observation_org_bot_check(
+    client: requests.Session, endpoint: str, response_text: str
+) -> dict[str, Any]:
+    challenge_payload = _extract_anubis_challenge_payload(response_text)
+    challenge = challenge_payload.get("challenge") or {}
+    rules = challenge_payload.get("rules") or {}
+
+    challenge_id = challenge.get("id")
+    random_data = challenge.get("randomData")
+    difficulty = int(rules.get("difficulty") or 0)
+
+    if not challenge_id or not random_data or difficulty < 1:
+        raise ValueError(
+            f"Observation.org returned an incomplete bot-check challenge for {endpoint}"
+        )
+
+    nonce, challenge_response, elapsed_ms = _solve_anubis_challenge(
+        random_data, difficulty
+    )
+
+    pass_challenge_url = requests.compat.urljoin(
+        endpoint, "/.within.website/x/cmd/anubis/api/pass-challenge"
+    )
+    verification_response = client.get(
+        pass_challenge_url,
+        params={
+            "id": challenge_id,
+            "response": challenge_response,
+            "nonce": nonce,
+            "redir": endpoint,
+            "elapsedTime": elapsed_ms,
+        },
+        headers=REQUEST_HEADERS,
+        timeout=30,
+        allow_redirects=False,
+    )
+    verification_response.raise_for_status()
+
+    verified_response = client.get(endpoint, headers=REQUEST_HEADERS, timeout=30)
+    return _parse_json_response(verified_response, endpoint=endpoint)
+
+
+def get_non_inaturalist_project_stats(
+    endpoint: str, *, session: requests.Session | None = None
+) -> NonInaturalistProjectStats:
+    client = session or requests.Session()
+    response = client.get(endpoint, headers=REQUEST_HEADERS, timeout=30)
+    response_text = response.text or ""
+
+    if _is_observation_org_bot_check(response_text, endpoint):
+        return _pass_observation_org_bot_check(client, endpoint, response_text)
+
+    return _parse_json_response(response, endpoint=endpoint)
