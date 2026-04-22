@@ -30,10 +30,32 @@ deployments:
       # Run the worker from the repo root (or set WorkingDirectory in systemd).
       working_dir: "."
 
-- name: additional
-  description: Fetch and upload additional stats for each project.
+- name: identifiers-count
+  description: Fetch and upload identifiers counts for each project.
   tags: ["cnc", "stats"]
-  entrypoint: flows/update_additional_stats.py:update_additional_stats
+  entrypoint: flows/update_identifiers_count.py:update_identifiers_count
+  parameters: {}
+  work_pool:
+    name: cnc-etl
+    work_queue_name: null
+    job_variables:
+      working_dir: "."
+
+- name: quality-grades
+  description: Fetch and upload quality grade counts for each project.
+  tags: ["cnc", "stats"]
+  entrypoint: flows/update_quality_grades.py:update_quality_grades
+  parameters: {}
+  work_pool:
+    name: cnc-etl
+    work_queue_name: null
+    job_variables:
+      working_dir: "."
+
+- name: most-observed-species
+  description: Fetch and upload most observed species for each project.
+  tags: ["cnc", "stats"]
+  entrypoint: flows/update_most_observed_species.py:update_most_observed_species
   parameters: {}
   work_pool:
     name: cnc-etl

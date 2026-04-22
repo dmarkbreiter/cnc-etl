@@ -71,7 +71,9 @@ prefect worker start -p cnc-etl -t process
 In the UI: **Deployments** → pick one of:
 
 - `update_umbrella_stats / umbrella`
-- `update_additional_stats / additional`
+- `update_identifiers_count / identifiers-count`
+- `update_quality_grades / quality-grades`
+- `update_most_observed_species / most-observed-species`
 - `compose_city_results / compose`
 
 Click **Run** and set parameters if you want (e.g. `year`, `project_id`, `api_call_delay`).
@@ -85,7 +87,9 @@ cd /path/to/cnc-etl
 source .venv/bin/activate
 
 prefect deployment run update_umbrella_stats/umbrella --param year=2026
-prefect deployment run update_additional_stats/additional --param year=2026 --param api_call_delay=5.0
+prefect deployment run update_identifiers_count/identifiers-count --param year=2026 --param api_call_delay=5.0
+prefect deployment run update_quality_grades/quality-grades --param year=2026 --param api_call_delay=5.0
+prefect deployment run update_most_observed_species/most-observed-species --param year=2026 --param api_call_delay=5.0
 prefect deployment run compose_city_results/compose
 ```
 

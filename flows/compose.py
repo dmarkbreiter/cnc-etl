@@ -2,15 +2,20 @@ from clients.spaces import SpacesObject
 import pandas as pd
 
 from prefect import flow, get_run_logger, task
+from flows.additional_stats_common import ADDITIONAL_STATS_OBJECT_KEYS, merge_additional_stat_results
 
 
 @task(retries=3, retry_delay_seconds=5)
-def fetch_additional_stats():
+def fetch_additional_stats(key: str):
     logger = get_run_logger()
-    spaces = SpacesObject(key="additional-stats")
+    spaces = SpacesObject(key=key)
     content = spaces.get_content()
 
-    logger.info("Fetched additional stats payload (has_results=%s).", bool(content))
+    logger.info(
+        "Fetched additional stats payload key=%s (has_results=%s).",
+        key,
+        bool(content),
+    )
     return content.get("results", [])
 
 
@@ -91,6 +96,19 @@ def merge_stats(
     }
 
 
+@task
+def merge_additional_stats(
+    identifiers_count_stats: list[dict],
+    quality_grades_stats: list[dict],
+    most_observed_species_stats: list[dict],
+) -> list[dict]:
+    return merge_additional_stat_results(
+        identifiers_count_stats,
+        quality_grades_stats,
+        most_observed_species_stats,
+    )
+
+
 @task(retries=3, retry_delay_seconds=10)
 def upload_merged_stats(merged_stats: dict) -> None:
     logger = get_run_logger()
@@ -107,7 +125,20 @@ def upload_merged_stats(merged_stats: dict) -> None:
 
 @flow(name="compose_city_results")
 def compose_city_results() -> dict:
-    additional_stats = fetch_additional_stats()
+    identifiers_count_stats = fetch_additional_stats(
+        ADDITIONAL_STATS_OBJECT_KEYS["identifiers_count"]
+    )
+    quality_grades_stats = fetch_additional_stats(
+        ADDITIONAL_STATS_OBJECT_KEYS["quality_grades"]
+    )
+    most_observed_species_stats = fetch_additional_stats(
+        ADDITIONAL_STATS_OBJECT_KEYS["most_observed_species"]
+    )
+    additional_stats = merge_additional_stats(
+        identifiers_count_stats,
+        quality_grades_stats,
+        most_observed_species_stats,
+    )
     umbrella_stats = fetch_umbrella_stats()
     strapi_stats = fetch_strapi_stats()
     non_inat_stats = fetch_non_inat_stats()

@@ -1,4 +1,40 @@
-from flows.compose import merge_stats
+from flows.compose import merge_additional_stats, merge_stats
+
+
+def test_merge_additional_stats_combines_partial_results_by_project_id():
+    identifiers_count_stats = [
+        {"id": 1, "identifiers_count": 10},
+        {"id": 2, "identifiers_count": 5},
+    ]
+    quality_grades_stats = [
+        {"id": 1, "quality_grades": {"research": 1, "needs_id": 2, "casual": 3}},
+        {"id": 2, "quality_grades": {"research": 4, "needs_id": 0, "casual": 1}},
+    ]
+    most_observed_species_stats = [
+        {"id": 1, "most_observed_species": {"scientific_name": "A"}},
+        {"id": 2, "most_observed_species": {"scientific_name": "B"}},
+    ]
+
+    actual = merge_additional_stats.fn(
+        identifiers_count_stats,
+        quality_grades_stats,
+        most_observed_species_stats,
+    )
+
+    assert actual == [
+        {
+            "id": 1,
+            "identifiers_count": 10,
+            "quality_grades": {"research": 1, "needs_id": 2, "casual": 3},
+            "most_observed_species": {"scientific_name": "A"},
+        },
+        {
+            "id": 2,
+            "identifiers_count": 5,
+            "quality_grades": {"research": 4, "needs_id": 0, "casual": 1},
+            "most_observed_species": {"scientific_name": "B"},
+        },
+    ]
 
 
 def test_merge_stats_appends_strapi_and_non_inat_results():

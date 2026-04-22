@@ -2,13 +2,6 @@ from flows.update_strapi_stats import _transform_strapi_result
 
 
 def test_transform_strapi_result_maps_nested_species_media():
-    project_lookup = {
-        8: {
-            "city": "Copenhagen",
-            "project": "Copenhagen",
-        }
-    }
-
     raw_result = {
         "id": 5,
         "title": "Copenhagen",
@@ -42,7 +35,7 @@ def test_transform_strapi_result_maps_nested_species_media():
         },
     }
 
-    actual = _transform_strapi_result(raw_result, project_lookup)
+    actual = _transform_strapi_result(raw_result)
 
     assert actual == {
         "id": 8,
