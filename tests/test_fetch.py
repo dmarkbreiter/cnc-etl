@@ -1,16 +1,21 @@
 import requests
 
 from results.fetch import (
+    get_non_inaturalist_project_stats,
     get_project_identifiers_count,
     get_project_most_observed_species,
     get_project_quality_grades,
     get_strapi_results,
+    get_umbrella_project_stats,
 )
 
 
 class _StubResponse:
     def __init__(self, payload: dict):
         self._payload = payload
+        self.status_code = 200
+        self.headers: dict[str, str] = {}
+        self.text = ""
 
     def raise_for_status(self) -> None:
         return None
@@ -44,9 +49,16 @@ class _HttpResponseStub:
 def test_get_strapi_results_normalizes_strapi_payload(monkeypatch):
     calls = {}
 
-    def fake_get(url: str, params: dict | None = None):
+    def fake_get(
+        url: str,
+        params: dict | None = None,
+        headers: dict | None = None,
+        timeout: float | None = None,
+    ):
         calls["url"] = url
         calls["params"] = params
+        calls["headers"] = headers
+        calls["timeout"] = timeout
         return _StubResponse(
             {
                 "data": [
@@ -87,6 +99,8 @@ def test_get_strapi_results_normalizes_strapi_payload(monkeypatch):
             "populate[results][populate][most_observed_species][populate]": "*",
             "filters[year][$eq]": 2026,
         },
+        "headers": {"User-Agent": "Mozilla/5.0", "Accept": "application/json,text/html,*/*"},
+        "timeout": 30,
     }
     assert actual == [
         {
@@ -109,7 +123,12 @@ def test_get_strapi_results_normalizes_strapi_payload(monkeypatch):
 
 
 def test_get_strapi_results_unwraps_nested_strapi_objects(monkeypatch):
-    def fake_get(url: str, params: dict | None = None):
+    def fake_get(
+        url: str,
+        params: dict | None = None,
+        headers: dict | None = None,
+        timeout: float | None = None,
+    ):
         return _StubResponse(
             {
                 "data": [
@@ -299,3 +318,114 @@ def test_get_project_identifiers_count_retries_on_rate_limit(monkeypatch):
     monkeypatch.setattr("results.fetch.time_module.sleep", lambda _: None)
 
     assert get_project_identifiers_count(265959) == 44
+
+
+def test_get_umbrella_project_stats_retries_on_rate_limit(monkeypatch):
+    calls: list[dict] = []
+    sleeps: list[float] = []
+    responses = iter(
+        [
+            _HttpResponseStub(
+                status_code=429,
+                payload={},
+                headers={"Retry-After": "0"},
+                text="normal_throttling",
+            ),
+            _HttpResponseStub(
+                status_code=200,
+                payload={
+                    "results": [
+                        {
+                            "observation_count": 12,
+                            "species_count": 8,
+                            "observers_count": 4,
+                            "project": {"id": 123},
+                        }
+                    ]
+                },
+            ),
+        ]
+    )
+
+    def fake_get(
+        url: str,
+        params: dict | None = None,
+        headers: dict | None = None,
+        timeout: float | None = None,
+    ):
+        calls.append(
+            {
+                "url": url,
+                "params": params,
+                "headers": headers,
+                "timeout": timeout,
+            }
+        )
+        return next(responses)
+
+    monkeypatch.setattr("results.fetch.requests.get", fake_get)
+    monkeypatch.setattr("results.fetch.time_module.sleep", sleeps.append)
+
+    actual = get_umbrella_project_stats("city-nature-challenge-2026")
+
+    assert len(calls) == 2
+    assert sleeps == [0.0]
+    assert actual == [
+        {
+            "observation_count": 12,
+            "species_count": 8,
+            "observers_count": 4,
+            "project": {"id": 123},
+        }
+    ]
+
+
+def test_get_non_inaturalist_project_stats_retries_on_rate_limit(monkeypatch):
+    sleeps: list[float] = []
+
+    class _SessionStub:
+        def __init__(self) -> None:
+            self._responses = iter(
+                [
+                    _HttpResponseStub(
+                        status_code=429,
+                        payload={},
+                        headers={"Retry-After": "0"},
+                        text="normal_throttling",
+                    ),
+                    _HttpResponseStub(
+                        status_code=200,
+                        payload={"observation_count": 7, "species_count": 3},
+                    ),
+                ]
+            )
+            self.calls: list[dict] = []
+
+        def get(
+            self,
+            url: str,
+            params: dict | None = None,
+            headers: dict | None = None,
+            timeout: float | None = None,
+        ):
+            self.calls.append(
+                {
+                    "url": url,
+                    "params": params,
+                    "headers": headers,
+                    "timeout": timeout,
+                }
+            )
+            return next(self._responses)
+
+    session = _SessionStub()
+
+    monkeypatch.setattr("results.fetch.time_module.sleep", sleeps.append)
+    actual = get_non_inaturalist_project_stats(
+        "https://example.com/non-inat.json",
+        session=session,
+    )
+
+    assert len(session.calls) == 2
+    assert sleeps == [0.0]
+    assert actual == {"observation_count": 7, "species_count": 3}

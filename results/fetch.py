@@ -222,14 +222,15 @@ def get_umbrella_project_stats(project_id: str) -> list[UmbrellaProjectStats]:
     Get aggregated stats for a given iNaturalist project.
     """
 
-    response = requests.get(
+    response = _get_with_rate_limit_retry(
         "https://api.inaturalist.org/v2/observations/umbrella_project_stats",
         params={
             "project_id": project_id,
         },
+        headers=REQUEST_HEADERS,
+        timeout=30,
     )
 
-    response.raise_for_status()
     data = response.json()
     results = data.get("results", [])
 
@@ -244,16 +245,17 @@ def get_strapi_results(year: int) -> list[dict[str, Any]]:
     Fetch raw project results for a City Nature Challenge year from Strapi.
     """
 
-    response = requests.get(
+    response = _get_with_rate_limit_retry(
         "https://cnc.nhmlac.org/api/event-dates",
         params={
             "populate[0]": "results",
             "populate[results][populate][most_observed_species][populate]": "*",
             "filters[year][$eq]": year,
         },
+        headers=REQUEST_HEADERS,
+        timeout=30,
     )
 
-    response.raise_for_status()
     data = response.json()
 
     event_dates = _normalize_strapi_value(data.get("data", []))
@@ -386,7 +388,12 @@ def get_non_inaturalist_project_stats(
     endpoint: str, *, session: requests.Session | None = None
 ) -> NonInaturalistProjectStats:
     client = session or requests.Session()
-    response = client.get(endpoint, headers=REQUEST_HEADERS, timeout=30)
+    response = _get_with_rate_limit_retry(
+        endpoint,
+        headers=REQUEST_HEADERS,
+        timeout=30,
+        session=client,
+    )
     response_text = response.text or ""
 
     if _is_observation_org_bot_check(response_text, endpoint):
