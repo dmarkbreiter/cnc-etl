@@ -8,7 +8,7 @@ from settings import resolve_year, settings
 def update_identifiers_count(
     *,
     year: int | None = None,
-    api_call_delay: float = 2.0,
+    api_call_delay: float = 3.0,
 ) -> dict:
     return run_additional_stat_update(
         stat_name="identifiers_count",
