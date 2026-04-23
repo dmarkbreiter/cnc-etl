@@ -55,6 +55,42 @@ ANUBIS_CHALLENGE_RE = re.compile(
 )
 
 
+def _get_with_rate_limit_retry(
+    url: str,
+    *,
+    params: dict[str, Any] | None = None,
+    headers: dict[str, str] | None = None,
+    timeout: float | None = None,
+    session: requests.Session | None = None,
+    max_retries: int = 5,
+    backoff_factor: float = 1.0,
+) -> requests.Response:
+    request = session.get if session is not None else requests.get
+
+    for attempt in range(max_retries + 1):
+        response = request(url, params=params, headers=headers, timeout=timeout)
+
+        if response.status_code != 429:
+            response.raise_for_status()
+            return response
+
+        if attempt == max_retries:
+            response.raise_for_status()
+
+        retry_after = response.headers.get("Retry-After")
+        try:
+            sleep_for = float(retry_after) if retry_after is not None else None
+        except (TypeError, ValueError):
+            sleep_for = None
+
+        if sleep_for is None:
+            sleep_for = backoff_factor * (2**attempt) + random.uniform(0, 0.5)
+
+        time_module.sleep(sleep_for)
+
+    raise RuntimeError(f"Exceeded retry budget for {url}")
+
+
 def _normalize_strapi_value(value):
     """
     Recursively unwrap Strapi `data` / `attributes` containers into plain values.
@@ -83,16 +119,17 @@ def get_project_most_observed_species(project_id: int) -> MostObservedSpecies:
     Get the most observed species for a given iNaturalist project.
      - project_id: iNaturalist project ID to query
     """
-    response = requests.get(
+    response = _get_with_rate_limit_retry(
         "https://api.inaturalist.org/v2/observations/species_counts",
         params={
             "per_page": 1,
             "fields": "all",
             "project_id": project_id,
         },
+        headers=REQUEST_HEADERS,
+        timeout=30,
     )
 
-    response.raise_for_status()
     if response.status_code > 299:
         raise ValueError(
             f"Error fetching most observed species for project_id {project_id}: {response.status_code} {response.text}"
@@ -137,8 +174,12 @@ def get_project_identifiers_count(
     params = {"fields": "all", "project_id": project_id, "per_page": 1}
 
     # Request aggregated response from paginate (returns response-like dict)
-    response = requests.get(url, params=params)
-    response.raise_for_status()
+    response = _get_with_rate_limit_retry(
+        url,
+        params=params,
+        headers=REQUEST_HEADERS,
+        timeout=30,
+    )
 
     data = response.json()
 
@@ -154,8 +195,12 @@ def get_project_quality_grades(project_id: int) -> QualityGradeCounts:
     url = "https://api.inaturalist.org/v2/observations/quality_grades"
     params = {"fields": "all", "project_id": project_id, "per_page": 1}
 
-    response = requests.get(url, params=params)
-    response.raise_for_status()
+    response = _get_with_rate_limit_retry(
+        url,
+        params=params,
+        headers=REQUEST_HEADERS,
+        timeout=30,
+    )
 
     data = response.json()
 

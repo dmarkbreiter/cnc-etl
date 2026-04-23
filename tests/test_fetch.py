@@ -1,4 +1,11 @@
-from results.fetch import get_strapi_results
+import requests
+
+from results.fetch import (
+    get_project_identifiers_count,
+    get_project_most_observed_species,
+    get_project_quality_grades,
+    get_strapi_results,
+)
 
 
 class _StubResponse:
@@ -7,6 +14,28 @@ class _StubResponse:
 
     def raise_for_status(self) -> None:
         return None
+
+    def json(self) -> dict:
+        return self._payload
+
+
+class _HttpResponseStub:
+    def __init__(
+        self,
+        *,
+        status_code: int,
+        payload: dict,
+        headers: dict[str, str] | None = None,
+        text: str = "",
+    ):
+        self.status_code = status_code
+        self._payload = payload
+        self.headers = headers or {}
+        self.text = text
+
+    def raise_for_status(self) -> None:
+        if self.status_code > 399:
+            raise requests.HTTPError(f"{self.status_code} error", response=self)
 
     def json(self) -> dict:
         return self._payload
@@ -145,3 +174,128 @@ def test_get_strapi_results_unwraps_nested_strapi_objects(monkeypatch):
             },
         }
     ]
+
+
+def test_get_project_quality_grades_retries_on_rate_limit(monkeypatch):
+    calls: list[dict] = []
+    sleeps: list[float] = []
+    responses = iter(
+        [
+            _HttpResponseStub(
+                status_code=429,
+                payload={},
+                headers={"Retry-After": "0"},
+                text="normal_throttling",
+            ),
+            _HttpResponseStub(
+                status_code=200,
+                payload={
+                    "results": [
+                        {"quality_grade": "research", "count": 12},
+                        {"quality_grade": "casual", "count": 3},
+                    ]
+                },
+            ),
+        ]
+    )
+
+    def fake_get(
+        url: str,
+        params: dict | None = None,
+        headers: dict | None = None,
+        timeout: float | None = None,
+    ):
+        calls.append(
+            {
+                "url": url,
+                "params": params,
+                "headers": headers,
+                "timeout": timeout,
+            }
+        )
+        return next(responses)
+
+    monkeypatch.setattr("results.fetch.requests.get", fake_get)
+    monkeypatch.setattr("results.fetch.time_module.sleep", sleeps.append)
+
+    actual = get_project_quality_grades(265959)
+
+    assert len(calls) == 2
+    assert sleeps == [0.0]
+    assert actual == {"research": 12, "needs_id": 0, "casual": 3}
+
+
+def test_get_project_most_observed_species_retries_on_rate_limit(monkeypatch):
+    responses = iter(
+        [
+            _HttpResponseStub(
+                status_code=429,
+                payload={},
+                headers={"Retry-After": "0"},
+                text="normal_throttling",
+            ),
+            _HttpResponseStub(
+                status_code=200,
+                payload={
+                    "results": [
+                        {
+                            "count": 9,
+                            "taxon": {
+                                "name": "Danaus plexippus",
+                                "preferred_common_name": "monarch",
+                                "default_photo": {
+                                    "medium_url": "https://example.com/photo.jpg",
+                                    "attribution": "Example",
+                                    "original_dimensions": {"width": 100, "height": 80},
+                                },
+                            },
+                        }
+                    ]
+                },
+            ),
+        ]
+    )
+
+    monkeypatch.setattr(
+        "results.fetch.requests.get",
+        lambda url, params=None, headers=None, timeout=None: next(responses),
+    )
+    monkeypatch.setattr("results.fetch.time_module.sleep", lambda _: None)
+
+    actual = get_project_most_observed_species(265959)
+
+    assert actual == {
+        "media": {
+            "url": "https://example.com/photo.jpg",
+            "attribution": "Example",
+            "original_dimensions": {"width": 100, "height": 80},
+        },
+        "scientific_name": "Danaus plexippus",
+        "common_name": "Monarch",
+        "count": 9,
+    }
+
+
+def test_get_project_identifiers_count_retries_on_rate_limit(monkeypatch):
+    responses = iter(
+        [
+            _HttpResponseStub(
+                status_code=429,
+                payload={},
+                headers={"Retry-After": "0"},
+                text="normal_throttling",
+            ),
+            _HttpResponseStub(
+                status_code=200,
+                payload={"total_results": 44},
+            ),
+        ]
+    )
+
+    monkeypatch.setattr(
+        "results.fetch.requests.get",
+        lambda url, params=None, headers=None, timeout=None: next(responses),
+    )
+    monkeypatch.setattr("results.fetch.time_module.sleep", lambda _: None)
+
+    assert get_project_identifiers_count(265959) == 44
