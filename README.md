@@ -110,6 +110,18 @@ prefect variable set cnc_year 2026
 
 You can also create or edit `cnc_year` in the Prefect UI under **Variables**.
 
+## Prefect Variables for API call delay
+
+These flows can also read `api_call_delay` from separate Prefect Variables when
+you do not pass the parameter explicitly:
+
+- `update_identifiers_count`: `cnc_identifiers_count_api_call_delay`
+- `update_quality_grades`: `cnc_quality_grades_api_call_delay`
+- `update_most_observed_species`: `cnc_most_observed_species_api_call_delay`
+
+If a variable is unset, invalid, or Prefect is unavailable, the flow falls back
+to `3.0` seconds.
+
 ## Running on a server
 
 The pattern is the same:
