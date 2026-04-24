@@ -7,6 +7,12 @@ import time as time_module
 from typing import Any, TypedDict, Optional
 
 import requests
+from settings import (
+    resolve_rate_limit_backoff_factor,
+    resolve_rate_limit_max_retries,
+    resolve_rate_limit_max_retry_delay_seconds,
+    resolve_rate_limit_min_retry_delay_seconds,
+)
 
 
 class MostObservedSpecies(TypedDict):
@@ -62,19 +68,31 @@ def _get_with_rate_limit_retry(
     headers: dict[str, str] | None = None,
     timeout: float | None = None,
     session: requests.Session | None = None,
-    max_retries: int = 5,
-    backoff_factor: float = 1.0,
+    max_retries: int | None = None,
+    backoff_factor: float | None = None,
+    min_retry_delay_seconds: float | None = None,
+    max_retry_delay_seconds: float | None = None,
 ) -> requests.Response:
     request = session.get if session is not None else requests.get
+    resolved_max_retries = resolve_rate_limit_max_retries(max_retries)
+    resolved_backoff_factor = resolve_rate_limit_backoff_factor(backoff_factor)
+    resolved_min_retry_delay_seconds = resolve_rate_limit_min_retry_delay_seconds(
+        min_retry_delay_seconds
+    )
+    resolved_max_retry_delay_seconds = resolve_rate_limit_max_retry_delay_seconds(
+        max_retry_delay_seconds
+    )
+    if resolved_max_retry_delay_seconds < resolved_min_retry_delay_seconds:
+        resolved_max_retry_delay_seconds = resolved_min_retry_delay_seconds
 
-    for attempt in range(max_retries + 1):
+    for attempt in range(resolved_max_retries + 1):
         response = request(url, params=params, headers=headers, timeout=timeout)
 
         if response.status_code != 429:
             response.raise_for_status()
             return response
 
-        if attempt == max_retries:
+        if attempt == resolved_max_retries:
             response.raise_for_status()
 
         retry_after = response.headers.get("Retry-After")
@@ -83,8 +101,14 @@ def _get_with_rate_limit_retry(
         except (TypeError, ValueError):
             sleep_for = None
 
-        if sleep_for is None:
-            sleep_for = backoff_factor * (2**attempt) + random.uniform(0, 0.5)
+        exponential_backoff = resolved_backoff_factor * (2**attempt) + random.uniform(
+            0, 0.5
+        )
+        if sleep_for is None or sleep_for <= 0:
+            sleep_for = exponential_backoff
+
+        sleep_for = max(resolved_min_retry_delay_seconds, sleep_for)
+        sleep_for = min(resolved_max_retry_delay_seconds, sleep_for)
 
         time_module.sleep(sleep_for)
 

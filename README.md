@@ -122,6 +122,25 @@ you do not pass the parameter explicitly:
 If a variable is unset, invalid, or Prefect is unavailable, the flow falls back
 to `3.0` seconds.
 
+## Prefect Variables for rate-limit retries
+
+The shared iNaturalist/HTTP retry helpers can also read these Prefect Variables:
+
+- `cnc_rate_limit_max_retries`
+- `cnc_rate_limit_backoff_factor`
+- `cnc_rate_limit_min_retry_delay_seconds`
+- `cnc_rate_limit_max_retry_delay_seconds`
+
+Defaults:
+
+- `max_retries = 5`
+- `backoff_factor = 1.0`
+- `min_retry_delay_seconds = 5.0`
+- `max_retry_delay_seconds = 60.0`
+
+If a variable is unset, invalid, or Prefect is unavailable, the code falls back
+to those defaults.
+
 ## Running on a server
 
 The pattern is the same:

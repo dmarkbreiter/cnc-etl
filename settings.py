@@ -30,6 +30,14 @@ PREFECT_QUALITY_GRADES_API_CALL_DELAY_VARIABLE = (
 PREFECT_MOST_OBSERVED_SPECIES_API_CALL_DELAY_VARIABLE = (
     "cnc_most_observed_species_api_call_delay"
 )
+PREFECT_RATE_LIMIT_MAX_RETRIES_VARIABLE = "cnc_rate_limit_max_retries"
+PREFECT_RATE_LIMIT_BACKOFF_FACTOR_VARIABLE = "cnc_rate_limit_backoff_factor"
+PREFECT_RATE_LIMIT_MIN_RETRY_DELAY_SECONDS_VARIABLE = (
+    "cnc_rate_limit_min_retry_delay_seconds"
+)
+PREFECT_RATE_LIMIT_MAX_RETRY_DELAY_SECONDS_VARIABLE = (
+    "cnc_rate_limit_max_retry_delay_seconds"
+)
 
 
 def _get_prefect_variable(name: str, default: Any) -> Any:
@@ -45,6 +53,16 @@ def _resolve_float(value: object, fallback: float) -> float:
 
     try:
         return float(value)
+    except (TypeError, ValueError):
+        return fallback
+
+
+def _resolve_int(value: object, fallback: int) -> int:
+    if value is None:
+        return fallback
+
+    try:
+        return int(value)
     except (TypeError, ValueError):
         return fallback
 
@@ -102,3 +120,56 @@ def resolve_most_observed_species_api_call_delay(
         fallback,
     )
     return _resolve_float(variable_value, fallback)
+
+
+def resolve_rate_limit_max_retries(max_retries: int | None = None, fallback: int = 5) -> int:
+    if max_retries is not None:
+        return max_retries
+
+    variable_value = _get_prefect_variable(
+        PREFECT_RATE_LIMIT_MAX_RETRIES_VARIABLE,
+        fallback,
+    )
+    return max(0, _resolve_int(variable_value, fallback))
+
+
+def resolve_rate_limit_backoff_factor(
+    backoff_factor: float | None = None,
+    fallback: float = 1.0,
+) -> float:
+    if backoff_factor is not None:
+        return backoff_factor
+
+    variable_value = _get_prefect_variable(
+        PREFECT_RATE_LIMIT_BACKOFF_FACTOR_VARIABLE,
+        fallback,
+    )
+    return max(0.0, _resolve_float(variable_value, fallback))
+
+
+def resolve_rate_limit_min_retry_delay_seconds(
+    min_retry_delay_seconds: float | None = None,
+    fallback: float = 5.0,
+) -> float:
+    if min_retry_delay_seconds is not None:
+        return min_retry_delay_seconds
+
+    variable_value = _get_prefect_variable(
+        PREFECT_RATE_LIMIT_MIN_RETRY_DELAY_SECONDS_VARIABLE,
+        fallback,
+    )
+    return max(0.0, _resolve_float(variable_value, fallback))
+
+
+def resolve_rate_limit_max_retry_delay_seconds(
+    max_retry_delay_seconds: float | None = None,
+    fallback: float = 60.0,
+) -> float:
+    if max_retry_delay_seconds is not None:
+        return max_retry_delay_seconds
+
+    variable_value = _get_prefect_variable(
+        PREFECT_RATE_LIMIT_MAX_RETRY_DELAY_SECONDS_VARIABLE,
+        fallback,
+    )
+    return max(0.0, _resolve_float(variable_value, fallback))

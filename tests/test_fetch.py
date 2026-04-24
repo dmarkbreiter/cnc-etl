@@ -240,7 +240,7 @@ def test_get_project_quality_grades_retries_on_rate_limit(monkeypatch):
     actual = get_project_quality_grades(265959)
 
     assert len(calls) == 2
-    assert sleeps == [0.0]
+    assert sleeps == [5.0]
     assert actual == {"research": 12, "needs_id": 0, "casual": 3}
 
 
@@ -369,7 +369,7 @@ def test_get_umbrella_project_stats_retries_on_rate_limit(monkeypatch):
     actual = get_umbrella_project_stats("city-nature-challenge-2026")
 
     assert len(calls) == 2
-    assert sleeps == [0.0]
+    assert sleeps == [5.0]
     assert actual == [
         {
             "observation_count": 12,
@@ -427,5 +427,86 @@ def test_get_non_inaturalist_project_stats_retries_on_rate_limit(monkeypatch):
     )
 
     assert len(session.calls) == 2
-    assert sleeps == [0.0]
+    assert sleeps == [5.0]
     assert actual == {"observation_count": 7, "species_count": 3}
+
+
+def test_get_with_rate_limit_retry_uses_exponential_backoff_for_zero_retry_after(
+    monkeypatch,
+):
+    sleeps: list[float] = []
+    responses = iter(
+        [
+            _HttpResponseStub(
+                status_code=429,
+                payload={},
+                headers={"Retry-After": "0"},
+                text="normal_throttling",
+            ),
+            _HttpResponseStub(
+                status_code=429,
+                payload={},
+                headers={"Retry-After": "0"},
+                text="normal_throttling",
+            ),
+            _HttpResponseStub(
+                status_code=200,
+                payload={"results": []},
+            ),
+        ]
+    )
+
+    monkeypatch.setattr(
+        "results.fetch.requests.get",
+        lambda url, params=None, headers=None, timeout=None: next(responses),
+    )
+    monkeypatch.setattr("results.fetch.random.uniform", lambda _a, _b: 0.0)
+    monkeypatch.setattr("results.fetch.time_module.sleep", sleeps.append)
+
+    response = get_project_quality_grades(265959)
+
+    assert sleeps == [5.0, 5.0]
+    assert response == {"research": 0, "needs_id": 0, "casual": 0}
+
+
+def test_get_with_rate_limit_retry_uses_prefect_backoff_config(monkeypatch):
+    sleeps: list[float] = []
+    responses = iter(
+        [
+            _HttpResponseStub(
+                status_code=429,
+                payload={},
+                headers={"Retry-After": "0"},
+                text="normal_throttling",
+            ),
+            _HttpResponseStub(
+                status_code=200,
+                payload={"results": []},
+            ),
+        ]
+    )
+
+    monkeypatch.setattr(
+        "results.fetch.requests.get",
+        lambda url, params=None, headers=None, timeout=None: next(responses),
+    )
+    monkeypatch.setattr("results.fetch.resolve_rate_limit_max_retries", lambda value=None: 9)
+    monkeypatch.setattr(
+        "results.fetch.resolve_rate_limit_backoff_factor",
+        lambda value=None: 2.5,
+    )
+    monkeypatch.setattr(
+        "results.fetch.resolve_rate_limit_min_retry_delay_seconds",
+        lambda value=None: 7.0,
+    )
+    monkeypatch.setattr(
+        "results.fetch.resolve_rate_limit_max_retry_delay_seconds",
+        lambda value=None: 15.0,
+    )
+    monkeypatch.setattr("results.fetch.random.uniform", lambda _a, _b: 0.0)
+    monkeypatch.setattr("results.fetch.time_module.sleep", sleeps.append)
+
+    response = get_project_quality_grades(265959)
+
+    assert sleeps == [7.0]
+    assert response == {"research": 0, "needs_id": 0, "casual": 0}

@@ -2,6 +2,12 @@ from typing import Mapping, Any, Optional
 import random
 import time
 import requests
+from settings import (
+    resolve_rate_limit_backoff_factor,
+    resolve_rate_limit_max_retries,
+    resolve_rate_limit_max_retry_delay_seconds,
+    resolve_rate_limit_min_retry_delay_seconds,
+)
 
 
 def paginate(
@@ -9,8 +15,10 @@ def paginate(
     params: Optional[dict] = None,
     session: Optional[requests.Session] = None,
     per_page: int = 400,
-    max_retries: int = 5,
-    backoff_factor: float = 1.0,
+    max_retries: int | None = None,
+    backoff_factor: float | None = None,
+    min_retry_delay_seconds: float | None = None,
+    max_retry_delay_seconds: float | None = None,
 ) -> Mapping[str, Any]:
     """
     Iterate over paginated API responses.
@@ -39,6 +47,16 @@ def paginate(
 
     # Use a session for connection pooling and shared configuration.
     sess = session or requests.Session()
+    resolved_max_retries = resolve_rate_limit_max_retries(max_retries)
+    resolved_backoff_factor = resolve_rate_limit_backoff_factor(backoff_factor)
+    resolved_min_retry_delay_seconds = resolve_rate_limit_min_retry_delay_seconds(
+        min_retry_delay_seconds
+    )
+    resolved_max_retry_delay_seconds = resolve_rate_limit_max_retry_delay_seconds(
+        max_retry_delay_seconds
+    )
+    if resolved_max_retry_delay_seconds < resolved_min_retry_delay_seconds:
+        resolved_max_retry_delay_seconds = resolved_min_retry_delay_seconds
     page = 1
 
     all_items: list[Any] = []
@@ -58,7 +76,7 @@ def paginate(
 
             # If rate limited, honor Retry-After header when present.
             if resp.status_code == 429:
-                if attempt > max_retries:
+                if attempt > resolved_max_retries:
                     # Give up and surface the HTTPError to the caller.
                     resp.raise_for_status()
 
@@ -71,11 +89,12 @@ def paginate(
                 except (TypeError, ValueError):
                     sleep_for = None
 
-                if sleep_for is None:
+                if sleep_for is None or sleep_for <= 0:
                     # Exponential backoff with jitter: base * 2^(attempt-1) + jitter
-                    sleep_for = backoff_factor * (2 ** (attempt - 1)) + random.uniform(
-                        0, 0.5
-                    )
+                    sleep_for = resolved_backoff_factor * (2 ** (attempt - 1)) + random.uniform(0, 0.5)
+
+                sleep_for = max(resolved_min_retry_delay_seconds, sleep_for)
+                sleep_for = min(resolved_max_retry_delay_seconds, sleep_for)
 
                 time.sleep(sleep_for)
                 # Retry the request after sleeping.
