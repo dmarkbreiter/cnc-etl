@@ -5,6 +5,7 @@ import time
 from typing import Any, Literal
 
 import pandas as pd
+import requests
 import tqdm
 from prefect import get_run_logger, task
 
@@ -39,6 +40,21 @@ def _fetch_stat_value(project_id: int, stat_name: AdditionalStatName) -> Any:
     raise ValueError(f"Unsupported additional stat: {stat_name}")
 
 
+def _default_stat_value(stat_name: AdditionalStatName) -> Any:
+    if stat_name == "identifiers_count":
+        return 0
+    if stat_name == "quality_grades":
+        return {"research": 0, "needs_id": 0, "casual": 0}
+    if stat_name == "most_observed_species":
+        return {
+            "media": {"url": "", "attribution": "", "original_dimensions": {}},
+            "scientific_name": "",
+            "common_name": "",
+            "count": 0,
+        }
+    raise ValueError(f"Unsupported additional stat: {stat_name}")
+
+
 @task
 def get_project_ids(year: int) -> list[int]:
     projects = pd.read_csv(f"data/{year}/inaturalist-projects_{year}.csv")
@@ -52,7 +68,19 @@ def fetch_additional_stat(
     api_call_delay: float = 5.0,
 ) -> dict:
     logger = get_run_logger()
-    value = _fetch_stat_value(project_id, stat_name)
+    try:
+        value = _fetch_stat_value(project_id, stat_name)
+    except requests.HTTPError as exc:
+        status_code = exc.response.status_code if exc.response is not None else None
+        if status_code != 422:
+            raise
+
+        logger.warning(
+            "Project %s returned 422 for %s; using default value because the project may have been deleted.",
+            project_id,
+            stat_name,
+        )
+        value = _default_stat_value(stat_name)
 
     # Sleep briefly between project requests to avoid hitting rate limits.
     time.sleep(api_call_delay)
