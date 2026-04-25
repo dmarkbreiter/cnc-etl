@@ -88,10 +88,22 @@ def merge_stats(
     merged_results.extend(strapi_stats)
     merged_results.extend(non_inat_stats)
 
+    umbrella_totals = umbrella_stats.get("totals") or _count_totals(
+        umbrella_stats.get("results", [])
+    )
+    extra_totals = _count_totals([*strapi_stats, *non_inat_stats])
+
     return {
         "timestamp": int(pd.Timestamp.now(tz="UTC").timestamp()),
         "datetime": pd.Timestamp.now(tz="UTC").isoformat(),
-        "totals": _count_totals(merged_results),
+        "totals": {
+            "observation_count": umbrella_totals.get("observation_count", 0)
+            + extra_totals["observation_count"],
+            "species_count": umbrella_totals.get("species_count", 0)
+            + extra_totals["species_count"],
+            "observer_count": umbrella_totals.get("observer_count", 0)
+            + extra_totals["observer_count"],
+        },
         "results": merged_results,
     }
 

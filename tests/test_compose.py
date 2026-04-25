@@ -47,6 +47,11 @@ def test_merge_stats_appends_strapi_and_non_inat_results():
         }
     ]
     umbrella_stats = {
+        "totals": {
+            "observation_count": 20,
+            "species_count": 99,
+            "observer_count": 30,
+        },
         "results": [
             {
                 "id": 1,
@@ -87,9 +92,9 @@ def test_merge_stats_appends_strapi_and_non_inat_results():
     )
 
     assert actual["totals"] == {
-        "observation_count": 15,
-        "species_count": 14,
-        "observer_count": 14,
+        "observation_count": 24,
+        "species_count": 101,
+        "observer_count": 31,
     }
     assert actual["results"] == [
         {
