@@ -2,6 +2,7 @@ from results.fetch import get_umbrella_project_stats
 import pandas as pd
 from clients.spaces import SpacesObject
 from datetime import datetime, timezone
+import requests
 
 from prefect import flow, get_run_logger, task
 
@@ -41,6 +42,14 @@ def process_umbrella_stats(stats: list[dict], year: int) -> dict:
 
     totals = count_totals(stats)
 
+    species_total = (
+        requests.get(
+            "https://api.inaturalist.org/v2/observations/species_counts?project_id=city-nature-challenge-2026&per_page=0"
+        )
+        .json()
+        .get("total_results", 0)
+    )
+
     results = []
     for stat in stats:
         project_id = stat.get("project").get("id")
@@ -51,7 +60,7 @@ def process_umbrella_stats(stats: list[dict], year: int) -> dict:
                     "city": projects.get(project_id).get("city"),
                     "name": projects.get(project_id).get("project"),
                     "observation_count": stat.get("observation_count", 0),
-                    "species_count": stat.get("species_count", 0),
+                    "species_count": species_total,
                     "observers_count": stat.get("observers_count", 0),
                 }
             )
