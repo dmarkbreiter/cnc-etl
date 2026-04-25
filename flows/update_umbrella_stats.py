@@ -16,11 +16,22 @@ def fetch_umbrella_stats(project_id: str) -> list[dict]:
 
 @task
 def count_totals(stats: list[dict]) -> dict:
-    totals = {"observation_count": 0, "species_count": 0, "observer_count": 0}
+
+    species_total = (
+        requests.get(
+            "https://api.inaturalist.org/v2/observations/species_counts?project_id=city-nature-challenge-2026&per_page=0"
+        )
+        .json()
+        .get("total_results", 0)
+    )
+    totals = {
+        "observation_count": 0,
+        "species_count": species_total,
+        "observer_count": 0,
+    }
 
     for stat in stats:
         totals["observation_count"] += stat.get("observation_count", 0)
-        totals["species_count"] += stat.get("species_count", 0)
         totals["observer_count"] += stat.get("observers_count", 0)
 
     return totals
@@ -42,14 +53,6 @@ def process_umbrella_stats(stats: list[dict], year: int) -> dict:
 
     totals = count_totals(stats)
 
-    species_total = (
-        requests.get(
-            "https://api.inaturalist.org/v2/observations/species_counts?project_id=city-nature-challenge-2026&per_page=0"
-        )
-        .json()
-        .get("total_results", 0)
-    )
-
     results = []
     for stat in stats:
         project_id = stat.get("project").get("id")
@@ -60,7 +63,7 @@ def process_umbrella_stats(stats: list[dict], year: int) -> dict:
                     "city": projects.get(project_id).get("city"),
                     "name": projects.get(project_id).get("project"),
                     "observation_count": stat.get("observation_count", 0),
-                    "species_count": species_total,
+                    "species_count": stat.get("species_count", 0),
                     "observers_count": stat.get("observers_count", 0),
                 }
             )
