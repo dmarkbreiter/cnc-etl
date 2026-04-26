@@ -7,6 +7,7 @@ from results.fetch import (
     get_project_quality_grades,
     get_strapi_results,
     get_umbrella_project_stats,
+    get_umbrella_species_total,
 )
 
 
@@ -29,20 +30,24 @@ class _HttpResponseStub:
         self,
         *,
         status_code: int,
-        payload: dict,
+        payload: dict | None,
         headers: dict[str, str] | None = None,
         text: str = "",
+        json_error: Exception | None = None,
     ):
         self.status_code = status_code
         self._payload = payload
         self.headers = headers or {}
         self.text = text
+        self._json_error = json_error
 
     def raise_for_status(self) -> None:
         if self.status_code > 399:
             raise requests.HTTPError(f"{self.status_code} error", response=self)
 
     def json(self) -> dict:
+        if self._json_error is not None:
+            raise self._json_error
         return self._payload
 
 
@@ -378,6 +383,72 @@ def test_get_umbrella_project_stats_retries_on_rate_limit(monkeypatch):
             "project": {"id": 123},
         }
     ]
+
+
+def test_get_umbrella_species_total_retries_on_rate_limit(monkeypatch):
+    calls: list[dict] = []
+    sleeps: list[float] = []
+    responses = iter(
+        [
+            _HttpResponseStub(
+                status_code=429,
+                payload={},
+                headers={"Retry-After": "0"},
+                text="normal_throttling",
+            ),
+            _HttpResponseStub(
+                status_code=200,
+                payload={"total_results": 321},
+            ),
+        ]
+    )
+
+    def fake_get(
+        url: str,
+        params: dict | None = None,
+        headers: dict | None = None,
+        timeout: float | None = None,
+    ):
+        calls.append(
+            {
+                "url": url,
+                "params": params,
+                "headers": headers,
+                "timeout": timeout,
+            }
+        )
+        return next(responses)
+
+    monkeypatch.setattr("results.fetch.requests.get", fake_get)
+    monkeypatch.setattr("results.fetch.time_module.sleep", sleeps.append)
+
+    actual = get_umbrella_species_total("city-nature-challenge-2026")
+
+    assert len(calls) == 2
+    assert sleeps == [5.0]
+    assert actual == 321
+
+
+def test_get_umbrella_species_total_raises_clear_error_for_non_json(monkeypatch):
+    monkeypatch.setattr(
+        "results.fetch.requests.get",
+        lambda url, params=None, headers=None, timeout=None: _HttpResponseStub(
+            status_code=200,
+            payload=None,
+            text="<html>rate limited</html>",
+            json_error=ValueError("Expecting value"),
+        ),
+    )
+
+    try:
+        get_umbrella_species_total("city-nature-challenge-2026")
+    except ValueError as exc:
+        assert (
+            str(exc)
+            == "Expected JSON response from https://api.inaturalist.org/v2/observations/species_counts but received: <html>rate limited</html>"
+        )
+    else:
+        raise AssertionError("Expected ValueError for non-JSON species count response")
 
 
 def test_get_non_inaturalist_project_stats_retries_on_rate_limit(monkeypatch):

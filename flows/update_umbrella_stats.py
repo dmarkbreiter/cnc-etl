@@ -1,8 +1,7 @@
-from results.fetch import get_umbrella_project_stats
+from results.fetch import get_umbrella_project_stats, get_umbrella_species_total
 import pandas as pd
 from clients.spaces import SpacesObject
 from datetime import datetime, timezone
-import requests
 
 from prefect import flow, get_run_logger, task
 
@@ -14,16 +13,9 @@ def fetch_umbrella_stats(project_id: str) -> list[dict]:
     return get_umbrella_project_stats(project_id)
 
 
-@task
-def count_totals(stats: list[dict]) -> dict:
-
-    species_total = (
-        requests.get(
-            "https://api.inaturalist.org/v2/observations/species_counts?project_id=city-nature-challenge-2026&per_page=0"
-        )
-        .json()
-        .get("total_results", 0)
-    )
+@task(retries=3, retry_delay_seconds=10)
+def count_totals(stats: list[dict], project_id: str) -> dict:
+    species_total = get_umbrella_species_total(project_id)
     totals = {
         "observation_count": 0,
         "species_count": species_total,
@@ -38,7 +30,7 @@ def count_totals(stats: list[dict]) -> dict:
 
 
 @task
-def process_umbrella_stats(stats: list[dict], year: int) -> dict:
+def process_umbrella_stats(stats: list[dict], year: int, project_id: str) -> dict:
     projects = pd.read_csv(
         f"data/{year}/inaturalist-projects_{year}.csv",
         keep_default_na=False,
@@ -51,7 +43,7 @@ def process_umbrella_stats(stats: list[dict], year: int) -> dict:
     projects = projects[["city", "project"]].to_dict(orient="index")
     # projects = {int(k): v for k, v in projects.items()}
 
-    totals = count_totals(stats)
+    totals = count_totals(stats, project_id)
 
     results = []
     for stat in stats:
@@ -98,7 +90,9 @@ def update_umbrella_stats(
     resolved_project_id = project_id or f"city-nature-challenge-{resolved_year}"
 
     results = fetch_umbrella_stats(resolved_project_id)
-    processed_results = process_umbrella_stats(results, year=resolved_year)
+    processed_results = process_umbrella_stats(
+        results, year=resolved_year, project_id=resolved_project_id
+    )
     logger.info("Fetched umbrella stats for project %s.", resolved_project_id)
     upload_umbrella_stats(processed_results)
     return processed_results

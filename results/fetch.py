@@ -264,6 +264,28 @@ def get_umbrella_project_stats(project_id: str) -> list[UmbrellaProjectStats]:
     return results
 
 
+def get_umbrella_species_total(project_id: str) -> int:
+    """
+    Get the total species count for a given iNaturalist umbrella project.
+    """
+
+    response = _get_with_rate_limit_retry(
+        "https://api.inaturalist.org/v2/observations/species_counts",
+        params={
+            "project_id": project_id,
+            "per_page": 0,
+        },
+        headers=REQUEST_HEADERS,
+        timeout=30,
+    )
+
+    payload = _parse_json_response(
+        response,
+        endpoint="https://api.inaturalist.org/v2/observations/species_counts",
+    )
+    return int(payload.get("total_results", 0) or 0)
+
+
 def get_strapi_results(year: int) -> list[dict[str, Any]]:
     """
     Fetch raw project results for a City Nature Challenge year from Strapi.
